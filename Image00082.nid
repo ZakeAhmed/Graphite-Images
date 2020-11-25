@@ -1,0 +1,783 @@
+[DataSet]
+Version=2
+GroupCount=2
+Gr0-Name=Scan forward
+Gr0-ID=0
+Gr0-Count=8
+Gr1-Name=Scan backward
+Gr1-ID=0
+Gr1-Count=8
+Gr0-Ch0=DataSet-0:0
+Gr0-Ch1=DataSet-0:1
+Gr1-Ch0=DataSet-1:0
+Gr1-Ch1=DataSet-1:1
+SetInfos=DataSet-Info
+InfoSetCount=3
+InfoSet0=DataSetInfos
+InfoSet1=Calibration
+InfoSet2=Parameters
+
+[DataSet-Info]
+-- Scan --=--------
+Image size=4nm
+Scan direction=Up
+Time/Line=59.9ms
+Points=128 
+Lines=128 
+X-Slope=2 ยฐ
+Y-Slope=-3.43 ยฐ
+Rotation=0 ยฐ
+X-Pos=0 m
+Y-Pos=0 m
+Z-Plane=0 m
+Line mode=Standard
+Date=23-11-2020
+Time=14:34:35
+-- Approach --=--------
+Setpoint=1nA
+P-Gain=500 
+I-Gain=1000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50.1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=200nA
+Ampl. Ctrl. mode=Const. Drive
+-- Global --=--------
+Op. mode=STM
+Head type=STM
+Scan head=61-20-225.hed
+Software ver.=3.10.0.7
+Firmware ver.=3.8.1.0
+Controller S/N=061-20-225
+-- Module --=--------
+Controller Board=2
+USB Module=4
+
+[DataSet\DataSetInfos]
+SubSectionCount=4
+SubSection0=Scan
+SubSection1=Approach
+SubSection2=Global
+SubSection3=Module
+
+[DataSet\DataSetInfos\Scan]
+SubSectionCount=0
+Image size=4nm
+Scan direction=Up
+Time/Line=59.9ms
+Points=128 
+Lines=128 
+X-Slope=2 ยฐ
+Y-Slope=-3.43 ยฐ
+Rotation=0 ยฐ
+X-Pos=0 m
+Y-Pos=0 m
+Z-Plane=0 m
+Line mode=Standard
+Date=23-11-2020
+Time=14:34:35
+
+[DataSet\DataSetInfos\Approach]
+SubSectionCount=0
+Setpoint=1nA
+P-Gain=500 
+I-Gain=1000 
+D-Gain=0 
+P-Gain2=0 
+I-Gain2=0 
+D-Gain2=0 
+Tip voltage=50.1mV
+Feedback mode=Free
+Feedback algo.=Adaptive PID
+Error range=200nA
+Ampl. Ctrl. mode=Const. Drive
+
+[DataSet\DataSetInfos\Global]
+SubSectionCount=0
+Op. mode=STM
+Head type=STM
+Scan head=61-20-225.hed
+Software ver.=3.10.0.7
+Firmware ver.=3.8.1.0
+Controller S/N=061-20-225
+
+[DataSet\DataSetInfos\Module]
+SubSectionCount=0
+Controller Board=2
+USB Module=4
+
+[DataSet\Calibration]
+SubSectionCount=2
+SubSection0=Scanhead
+SubSection1=Cantilever
+
+[DataSet\Calibration\Scanhead]
+SubSectionCount=0
+Version=6
+HeadTyp=STM
+SerialNo=uncal STM
+RevisionNo=1
+ScanFit=None
+CtrlInPol=Positiv
+Main1InPol=Positiv
+Main2InPol=Positiv
+SignalUserADC0Pol=Positiv
+SignalUserADC1Pol=Positiv
+SignalUserADC2Pol=Positiv
+AnalogOut2Pol=Positiv
+AnalogOut3Pol=Positiv
+XAxisPol=Positiv
+YAxisPol=Positiv
+ZAxisPol=Positiv
+ZAxisAnalogOut2Pol=Positiv
+ZAxisAnalogOut3Pol=Positiv
+Ch0Corr=Sub
+SetPointCheck=Equal
+InCount=24
+In0=0,Channel0,Tip Current,A,1e-07,0
+In1=1,Channel1,Z-Axis,m,1e-07,0
+In2=2,Channel2,Not defined,V,35,0
+In3=3,Channel3,Not defined 1,V,10,0
+In4=4,Channel4,Not defined,V,10,0
+In5=5,TipSignalDC,Tip Current,A,1e-07,0
+In6=6,TipSignalAC,Not defined,V,10,0
+In7=7,TipPhase,Not defined,V,90,0
+In8=8,Lever Current,Not defined,V,10,0
+In9=9,User Input0,User input 1,V,10,0
+In10=10,User Input1,User input 2,V,10,0
+In11=11,HeadSig2,Not defined 1,V,10,0
+In12=12,Channel5,User input 1,V,10,0
+In13=13,Channel6,User input 2,V,10,0
+In14=15,Dissipation,Dissipation,V,5,0
+In15=16,TipSignalDC1,Deflection,V,10,0
+In16=17,TipSignalDC2,Deflection,N,1,0
+In17=18,SensorSignal1,SensorSignal,W,0.005,0
+In18=19,SensorSignal2,SensorSignal,A,0.0005,0
+In19=20,Channel7,Z-Axis,m,1e-07,0
+In20=21,XAxisSensor,X-Axis Sensor,m,0.0001,0
+In21=22,YAxisSensor,Y-Axis Sensor,m,0.0001,0
+In22=23,ZAxisSensor,Z-Axis Sensor,m,1e-05,0
+In23=24,User Input2,User In A,V,10,0
+OutCount=9
+Out0=0,ScanAxis0,X-Axis,m,3.25e-07,0
+Out1=1,ScanAxis1,Y-Axis,m,3e-07,0
+Out2=2,ScanAxis2,Z-Axis,m,1e-07,0
+Out3=4,AnalogOut0,Tip voltage,V,10,0
+Out4=5,AnalogOut1,Not defined,V,10,0
+Out5=6,AnalogOut2,User Output 1,V,10,0
+Out6=7,AnalogOut3,User Output 2,V,10,0
+Out7=8,DriveAmp,Not defined,V,1,0
+Out8=9,MixedOut4,User Output C,V,10,0
+ScanCorrCount=1
+ScanCorrA=0
+ScanCorrB=0
+ScanCorrC=0
+ScanCorrD=0
+ScanCorrE=0
+ScanCorrF=0
+ScanCorrG=0
+ScanCorrH=0
+ScanCorrI=0
+ScanCorrJ=0
+ScanCorrK=0
+ScanCorrL=0
+ScanCorrM=0
+ScanCorrN=0
+ScanCorrO=0
+ScanCorrTableRot=0
+ScanCorrRotX=0
+ScanCorrRotY=0
+ScanScaleZ=3276.8
+ScanScaleXY=256
+ZRangeFit=None
+ZRangeCorrCount=1
+ZRangeCorrA=1
+ZRangeCorrB=0
+ZRangeCorrC=0
+ZRangeCorrD=0
+ApproachStartPos=-1
+MaxApproachSpeed=0.61
+ManualMoveSpeed=1
+DefaultDynRefAmp=0.05
+DefaultDynRefAmpLiquid=0.2
+DefaultDynRefAmpVacuum=0.005
+DefaultForceModRefAmp=1
+DetectorABGainAC=3.5
+CompDcSourceWithX=0
+CompDcWithX=0
+CompDcSourceWithY=0
+CompDcWithY=0
+CompDcSourceWithZ=0
+CompDcWithZ=0
+VideoSupport=1
+HasLaserOnOffCtrl=0
+XYCLPIDGainsX=1.000000;1.000000;1.000000
+XYCLPIDGainsY=1.000000;1.000000;1.000000
+XZeroVoltage=0
+YZeroVoltage=0
+ZZeroVoltage=0
+ScanAxis0FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis0FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis1FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff0=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff1=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff2=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+ScanAxis2FilterCoeff3=1.000000;0.000000;0.000000;0.000000;0.000000;1.000000
+HasXPositionSensor=0
+XPositionSensorPol=Negativ
+HasYPositionSensor=0
+YPositionSensorPol=Negativ
+HasZPositionSensor=0
+ZPositionSensorPol=Negativ
+ApproachStatusMode=1
+ApproachStatusPol=Positiv
+ApproachStatusMeterRange=-1;-0.9;0.9;1
+SensorStatusMode=1
+SensorStatusPol=Negativ
+SensorStatusMeterRange=0.0866142;0.102362;0.102362;0.811024;0.811024;0.913386
+LaserWavelength=0
+
+[DataSet\Calibration\Cantilever]
+SubSectionCount=0
+Version=2
+GUID={7C725C17-AB98-465d-AADA-D6D453C769DA}
+Manufacturer=STM Tip
+PropCount=14
+Prop0=D[0]*[N/m]
+Prop1=D[0]*[Hz]
+Prop2=D[0]*[m]
+Prop3=D[0]*[m]
+Prop4=D[0]*[]
+Prop5=D[0]*[Hz]
+Prop6=D[0]*[]
+Prop7=D[0]*[]
+Prop8=D[0]*[ยฐ]
+Prop9=D[0]*[m]
+Prop10=D[0]*[]
+Prop11=D[0]*[Hz]
+Prop12=D[0.3]*[]
+Prop13=D[1]*[]
+
+[DataSet\Parameters]
+SubSectionCount=8
+SubSection0=Approach
+SubSection1=ZFeedback
+SubSection2=Lithography
+SubSection3=Imaging
+SubSection4=SignalIO
+SubSection5=Spectroscopy
+SubSection6=SPMSystem
+SubSection7=Stage
+
+[DataSet\Parameters\Approach]
+SubSectionCount=0
+ApproachSteps=L[10000]*[]
+WithdrawSteps=L[20]*[]
+AutoPeriode=D[0]*[s]
+MovePeriode=D[0]*[s]
+StepSlope=L[6]*[]
+AutoStartScan=B[1]*[]
+ApproachSpeed=D[0.700122]*[%]
+AFMApproachMode=L[0]*[]
+AFMMotorSource=L[0]*[]
+AFMStepByStepSpeed=D[1]*[]
+AFMStepByStepSlope=D[1e-06]*[m/s]
+AFMStepByStepFineStepSizePercentage=D[5]*[%]
+AFMStepByStepCoarseStepSizePercentage=D[90]*[%]
+AFMStepByStepMode=D[0]*[]
+
+[DataSet\Parameters\ZFeedback]
+SubSectionCount=0
+PGain=L[500]*[]
+IGain=L[1000]*[]
+DGain=L[0]*[]
+PGain2=L[0]*[]
+IGain2=L[0]*[]
+DGain2=L[0]*[]
+SetPoint=D[1.00101e-09]*[A]
+SetPointForce=D[2e-08]*[N]
+SetPointDC=D[1.00101e-09]*[A]
+SetPointAmp=D[50]*[%]
+SetPointPhase=D[1]*[V]
+SetPointForceUnitMode=L[2]*[]
+SetPointForce_V=D[2e-07]*[]
+SetPointForce_m=D[2e-15]*[]
+SetPointForce_N=D[2e-08]*[]
+SetPointDeltaF_Hz=D[0]*[Hz]
+SetPointUserDefined=D[0]*[A]
+ChGainRegError=L[0]*[]
+FeedbackMode=L[0]*[]
+Algorithm=L[1]*[]
+RefFrq=D[170000]*[Hz]
+RefAmplitude=D[0.0499893]*[V]
+RefPhase=D[90.022]*[ยฐ]
+CoarseSweepStartFrq=D[350]*[Hz]
+CoarseSweepEndFrq=D[650]*[Hz]
+CoarseSweepStepFrq=D[100.002]*[Hz]
+FineSweepStartFrq=D[130000]*[Hz]
+FineSweepEndFrq=D[210000]*[Hz]
+FineSweepStepFrq=D[100]*[Hz]
+ManualSweepStartFrq=D[130000]*[Hz]
+ManualSweepEndFrq=D[210000]*[Hz]
+ManualSweepStepFrq=D[100]*[Hz]
+AutoCalFrqPeak=B[1]*[]
+AutoCalPhase=B[1]*[]
+DynamicAmp=D[0.199744]*[V]
+CalRefPlotGraph=B[0]*[]
+ForceModFrq=D[20000]*[Hz]
+ForceModAmp=D[0.800012]*[V]
+AutoFrqSweepRange=B[1]*[]
+AmpCtrlMode=L[0]*[]
+FrqPeakReduceAir=D[20]*[%]
+FrqPeakUpperSideAir=B[1]*[]
+FrqPeakReduceLiquid=D[5]*[%]
+FrqPeakUpperSideLiquid=B[0]*[]
+FrqPeakReduceVacuum=D[20]*[%]
+FrqPeakUpperSideVacuum=B[1]*[]
+RegMoveMode=L[0]*[]
+DynamicMeasureBW=L[6]*[]
+RegOutputSel=L[0]*[]
+FrequencyLockRange=L[1]*[]
+PhaseCtrlPGain=D[0.3]*[]
+PhaseCtrlIGain=D[2.5]*[]
+AmplCtrlPGain=D[2.5]*[]
+AmplCtrlIGain=D[20]*[]
+UserOpModeInputSel=L[3]*[]
+UserOpModeInputPol=L[0]*[]
+UserOpModePIDGainCorr=D[1]*[]
+UserOpModeDCOffsetMode=L[0]*[]
+UserOpModeDCOffsetAutoGain=D[10000]*[]
+CantileverExcitationMode=L[0]*[]
+
+[DataSet\Parameters\Lithography]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OpMode=L[1]*[]
+InactivePenMode=L[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+XYMoveSpeed=D[1e-05]*[m/s]
+ZMoveSpeed=D[1e-06]*[m/s]
+LiftTipAbsZPos=D[0]*[m]
+
+[DataSet\Parameters\Imaging]
+SubSectionCount=0
+ModuleLevel=L[1]*[]
+ScanRange=V[4e-09,4e-09,0]*[m,m,m]
+ScanOffset=V[0,0,0]*[m,m,m]
+ScanRotation=V[-3.43209,1.99937,0]*[ยฐ,ยฐ,ยฐ]
+ScanTime=V[0.059944,0.059944,0]*[s,s,s]
+Datapoints=V[128,128,0]*[,,]
+ScanMode=L[0]*[]
+OverScanSize=D[0]*[%]
+FirstScanlineRep=L[1]*[]
+SyncOutMode=L[0]*[]
+LineScanning=L[0]*[]
+RelTipPos=D[5e-09]*[m]
+ContourEnabled=B[0]*[]
+AutoReadjustProbeEnabled=B[0]*[]
+ReadjustLiftHeight=D[0]*[m]
+SndScanDynamicAmplitude=D[0]*[V]
+SndScanDynamicAmplitudeEnabled=B[0]*[]
+SndScanForceModulationAmplitude=D[0]*[V]
+SndScanForceModulationAmplitudeEnabled=B[0]*[]
+SndScanEnableDarkMode=B[0]*[]
+SndScanEnableKPFM=B[0]*[]
+SndScanSndLockInExcitationAmplitude=D[0]*[]
+SndScanSndLockInExcitationAmplitudeEnabled=B[0]*[]
+XYMoveSpeed=D[5e-05]*[m/s]
+AutoSlopeCorrection=B[1]*[]
+AutoDeleteBuffer=B[1]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpikeGuardEnable=B[0]*[]
+PrescanSpeedup=L[0]*[]
+
+[DataSet\Parameters\SignalIO]
+SubSectionCount=0
+UserDAC0=D[0]*[V]
+UserDAC1=D[0]*[V]
+EnableUserADC0=B[0]*[]
+EnableUserADC1=B[0]*[]
+EnableUserADC2=B[0]*[]
+TipSignalMode=L[0]*[]
+ExcitationMode=L[0]*[]
+MonitorOut0=L[0]*[]
+MonitorOut1=L[0]*[]
+EnableUserADC1ZSensor=B[0]*[]
+User0CtrlMode=L[0]*[]
+User0InputPol=L[0]*[]
+User0OutputFlag=L[0]*[]
+User0SetPoint=D[0]*[V]
+User0IGain=L[1000]*[]
+
+[DataSet\Parameters\Spectroscopy]
+SubSectionCount=0
+ModuleLevel=L[0]*[]
+OutputType=L[0]*[]
+Repetition=L[1]*[]
+RepetitionMode=L[0]*[]
+FwModTime=D[12.7996]*[s]
+BwModTime=D[6.5532]*[s]
+ModRelValue=B[1]*[]
+FwModDatapoints=L[32767]*[]
+BwModDatapoints=L[256]*[]
+SyncOutMode=L[0]*[]
+FeedbackActive=B[0]*[]
+AutoChartSettings=B[1]*[]
+AutoCapture=B[1]*[]
+SpecEndMode=L[1]*[]
+FwModRange=D[1.27996e-07]*[m]
+BwModRange=D[-1e-08]*[m]
+XYMoveSpeed=D[2.5e-07]*[m/s]
+StartOffset=D[-1e-08]*[m]
+StartOffsetMoveSpeed=D[2e-08]*[m/s]
+FwModMode=L[0]*[]
+BwModMode=L[0]*[]
+FwModStopValue=D[5.00504e-09]*[A]
+BwModStopValue=D[0]*[A]
+FwModStopMode=L[1]*[]
+BwModStopMode=L[1]*[]
+FwPauseTime=D[0]*[s]
+BwPauseTime=D[0]*[s]
+FwPauseDatapoints=L[0]*[]
+BwPauseDatapoints=L[0]*[]
+FwPauseMode=L[0]*[]
+BwPauseMode=L[0]*[]
+AutoRecalibrateProbeInterval=L[0]*[]
+PressurePulseValue=D[0]*[bar]
+PressurePulseDuration=D[0]*[s]
+PressurePulseRelative=B[0]*[]
+PressurePulseActive=B[0]*[]
+PressureActionId=L[0]*[]
+ModulationStopValueBandwidth=L[0]*[]
+
+[DataSet\Parameters\SPMSystem]
+SubSectionCount=0
+AOut0=D[0.0500504]*[V]
+AOut1=D[0]*[V]
+SPMMode=L[1]*[]
+VideoFPSControlValueMin=D[1.5]*[]
+VideoFPSControlWindowSize=L[5]*[]
+VideoTopLight=D[100]*[%]
+VideoSideLight=D[100]*[%]
+VideoTopBrightness=D[80]*[]
+VideoSideBrightness=D[80]*[]
+VideoTopContrast=D[70]*[]
+VideoSideContrast=D[70]*[]
+FlexVideoTopExpTime=L[60]*[]
+FlexVideoSideExpTime=L[60]*[]
+FlexVideoTopGain=L[8]*[]
+FlexVideoSideGain=L[8]*[]
+FlexVideoTopADCLevel=L[2]*[]
+FlexVideoSideADCLevel=L[2]*[]
+FlexVideoTopRatioR=D[1]*[]
+FlexVideoSideRatioR=D[1]*[]
+FlexVideoTopRatioG=D[1]*[]
+FlexVideoSideRatioG=D[1]*[]
+FlexVideoTopRatioB=D[1]*[]
+FlexVideoSideRatioB=D[1]*[]
+FlexVideoTopRatioGamma=D[1]*[]
+FlexVideoSideRatioGamma=D[1]*[]
+FlexVideoTopAutoLevels=B[1]*[]
+FlexVideoSideAutoLevels=B[1]*[]
+FlexVideoTopPositionMarkerX=D[0]*[]
+FlexVideoSidePositionMarkerX=D[0]*[]
+FlexVideoTopPositionMarkerY=D[0]*[]
+FlexVideoSidePositionMarkerY=D[0]*[]
+HighResVideoTopExpTime=L[60]*[]
+HighResVideoSideExpTime=L[60]*[]
+HighResVideoTopGain=L[25]*[]
+HighResVideoSideGain=L[8]*[]
+HighResVideoSideADCLevel=L[2]*[]
+HighResVideoTopRatioR=D[1]*[]
+HighResVideoSideRatioR=D[1]*[]
+HighResVideoTopRatioG=D[0.8]*[]
+HighResVideoSideRatioG=D[1]*[]
+HighResVideoTopRatioB=D[0.8]*[]
+HighResVideoSideRatioB=D[1]*[]
+HighResVideoTopRatioGamma=D[0.9]*[]
+HighResVideoSideRatioGamma=D[1]*[]
+HighResVideoTopAutoLevels=B[1]*[]
+HighResVideoSideAutoLevels=B[1]*[]
+HighResVideoTopADCLevel=L[2]*[]
+HighResVideoTopPositionMarkerX=D[0]*[]
+HighResVideoSidePositionMarkerX=D[0]*[]
+HighResVideoTopPositionMarkerY=D[0]*[]
+HighResVideoSidePositionMarkerY=D[0]*[]
+ImSoVideoTVConfiguration=S[]*[]
+ImSoVideoSVConfiguration=S[]*[]
+ActiveSensorByGUID=S[{7C725C17-AB98-465d-AADA-D6D453C769DA}]*[]
+MeasEnv=L[0]*[]
+SystemStateIdleZAxisMode=L[0]*[]
+SystemStateIdleMixOut4Mode=L[3]*[]
+SystemStateIdleXYAxisMode=L[0]*[]
+SystemStateIdleZAxisValue=D[0]*[m]
+SndOpModeEnabled=B[0]*[]
+SndOpMode=L[0]*[]
+ZClosedLoopMode=L[0]*[]
+ZClosedLoopSpeed=D[1000]*[]
+XYClosedLoopEnabled=B[0]*[]
+XYClosedLoopSpeed=D[1000]*[]
+
+[DataSet\Parameters\Stage]
+SubSectionCount=0
+
+[DataSet-0:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=4e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=4e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-0:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan forward
+CurLine=127
+Dim0Name=X*
+Dim0Unit=m
+Dim0Range=4e-09
+Dim0Min=0
+Dim1Name=Y*
+Dim1Unit=m
+Dim1Range=4e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:0]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=4e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=4e-09
+Dim1Min=0
+Dim2Name=Tip Current
+Dim2Unit=A
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[DataSet-1:1]
+Version=2
+Points=128
+Lines=128
+Frame=Scan backward
+CurLine=127
+Dim0Unit=m
+Dim0Range=4e-09
+Dim0Min=0
+Dim1Unit=m
+Dim1Range=4e-09
+Dim1Min=0
+Dim2Name=Z-Axis
+Dim2Unit=m
+Dim2Range=2e-07
+Dim2Min=-1e-07
+SaveMode=Binary
+SaveBits=16
+SaveSign=Signed
+SaveOrder=Intel
+
+[SetView]
+ViewWidth=638
+ViewHeight=526
+ViewCount=4
+View0=SetView-View0
+View1=SetView-View1
+View2=SetView-View2
+View3=SetView-View3
+
+[SetView-View0]
+ViewTyp=1
+LineOp=2
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-20,18
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View1]
+ViewTyp=0
+LineOp=1
+Channel=1
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-25,22
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,4e-09
+
+[SetView-View2]
+ViewTyp=1
+LineOp=2
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-94,171
+ParCount=6
+Par0=1,Shading,0
+Par1=1,DeltaGain,5
+Par2=1,Smooth,0
+Par3=1,DriverInstanceNo,0
+Par4=1,RangeMin,0
+Par5=1,RangeMax,95
+
+[SetView-View3]
+ViewTyp=0
+LineOp=1
+Channel=0
+Frame=0
+ViewSize=256
+ViewMode=0
+GraphMode=1
+AspectRatio=0
+AutoZRange=1
+ZRange=-106,161
+ParCount=3
+Par0=0,ReverseLine,1
+Par1=0,XAxisMin,0
+Par2=0,XAxisMax,4e-09
+
+[ProcessorSet]
+ProcessorCount=0
+
+
+#!'N)#@]€x8UJ.zR7A_w`K%644€jK\5SZc@:RX`<(KmJV7AmT:(?•{#6-'5:RWU'Kh?J0>aQ7^WOUf1%IHp.f?_eP0&%KH…FPvvKK-7RsT>"8”R{cG,:Q\c==D]TK2\P\2;;Y;E=BRLV,+ VsV-C'dP7(CKQHu($RiZH;4$b*w?Wmge'A+7jmJ"!VrKU'5QญR1þ 
+IRVD2N‘sNK5&&Bj|(4um•0J6gf:(Sm’R&AnXLVp*(๒ LlS,|uY,E,aJ=๑ 9H…6&bFMH85Iฑ.I!"-\YmD6<K>5-+>]N\W\Ma65.+CP6Q.hM;F,M<uC2r€D rMpþ b•s2S=DnLKhp7๕ QR–ITUPBkc28`Oo\6'PF5j<
+J7}Y๗ RJyG>1G“I2Ze1+;Yg7W>/xBz3F3I:g->X\[/Tk\5-:6b\A"QZS(7O\;<7S_[E73WRtT5%Y5?J/!;*x_LP`n7KE!0`G.E7PถT,UOgH8;IfBI<g=.oK7`>3I<Jp`\P/S๙\-๚ '<\S5(/V]\_UpHj…HJ<0AKX=I!!ซz$L;:77]_R4CFuC$
+LบG"I2…$X๚ 
+kJ6AMt^Dg_337lQ(A->6.!xV”jM-B”c+8w–OdT^|\3P_j0&0I–ฒ^+BU^,!$Fm@;R;^SGJXlb75[S8'!jM8}EE3FSR[.,|<`Qb6&y_T[1ÿ hcGa~R%!Rข-=Xl((+A\kG.1bT Rff2]LpZ1MHญ$Uq`.,U^Z788\L=`D><_e”1i7๖ O? 8LฑI#"q_TA1!uÜG'(v}CVKbwA.6Xs@g/2k‘P2E5)0LD@%OyPRY0`_A-! ”ฎY-Nฆฅ@'5M’1;KOZc&5pjE<8ej\O)7kST`?XJmnRK$A…DO:Fs_N;&(<XV!;t•`F+&Oml-#BlU8`h^:r๎ M{€"*BBVm๖ QM{IM'-MM?N)AMm=nREH^vs<SO]?gIJ5Xd{/4+pณ^_%,Wuc5/Qy\0>/<k@-)DmW_U0CktlL/?L(UsH3>=4^C!+WFe@H-&KHH5M!mฌrT3/?YFORHM‘l]Ev–D;kWLG^ t@€rG%%hqP:ทg TXj`g'n/#_nN	1:R+=T#5iUB+Ob<cC2\Z`q
+?m~”c@\!G)B-qFF6QE1-"caYS (REjt^:SP_
+2qzbO&H^a(10BbxD(W^บe3&QGWh8B-rgNZaKS_=3tE3"-N7HZ]80g:= 0&KFzfHa\งeA
+!]QR16+@rwJ54PCQ.Vz`s+I์ ,hำr(%6CNge	LmPS*CR AK=M<5REnS'hJY?O*+๐ &LSd…j[lNayu:BAeNQ]b1EjMMG=N>?z*€.\NaXV-Bs7"sr…mC3 CR?2}ka)3EIH'1r—jtqbM</"QfXY,Eb\2;UXฃh[c=CF—q7o0KI;!7Z“@ #AawWXrY<4@B{^J-mL-@(F)7gง{H๗ /RP^E>V]2ý F€G- 4Otk3R<k…Z!þ &ปH: ;clB?&JCWwRAWT3|.6c$T+cSXW;JK%*c“((U€\DV71wBI+U	o=j ”<\^9:NXG
+#7=nR8aG<Lz*Lh]!n mO EJRทT.gnv%þ GP55WFPb</EIOc๘ ๕ ZDQa_k_tK>BO|GH;*ฌEV#U€?=•—b?V?jkf,.k^‘๗ j“8M1M-3SO*3[~lC."xฦ<-O6]ลjF	[…{t]ใ ü A;iMRl'@OWZ<DR(~=rR+%?{6':’Pwbn๛ JC(8I‘n$$'NฅH>#MQศ$8OqV?b7"#/uD8)(GPiK"'\RG6&:HrBl'3:๑ ะ]3%==mr>"B_WN:WIC &๖  _BQ;L=@]<y:<)7b**Af^{H}X@๒ จ>b^0SmjA;2%rUu*€E!XTs’_๗ RUQ>Y}&=}O$#5JZZ3}nffbN*#2]F(R@U83927n\0?3~C+[f]B'dS>?U-!^FIQ]=BXD$R2nef7UYฆ5IHiwc51[–b:)#%นIJ/Nk[0,d8$AS@<]1fbbK/,ฅkH*#=&=N,%LXc;;bT51x\XeA206Dg>'p`93>ai-"J&Stl<KW]S:"4uv1*#ฆ(2<pTlEq/๛ OBG\@Kf€`?$6mจX(30Ld^๛ þ QxL,/q1+.&AM*Ji>=N~h7๗ ]Fj`'1S\ZF;:9vฆX<%ej3-ka+c\?,0bfs2๘ Frd=HKdBIQ;fÿ hREzHN\6>O_{a:H‘h  2dbqZ!Bz[BE2W<hANCB%#SO’2 1-SWCG_NC*'<]7G!#.\DB1'@d>Fpฎm:๙ 0)rsqCXef7..b€H8'B_hBG$`bU@-2_W@/*'[xcjQ=G.C`(6‘Z9๛ ๔ ๖ fฑ\bXOB&o?2=JbW"^oXS_($%[~…j:EuคIcun(R,Mea1=OVNK6x2vRor5@8hI/+:o>QRA/X‘XF8YA3-kGP?:mw<+	๘ HX(DmM(7ERHO8D\ข•; ๖ -Wo>"GW~<PARMท<'[hK7QR57FDtฏvA8l“b9JBo"4ErqX'UBZw:ÿ  Bwp<*%WW5000RW6 ,?LU1L^z@0<bHBX3/VWRd'MXZ=4Aฦ`W$.;VU=GfWqG(`•,&GP8./UJFf{7"/d2m\9#.8\O%'}kg!([“JH#aI[N(!tom(->z^U%B)VlU5๚ ü ฒJPXKFDWSJ]@H^F<JXe6!-m~\[<,งT?\jV!_|@.]cA}d/))“u,B#Nl 8~u{;&&muJ>/7?fnA5*9VP<BC–rZ?([6YBO<ak[2S<OV2%'{jT	d…fý \eVtHSFq.>`zAG@)]rkG1þ 1Kb*4Bข7,(,!B-$YOM:1*i M%๛ Vk[,_PxfD^จd750adZk>(?uq;/<,U+;K*>J@#€GUGLQe%m‘h+5K#1)+Co[9H<’NO4๘ "_vP 4ZฃC<>A“21dZ$,I#+B…pGGB*M~KL	<พJ:DFbBXsIJASTdF<๓ b\e;=P-CW[45vขQPRhO?BP4hU76Gb;?MOWT"JdM020{F3gP9=,iWX5XFDฆoD0GS~VA'+\O+1I{VM€^zAX%UE4-?$H[[C02ผ\E42?M][@6_-I3D,4WO7K\_2ak6G>lg3Z–t2(K>@:GkV&H$A•nQL`G8,Vþ 2Gw^$2aRU/?RX>+ü ü '‘1
+* }juF=m_+`@WBE1:Ew4 "งYR54esLฃC8&#Kv02กOL1%2GI^b=n@5(>Xmv346dLC3=mส@7.JwQL1<ZIN]H".KFL* */]UdJAQ\H4%cszPÿ ,mQ;YCZ?0pZF%\SM9N>.1oWI8JA`975a>,E_lZQ?0akE6j=C<F=M7/'jtg>'oVF=&,rwwR+F>}PO$+3mHY0OJXK1E.OQ^PM=WQbHXNuVโ Bw;:C6[ขB^bgt;<wE'cU?"*4DH]l65xn\ü )@iFk-#Ea“Z,(V^T<\UJL%
+ldU1O9Rฒho+%]SZHG:72K9.Lp/bk-9`|R4XG4VP+7VAt=Gb’V:"$As…4ํ 6d}K=HRhqZ- J3|4!.VFl)(A`0GN9ff\e#N_;L–gU"5‘^>dQ C4kGE<RAqCH ;nS;6
+{D=:/80tnC.M7fK/]@eฐDIa6\\•?B#UlsR/7vo@์ -QtN0(2Bb9)0V`JA;/_h_(466>6t=PNrFDhl$>d.,eoGT>9Pฝ3RH5Dq;}f":XQM3<>K2aV?.AD€N$@KWXP7
+;rxH#S8TN}#U3l;.$@r:V%๛ 1C9csV€pUt@KF Xqf#,)8hLLwJsmJdiA@%KxX[8GK8oWh7/5/:UH;8F^go;0WEX[<$C+Y_KRG-eT)"FNqau"3UcD],\4@[bO>jP$F5;5@;]LQ$TRQNc`8=90iGpp4,8=;.>(im%/d#8JK]ZLU8NECT_>KT’jFJYeAJ7Rb!si:E>\mHTB#(g2[8,Ijv8*0q3Z6D}Fj>11"Q::k;aP|X?JM8]0KaJCD(f[uS%c[C?WJcT220UsR-I>aJLJsIP#%[=6+E0ZNCCLgG3?IV'Fvu0bw{G#ý ์ e€5JTFw.APDPX2๕ ,`\QMzkC`$2ILv45>]x^9ý |{b];
+\…VH:>PW^O;iRr`IvC'fl^=#p{k9-Pd];%0CG}‘*!@c_[8/,uHS+L-IO\.JH]_LD?<JiI5:SW$X^\"NRQ$$ iQR+E@JIpJ5GqqW(:4`mH&+1eLJ;>mF85:@HY^F3Z[_[K9"@gh%"5F…M.pSGRZS801ภpN7t_90-U>3o`+1Pzvl'j}P7#-DiE8&y•[B"'6mk]*๗ %Ssg$O,RCai whB ;!POoOf^[S=
+Du&~!CSHWXOGP<-!E:=rฅD$jkฒh4$๒ QvU:oSVz-GZ,aR[`O=D:=r”}G&"%(R:O>OUrn& k-x#H/6Ln@=>LTr\?:U^กK.#v^,&']`P<(TrTM5	5h•H#1IqyT	CyF(>VsA0.ฉX6N|“rP{Fu@R_U?oeT^A8
+?ERJhHA๏ >W|]/dKhG, -Hxvcโ ! ัXX<$:{L5@ $่b42cซ6!4<ญQ-73R]>=lpVVV\`K)"YG!zn8[RA]%	5|<<OAG0þ %Gmr7MG\Gi3<8S;/,IN/AHg{<;Zgh,-5Dq6@๛ &NQ 1N€XI0.4’aPAGW`'AsMN`;3:b”V-)%?MMH.`s$%F-NaB=Lb\9-?EM^Q๊ `cP56‘;1'q“ze5+๛ WM6>=`xW;"OhTGb4>@QVu6*“?B.AHOYC/JkOI+(สOL+GbfGC>U}M,6]4FI;?jU7%+,URU* ORUQC<4Hc~I-7 uL)[^a'h5XBK:>o|E๗ Wq[u)-ZBcg--๘ u:H,^6*E)!5csrA,'NmQU5=7OM&;^2>MF*NIgS/>cv@OฆX๊ XMnyI/SoNL)#<\XajF,;=/ADg/<fisd:๔ /RDAF2^G$P%๘ ๖ ตS:/K}wD@0AZ1\ฒr.0M]2*[ý 0ap9?WfX:,H6gj9-9E[|H4(hg€D ]8s]}0+ImRVISgC/A6\ Dd.#aP
+PkiNl>3;jP=8&+Ko,@:2Fw€/-%D3PR%*(erfDm\Xc'73#oqh-,XNY7H‘a9m25QPU,N@h<5Bb}bZ+r4=#\rbM32&]O0Sf8wN:E8B9^<.>S;t4cheGO=#KJJbc'IK<$x7C%[^@oS>W</2’A.!n[?"A—v
+*7XSz ,$Fณ[3S	0lU-=^Z๎ D—
+8Cข~d!orA-B)]Kb.A#DJdnT7M,nJGE,uT]iQUI5AH5aP>?`“I!=|98+bI<'FจaU,๐ YWq_G>LoG;"ExVT+9LdP//*QbrS&XMG(#sX>3)^kazÿ BV^WG592CM*/Uกl:;1goaM1.ucRE>N8F_H6)bw{=>(E>E'>5C19)HชW!A2WSX(4EZw4?…F`N6,bsfRGU(5(=VcQO18P^9B๑ J^wQHDL3B#kNC0$GR\V7MKPJgwIฟP/OKP=6_szwX9๐ คH
+@v}[2-]\a~?2e^PIFN^NJ&-FY…\.@NS2%:ld\:/Medt-S`a:7WFPL9<pQX(JoP4NAH[x)4?:UA%,LD.G@ RMT.*^u]]6,g…m@`BJ'L7QL?NE;0\U6<E%8Oj:>Vhv>]/=IfVLADHH7A[F]-%.KnfB2#i€h$+muQB:Rl_P!Zb\]) UM]A,WcbB,'zY#<qj'1[’j7=0YqR>7K/S+H=NxoH)QcF4
+Leu2?.fMJ5+5EKa?E<eO9G57=M^%,/K@OH?.MLUq-.Bg4
+;@Zr^O@ld=#i^xKÿ _r%4mqo&`vk[>#*`C0Q–k)(/djh),~cQ*57Cg:J	6+`>!%Pxv`2"*Eu?B QGOK]--JN6.<A6RlKN^L/0H";Pj7cU\8ZO8?7:-$;{bk|'/fllX,
+H`h-BVf^?LvXT5K&์ @fV@;NyO%'>/1Whrw\?.7qoq
+
+llCP>.SS=2?dmK/K^oxU"U"ANA+;^XD0Xbm?==Te@-0w:E๕ +QQB2Zd]K8asQF!ü >%:BGฃP'Z:USMrx>AN๚ #J“$G?jKBþ bGzw0.qdp.,1<JS%#mHXh1&}rMA]ซE?EPlgK็ ๕ BU[GA<T-…]\/kS\H&Ow32FduD,.Vgf;-}ฟ@4-Vfhb:!>jVh\8 L[Mio8E8R7I% mp`5I72J;%0BqU%๗ ,[e.;hk…pS๚ pkV',zx5&7{\A82O]r?$xuGK&IKoJH2#JhmO&jX…+!6ce/?Mจฌ_'!!PG@&๚ "xhDpkS.("fnC jmb-3A<๔ 4_pF*"Pu{DBEtVg+N[a%#,ESgEHAkS261td2.^h~D&"%jS6(DgCX#FEolb N•P #?rd/ FP_.(0XxHN(8g{fa0þ Xk1	$4Ku๕ Kr~E2 peGSx;E *h`&(Hฌ€—73$I\J>Nh€QQ63SaaE*1”=)R<5hz@+6.vVQ.#'R2&?eNTPrMG@uA?wVc@AIHM`+4TU''|j2%๛ [[<&?|K_+.4GNK/E—X\,*/+gH,@;PZk^XOD.HlvI/'%ApLP|#PISWbbucW๛ *kS]&ARH7 INiO),gWYPGB"Q>JK! Br3F>[H~<2"2`ajHn—q)'%7d€K'*m}bG@;PL]A^_'bb3>fwY+%-\ZIf(3#3V@3:MAge…H'6DuP:=?h_75VzP"8WhO2D^cU2/X{= DIHp:ChW]eZc$%MBi[Gÿ YXgPG^TBaK=:QMS>D`Ka+þ ={cF ๊ q[j81L“n(7Z`0[&+kc<&!'KnJ7Ch`X61nจ€ABhA?>E_€U+S~vm;ÿ ๗ jQFBPAiR`"%oP;5M`Lg_K6&3Nq}U๎ !UUa0'O_>z_	*N_U"<M*์ FLha]3–“C 5HspU<ý M`w|;OM2E]R3-0$L_x/HZjP3na=#þ "xxZ>FODW,-"Kzf7av`63BQง>qb=:W0V.2WfNJE/]6X<03^“OG
+S,'2f~J]FQ'JkWH?DOkU;Y.*r<H+9tzJQ~J30 XAnb/ZZ_.OsSzL#?QL>@$fb7&SlWO>8DROO%C…[7AakQ38Uo\&þ +1ZN9Tj<4M%]KจtAÿ 2{[&d{6EZ5<7fG<5dZH4 MlgcJ%VS>2# -8ฃz;;DHMUp"r€n(&,hg[GN/^{X".2iV&Mbu=K =]nyE"6{\T7'gSr<Q@PIdL^OG]rX7*.IRG72AvnZ?;wW;,@บX_AtS6:!ONcQU7%ณ]p!SNG”td]เ uh3%57M\w! x@6(
+aP.!1p\4'Y•S4 LH?LWcPT*1"E…gK"2BE-,9[xP>62LB7meI9 ๕ Uซ&<Szญq"WT|[*þ *kI]2[ogE<zne`รg+76VS…[6ElJX1\bcR+AXkEÿ Yf}3JNIkD5[FRp2F{€0'๚ OP"AJZ6kg,dYh12--u.:QOฅkD#๚ LฎpMCF@=N/-PฤsKH,blEH,,azF\%þ T6<$6vvข\<C<%=px{D:NVW-:RrgAA.QฎM5FAo}"LCX8db1LLVo?76?\52hte;;fLWk?3XTO);+m]WJ(#tk5AQYJ;;*G?I@7/l,-3-Zq03*eช`D@wWHW+jU\4FkH1!:Um2DtP<e_+H\O%!wjuU$+MCNeH[ft+๛ iM8DKCYr~*=>o^J%7fA[CFC5Xc#!'L[S!"V[>W+/>N–H+ TGOf'Ew_J2&<lkE	gWx44%XzO:X[R?KC8'๖ <€…:)bDeA=Mxq2$[dG!6)n.:MePf'6WnK<"_UWf&8hE_JJ827&x5!No&opd#BI[BJ'!GXiX"+?;Kq4\J8PHBL\I=B:Z=FHB-+sRj@.%GNLi.=yst[MGft-mKE+$`th“+!DT1;#ชeI+/E<-4๔—]7/5V@^Jgm6Y78{gIM7HQY?~QeD3I*8XN@.`ข<4#$n_`B;lQ$E3n–aK#)u&J[c6Q…AA)LSo+];jซtL;&7“PV(`XBJ8^,VxJ;BDqHP*F/rzC4C!}XC9!n/23h’^B8CฒK:8.W\_@./`ฅh E]tqY4—ฃ92!0_D๐ 9ย{B[L&`8KP?*86M8kgX>QVG^C=2='$%M`FRs}O:-TUO63$~’~[5YbT*ASjhNHJc23Z6FQ/8VpgzU4.Jd—fB+#WhX6:’C:SXZ8(#Jj”MA#IbnsXIvTd3nBjZP/0HO?dG64NUK@/#wW`O>#Nhng7G5–lW:ชR51>O—P5/8IQ8,SaHl\5<:O=:EJJH7{ZP,"8nLL6/8WYA51?dlC##:WQW?2(\Y]1AKb>#2P__EVJ3`}*ตx\[ฮN!.[GL}T!'tS_BS€b2E-;lG ,RZ[ew$&Qgc.	zOQF@FV%IM4HMsa:0=XPTSce'/!Yzt0A3?a?57.U‘KE"Km?nTX*VI`b<?0m30Fg[5$El0K[>BlkJ3ฉrN(LJ?30l•03*[2"!`…zn(๗ _”~J.\ul>'#L_kJa72fp^N9.dhP<J[b[N:6d~"-ltP%@-]HM&%Mu‘BN3U0H22M`gM75\e/I?dXW๐ _F,7dฃoX56ZK^=,IN]N2(<=RcSH+GCga6QT@^.JELV[0.bcvlE`EV5StrE"8W`bQ2D3];j;Ha\YP,'?R^".>Bk[;*dc'3@>XCA?>-.3xd7!XhoK%.uhY` D_~\.-]‘ฃ`๒  wqX#<7O.(6{ks$:03J0+y[qE1kA;cPq7hI\H>K‘1RV2=WD+!4IEi`kfSjABKFGB^\fv/7WaL-<]FJB4E5BqEBXfkI"ý $`>1XjA_  X^\EXFe^d=6;?fMwrqe<*J<F#=9{~d2#)J`q@6E_^SL?-@\k7'+H[vC3$7OpP$*N,@eKr=>/V~c8=@^P@&<bgM6:YyS8J,OFhVXCV•@M< ^BU%_S08$^@>^?PbG''g3 *DbjKT(BT^DG%!VLNTFcZXPI0DV^+;Qdk,(aXXK<@:xLItL?=/f^/?%Te?N!KrC!-@a’m63,=Rn@ MUg/!6lj7&0pbI>cAOX[H<~r<
+MeM;.2fcd+:>]O-IPFF*7Y;6>T\^!AWC>vm^'JFSQB,EXQRLo- KW8|<€xR#QBV6BVQhU๛ 2[\cF2n[~nP9#dn\6P`8di<$Ix~
+?{“!&]kjEB:P`3 fKaL*PFaZ.C_N57xauHZ0c2[ `I"2MT0!GofHNolP]"?R~€8'7FaFK`?JU@@(87[o%Dk[G9?16jdo}/1TIEC}UC'RkfA5[|=:`R!Arฑa?*8T<WAVKO4E?#f9POHLB|^K25JrxS!*LX>Yapa)2EZNxw3+(zH-0%(<bL,-1^“KP`!%j=2\cA6rค{UJ*==_-yW[@Z]*7Nf–W%ÿ Jqd>ÿ 5xU-/^NL!ZdL\P68=%PeOHHW005-^X79=uchAoljP]x}X>TO!LNrk<"fLXUuR~rN&- JQ'JNvmpA"]q?Oü  t~%$ฃ๕74#6?qN&?`vu=๚ gW(61Ohj6"(E3zjX2"VGnz\$BOg::Y_FbEXO.#!อUPC1
+;90%3\\yE#.(zrr$NAG4Ue{aMHþ E#Y=wT<E=Tw0$-HG<{H,ๆ 8`VH-E7O]V&%iY@X1HX—\R+EZXc2>tMk6EK/HVf 5;DXC9vlM8 ;v9SC/:n76IECVXJ+sXe/%&fฌ<'ý FZtp%Ncbua!>H}bl1]oQX=9qaU,%o]H=yB6SLdEa +S_M-c:;ÿ /Dn{?5JRtFC&BliIN5PHllA๔ SvvX?๙ 3…t?;9(rmW4UsFR/0GaWhP$P0eu 2BtnHMG\N`K)52Z>vN_0DqQRnM*$'k{oK.cRgvU๎ y…v?Kfr(“j]A-_^aE'Po\T-8<2X@TY=JzJ &'Oz' Q_g`?<ส@;(3~~Ld(9^TN-'6PVi
+_๐ !~|jr๕ ,LX€€u06)?GW7'.>w—8&%^•S47{“wP	๘ –QH@I–GV*D`f@J<in^A<^gZG7A:J4KJ7WT8rJ+,&(>%-*"d~2Wb‘H5 8€iM!RXl?8]D@>A_a`Aqe\o4 I){s/P’=I-sรRH,$sf&[^^5IaI'CSdG33*321;>Gม/1(K>KiF๖ Rh|.%@u=5<VA“'+e>BJ2O]cE'9o NK
+uKqLKBUoX-2hZ= OEG%vQ~n4,PS>1BUTiV1LuHcC$;CI~\;0e•BC$,Db%"+zKYM72UWS%#3K}k6FT22\M5%_^g8*$>oUloþ ý lIWU-hz7;=AuuL6+n|:2R;QOTH:"=cv,$/Wf?B*MZHNJ5[?.;S92^|aE5";ขEXP!NW5-3wMwMfLLRE[x4Pmk@:&6K.%EmgE@047HbjW5hQ&MxQ@/@gDX =TsS@%/,StS?Q+Sc?>03olH:/JPZQ#IO`Jy=:(3,oฏ=6Mj8A>(V€sEEZ…TP>O[O"&K–JA=B:Zw}"-)H^V3+^}n.7F.Q1(.QrH.Qx1"Jg…A๕ 8WOK?JpP{NB^mC<464[t3$p‘5	)F_<B1m7)2gr;NBบT'.%tZMQ> Iao"'4=กa=I3qVt5๏ .DI,CIp^/,93€6%%JHI*%,aEKB@I>mA7-|_[,C(<\Rd(KkF18>…sP9(xrzVX.%?;<*+cL?&'pLVZAA`JุbE4 >3^0@@UUP?!7LkK;Vabd^-CkA<( #b‘].=1bkb5-Tกsd#,ev_1A(8!T\vp#!UD>V@h*•b-%Wu[V,!%Er14Mxzu5ÿ 3 ]8#MB2+D…ฦU;5]J๓ 0BLF)8G~r><2mU2;9dXE^ /RU?1hlcRSA?h[2,&}[ZWO+9J8R;<Kj:K@ZQ6, KRD+XdqP"PpJ];34Aฒd-%8/:V>/4CggKg%#^N@<Bhl/>9,e=2KwoaA#'8]k[JG#UEG= &O_WD(#YศKM!&'mZV",V/F-'C~j5
+0Qo>893'%aOd.H8kR!+7—mN);7U\g"-CkQR,&V(_4><fqWc+%Pd`RE?eQhkYmu?66PUR86K )de:7:2XKw_S
+8h=-mค=L4(4EX>i\e5-&-•S>>o>G:)J+zwH?*>5X.	QoP-/x–L.๗ Rฯdh1?9_P+,hs[V*๏ oz1E 7Rw|O&+P;="fl6*<*>`NsoM.๛ #fJG5'_xM1DdcUJBOObR/Lv>gVdTR@=VIg0Ktm.'0lou'D3NN+"09^xd4`?OHv๖ :hSlUDP.rvMP]\KCKa HX'4URrcMDLBy’:3V#1|MK&	aXuMKTD9?0varN{H8]~G c…Mþ VmtqF 1WBEA7Lซr[0?!E43ZKnT?fC6*p’WE) e`[5-tWA]1E_B/8GIGEOVkD80QSPM*P#O:.=5Ie~\6.aT6-' >[p]CEj“;FOS}BoASB{u,ZBdIXM\:[AดrF;Hs[B5T'S15EkX>/UgaM'%e…H3"R>f€1'UYB:>;VpHL@.aK{a5Lb.1Tbbk3FO#^A๊ uFE,EงzB(<CD@EPEIjK;<}4&g“/C!:lweA;C.^q,XGhB?PTDB`*X70O[cL;cTA##1I]K!€oE=@NEF3K‘25ํ 7p\@GU_CC,unO':-1@€asM?)5?DSA;6j…W=,Icr,0(QpQ-.#BPeG8 ฏ`]@(-ZpI88dHHD;vฎY5HEE)]7S{oR(4hHOJ>vPU?< aNSdL0‘O@YA!KKMP@#QjvN*6€ฉ\>?b.Q]&'0uZ,IVcOL<1^H426kp+.#\lO+(SVe@*8d`7'þ @vfMM!\]E?"XecjLWH>b/A’`-"…@F(7oF.0+R{R)&;b]T1*,'SlQ#+qcW:Hm>8\,%U\SC7!;_]LV^y=fc/ฅ[=2<6ณ_KdfAV>2TN9&=`–?.่ j|L!FhkZ!R>m1-A KlB*0<{20AyV;#jjU/pQ`๚ þ pUF"TbqAHDN_f]๘ 3_b[dg–nWHhC?(!gzRO65NT#2sJao”td-3 #xU(3oxmF''2SZ3/Hq€D#:RxqG%%S?V.&'vw&@tL^[(FPjBAXFxB":ก‘i;/s?x\*๓ 
+d\T2HNlEO5&Y€R7์ IW_2P*[TAKKZU\NG9,W/g=7+ 7ฎq>1ü B[]DHDpFPm7<SrJBV%WWRX1$@aHM:+_]f`?#GM;D<4,_aH2,XR~g@!z >~5A)ra7KAIk…X(74f@4?€i[`4#&[QGlO>.?m<=8FGO,$UO\'"2=9C<E5Zv;5#vkGc";,43‘W€>2!2WFA,RXjtS?cmE3FI@L7hm@+SawTG3(jN!8.jQU7ฒf’-rLL%GwvX8#/6IFE&]bjhN0NpUD52E2^[;%Hg_O+GhS.;M`@<=F€NR@&gPm['ÿ r‘H<.F:5-.WE]?`EX7cT8 #vRgD~]H$>oZP(7:V{<0(>uชH;)OO_B-|z{H8%h4Q;\gf;W8 $"`w0%>f.!E`h•SN$
+=aO=@**KwsH/2uT[X.0U[Z6%@^vk NL+,{oq99-CS1f6=DdYO@7/pta!>PZr?BF=pP6 "[€eHIwptF$fW3_Fs}$$SKL@z.2:`I <1O+$R[J0@7RR63[ฃ-;!์ +5~A%R3E,(Jc_4þ 'Jm=;F]pu1/Yb\PS-J`fLA๛ CsN92ZEeM09SouL+#(AH[UOH[F!>NB:?wI335!K]UyS- ROe_2+ LR(&RsXF!—k.;ZK^l\Trpg0&Mwz]7!…\hA.]i?$._b@/-E:DlI3/6wLQ^"QVd= C”+2dV?`:~uh2
+ชF=0AqF2T[K_3a@A[gC9177Kj\A.4exr$	+KbG18,pp(7upE/=;y3DF>o8OJ;Omf%#qyL0zJWB:LkF@`?MnmF'T\aaVQ•;>jSvTA<I4lTK(.A]"Q:"=zc.+þ ZH7GJa`3^`2EQV,$cx…K%2\`|n[,`NR,(uyC\qW,8U”&FZTN.-@9M-,7LCNA11^RS6+$IrcZ](TQ@0-Oqno8&M^9%f<L{#JUY("—u4/PฆrR#C>c_JXB&*0Sa9yqV1"MYQV(%B}vN),B|)JI@EVVOH/ ]|ZU</*AsH:T,k_;SQceI/1DSoR7!LC`jM110…`24I•t3C/8^^`-bA7eocUN>0NGB/IC`pFB)QZqh<6 BPcrR5[aSU<15cHAE;ý  k_;&@YjPhFXU8DmF3/K`K&GaaD-30?bYf0;4lmC=4d[0ý 8mI5@G3`F  *U|8W&7=>HH+jScJHE,U_K@2Jno6"
+HvT8F@.,.]e;>"Vj8h'=YZod(dNU< @_l7*,Au^-W,>Rr12C`+3m_8,$.KmF:/KSccR7*wISL1JhRO>38R^HE"+VpSSF@G^]/@5KVg^2/fmฅ145NAH4DNlJqL=๕ ,XE %2jE&-๐ J–FBMM`qES>gG%8>`f"("AUH#>”ะJ dP:FHๅ<//8e_LFcemT&#วOS85<< A*3Uช~F,`wdL@Cm[_*5ฯ/þ CmU#1DxlU]b)Hggf_8-4>C/)7/E1<3355 YuP+/Y3]F.sjaW- 1pตE"Jฌ\P2Adf[7T?hpQ6<WX$<7[`^DI>y@>qqs\0*NT`|2GHQL5AfN^M./(:]zM:5RN4@Jc"mxX2^hHL\[N*"1Il>G2O”m.avwUL]€…mXHV?5"%3d8#]@I\b>?z;MF\ 4}lkW"๓ b:33<hK/J82UbM<&1X=<5jspF#o”dC"#-Z^GKD2S^gI,$#M;yoMKSh=0:\pyC+#VSI^VoYK%#PB>\I8K~uLD MXRM'*lLMaVc7M0!B>g>`81=?cSc"ARhVSfH$7wธ]2(U0@OZ•{W5$5f?H/mE^EaDP'J{F:Q9A'&H(N.H8^T.>OSrM^]E.CTICF7LG>LDwfWPy31`\L!?S64J?`GFPMW[GdF^>h[<H8<`-%H*(1DLBE\gF<>lUOt]EHJM^EP>AK+eKXCyr,2&VOO<9JXSTF@P<*V1W.>'BWeCH6D|n=8!(>XA43P~z,MBý F/D]vma"%zoal8-aKZ(^NZMB`ABzPO:->>cGTyขO8$lnb8ý FnD>$:gMAU~XVxp$ü 3JIq%"wj‘f>L?hQi!rRUH@+.vuhJqMSW Gw7db91MKw^\7=JO]CN`SR:(GqeM">q92kG!'W56?E3EQ7#VRB>;KniZ@
+c{rR.#Bahp&๐ -kYL#E.Q65 %ฃฃwD5	RL;LS€r8lGhS^:8WgkW “…r&
+#sKJxfP+๘ s>(:gd\Ucep<0L/_@S7HX\R%?Ca}lH=/>a^/งZGk#C'!2ฆ|H!+PjB!#Nxd`14om=00z—RPw"XwRE@q9|}F6>*]=8X.^GVtbnA+EK@S6;B0*5`L+)#`\C!*Fq?:%C^[8ZRITGC0P(hKrF9`gZ|m-A^:-&aBB&๓ D_->?S<XkJ50]หeW@$L4PSFu>~l`L๛ ,Sm]/7FHMVR>gHCn<=-9{A_@oqL*(lWOJ.
+Ol]k1)5#ZขO71,3RFD3bra7<(^RO[4*(XC-,DMe@+`nkL#(:Fs;>nnUC&iOWP1KYPWL&V.MsuM?JYz`8)/5PxRE1,WV:Y?2e>5DcV2<’ofF.<[{jW3-7…j27>g\; rA[GJ?P4PN*$*qelB`UP5Anqe7!$8AaN!>^XD8J_hJ$fj].DQZK9HLXง…@<8P3G.OS€T๚ xc ]E8&0g–`3.7V~;*0:gธU- bELA8zฎdQF5 H8xh{I,0Uu*F,hweQ1mEHVG`k57_th/=A?FJpk@7!S~n7&MdeTbญaC๚ U$NN>VKfVHGc_r]Cþ B*fg#$GvbXR๖ a]fd!;Qฃh@!Kd8Qj”eU6[4w@cG;b^A+/^xr ý <}[4+xmr\6"^N )Kp]:\s2FMWNt%<A,GuwN"J>\VR_RH0[KD4.mbฃ@  Gnwl)1CFH\M"mu%&C53M0ZM?K67L97'58GyW! E<RLUrEX}W6'RyPDfAP?9"ÿ h…W.uXv^P..Zh_D0/kZI"?NO>:P>qZ1-`?RฆB@7b]€>(>:wNf+$V~]Q๖ 2Wtm2 -ABc_,þ`๔ FS$PO,;]}Ir.;eX*+H=S`;B.W6?"b_FJghฑ56\bCF+^—hJ,๛ +7UPG0GGBC2itc'Gkb=S[เดÝดÝดฺดุดิดำดึดูดÜดูดึดีดึดิดฺดฺดุดูดÛด฿ดแดโดÜดูดึดีดฺดเด฿ดÛดูดÜดÞดÞด฿ดÛดุดÛดÝด฿ดÝดูดึดาดะดาดำดีดำดัดิดุดุดฺดุดิดิดุดุดึดิดาดฯดืดฺดืดีดำดัดอดอดฮดฯดฯดอดษดฮดฯดัดะดะดฮดฮดัดำดาดัดิดีดึดึดืดิดัดำดีดุดึดืดืดฺดÛดÜดÛดุดิดิดฯดาดูดืดำดำดืดฺดÛดÛดูดืดืดฺดÛดูดีดีดÜดใดโดใดๆดๅดโดแดโดไดๆดได฿ดÛดึดีดำดีดืดีดิดÛดเดแดใดเดÞดูดุดฺดฺดÛดูดึดุดฺดฺดฺดืดีดัดาดึดึดำดำดะดิดุดืดีดาดิดิดีดึดุดิดาดำดึดูดูดุดึดาดีดาดึดึดุดÛดÞดแดๅดโดแดÞดÝด฿ดแดแดÝดูดูดÝดÞด฿ดÛดืดึดีดÞด฿ดÞดุดาดิดีดืดึดีดึดÞดแดโดแด฿ดÜดุดูดÜดเดÝดฺด฿ดแดๅดใดโดÞดÛดÛดÞด฿ดÜดูดฺดÜดใดแดใดใดใดÞดุดฺดÛด฿ดไดแดÞดีดีดืดูดÛดีดำดุดÜดÞดใด฿ด฿ดÝดแด้ด๊ด้ดใดÝดÛดÜดโดเดÝดÜดÝดÝดแดใดใด฿ด฿ดเด้ด็ดๆดโด฿ดÝดแดไดๆดๆดไดไดๅดๅดไดโดเดเดใดใดได้ดๆด็ด่ด่ด้ด็ดไดแดÞดÞดÞดÝดÜดÜดÝดÞดÝดÜดูดาดฯดาดะดีดัดฯดอดำดุด฿ดÞดูดีดึดุดฺด฿ดÛดืดะดาดืดÛดูดูดุดืดฺดฺดูดีดืดÛดแด฿ดูดาดำดีดÝด่ด่ด๋ด้ด้ดไดแดๅด้ด์ด๊ด็ด้ด๊ด๎ด๎ด์ด้ด๊ด้ดๆด้ด้ดๅดๅดเดโด็ด๋ด๋ดโดÜดืดุดูดÛดÛดูดึดุด฿ด็ดๆดโดÛดูดÜดÞดÛดุดืดิดึดุดึดึดีดำดืดูดÞดÝดูดีดิดิดาดำดัดฮดัดาดิดัดอดฮดืดÛดÞดÜดฺดุดืดูด฿ดแดเดÛดืดีดึดูดเดแด฿ดÝดเดๅด่ดๅดไดไดได็ด่ด่ดๆดๅด็ด่ด๋ดํด๊ด้ด้ดๆดๆดๆดใดแดเดÝดไดๆดๆดใดไดๆด็ด็ด่ด็ดใดÝดูดึดÝดเดเดÝดÜดÛดÝดใดโดเดÛดึดึดืดูดืดีดิดิดึดึดีดะดหดสดฮดฮดอดาดาดะดิดำดำดิดาดาดีดืดูดุดิดัดีด็ด่ดได฿ดÝดÛด฿ดแด฿ดÝดฺดÛดÞดเดแดโดใดโดๅด๊ด๋ด์ด๋ด็ดๆด็ด้ด้ด็ดไดโด่ดํด๐ด๎ด๏ด๊ดๅดใดใดแดเดได่ด่ด้ดๅดเดÞดÝดÞดแดเดฺดีดะดฯดืดึดำดำดัดืดÞดฺดÛดิดฯดาดฺดฺดุดำดาดิดืดษดษดอดฯดฬดหดศดอดัดาดะดฯดฬดอดำดุดึดำดฯดำดีดฺดÝดÜดูดีดีดฺดแดไดเดÛดฺด฿ดๅดไดๆดโดÛดÛดÝดใดใด฿ดÛดÛดÞดเดÝดÛดูดูด฿ด่ด่ดๅด฿ด฿ดเดโด็ดใดเดÞดÞดแดเดแดใด฿ดÝดแดแดแดÝดูดฺดÝด฿ดใดแดÛดืดูดÞดÝดÛดึดฯดฬดิดูดุดึดัดึดฺดูดฺดุดาดำดิดึดึดำดฯดหดฯดิดÛดูดิดฯดัดาดีดิดฮดหดฮดะดะดัดฯดหดฯดัดÝดÝดใด้ด่ดๅดแดÝดใดใด้ดไดเด฿ดเดใดแดÞดÛดÛดÝดใดๆดๆดใดÞดฺดÝดไดๅดเดÝดูดฺดÝดเดÞดฺดีดูดฺดเดใดเดÞดÞดเด่ดใดÞดุดิดึดฺดÜดฺดึดาดิดืดูดุดาดฯดอดฬดศดสดศดวดษดหดสดษดหดอดัดฮดาดีดำดฯดษดษดอดฬดษดฦดฤดฦดฬดาดะดอดษดฤดวดษดสดฬดสดศดฬดืดืดิดัดฮดาดึดีดึดิดฯดาดืดืดิดำดำดีดฺดÛดÝดูดืดÛดๅดไดๅดๅดๅดโดเดÛดืดึดึดีดีดาดำดึดึดืดุดึดัดีดึดึดำดะดหดฦดฬดึดืดีดาดำดฺดÞดÞดูดีดะดอดฯดิดาดฮดอดฮดฯดะดาดฯดสดฤดมดศดฬดฬดสดศดหดฮดฯดะดอดฬดฯดาดิดีดิดีดิดืดÛดÜดÛดุดิดาดูด฿ดÞดÞดÜดÛด฿ดโดโดแดÞดÜดÜดÞดÜดูดุดÝดใดๆดๅดใดÝดฺดÜดแดๆด้ดๆดแดÝดÜดเดใดโดใดๆด็ด็ด่ดโดÛดึดูดÝดเดÛดุดีดÛดÞดเด฿ดแดโดÜดิดำดีดÛดÛดÛดุดีดึดึดีดิดัดฯดาดึดำดึดืดึดุดูดÝดเดÝดÝดÝดÞดÝด฿ดÞดÞดÜดÜดÞดแดÞดÛดูดÝดๅด่ด้ดๅดโดเดโดๆด่ดๅดใดเด฿ดใดๅดไดใดเดÞดÜดแดแดÞดฺดูดÝดÝดเดแดÞดÞดเดได่ด็ดโดÛดูด฿ด฿ด฿ดÜดุดÛดÝดÜดÛดูดิดาดาดีดึดาดัดำดำดึดึดึดำดฮดฬดฬดอดหดหดศดฬดำดุดูดึดำดีดืดุดุดูดูดุดÜดÞดึดืดุดÝดแดเด฿ดแดแดเดแดÞดÞดÛด฿ดๆดๆดโดÝด฿ดได๋ด๊ด็ดโดÝดฺดÞดใด่ดๅดโดÜดÛดใดๅดแดÜดÝดเดได็ด็ดโด฿ดฺด฿ดโดเดÝดูดเดไดๆดไดÞดÛดÜดÝดÛดฺดูดึดิดึดำดิดำดะดะดำดาดีดิดัดฬดฮดัดาดิดฯดศดลดฤดวดสดฯดัดฯดิดÛดุดฺดืดีดีดูดูดุดัดะดำดุดุดีดำดะดิดิดืดืดีดาดำดิดืดÛดูดึดำดึดุดูดิดฯดหดำดใดโดๆด่ดๅดโดÞดÞดเดโด฿ดÝดÛดืดฺด฿ดÞดÜดืดาดาดิดÜดÞดÜดูดูดุดÜด฿ดÜดูดึดำดุดÛดÜดืดาดำดึดืดูดฺดุดิดึดีดำดะดอดฮดฯดอดฯดัดฮดหดฮดิดิดำดะดฮดฬดอดอดาดิดำดึดุดเดใดแดÜดูดูดฺดÛดุดืดีดิดืดฺดูดุดึดุดุดÞดÝดÛดÜดแดได็ดๆดๆดÞดÛดÞด็ด๊ดๆดโด฿ดÞด฿ดโดโดÞดÛดÜดÞดใดโด฿ดÜดÝดÞดÛดุดุดืดืดุดิดึดุดืดำดฯดำดีดิดืดืดืดำดาดÞดโดโดแดÞดืดะดอดสดสดหดฮดาดึดูดÝดÜดุดิดึดุดÛดฺดูดูดÝดเดแดแดโดÞดÜดÜด฿ด฿ด฿ดÞดÞดÞดÛดÛดÜดืดึดÜดโดแดแดÜดุดุดÛดÝด฿ด฿ดใด฿ดÞดเด฿ดฺดึดูดฺดเดไดใดแดÛดÞดเดÜดฺดีดำดืดฺดÛดูดุดิดีดีดีดะดฬดฬดัดึดฺดÞดแดไดÞดฺดÜดÜดฺดุดิดึดฺดÝดÞดูดิดะดัดำดีดำดาดิดุด฿ดูดฺดÛดูดูดึดำดำดูดÞดÜด฿ดÜดฺดฺดฺดฺดืดึดืดÝดÞดÛดุดำดะดาดิดÛดฺดืดีดุดฺดุดึดาดาดำดึดÛดโดÜดÝดÞดแดโด฿ดÞดÛดืดัดึดึดำดอดฬดฯดีดฺดฺดึดฯดอดอดะดัดฯดอดฮดะดูดÝดÛดืดัดาดุดืดีดัดฯดะดำดีดำดีดะดะดำดืดืดิดฮดศดฦดฯดำดัดอดอดฯดัดฯดฯดอดอดาดาดิดฺดูดิดฯดะดัดาดะดิดำดำดีดาดฯดัดฯดาดÞดÜดÜดÛดฺดูดิดะดอดาดิดฺดืดำดาดำดูดุดุดูดืดีดูดฺดูดีดีดาดืดึดืดาดฮดาดะดาดีดำดาดิดึดÜด฿ดูดึดำดัดิดีดีดีดัดัดิดำดึดาดฮดฮดิดุดÛดูดิดฯดัดฯดาดาดฯดฮดฯดะดืดืดำดัดีดุดÞดโดÞดุดิดำดุดูดืดีดึดุดูดÝดÛดุดุดุดืดÝด฿ดุดะดอดัดัดีดืดาดิดืดูดฺดูดึดีดืดÜดÝดฺดูดุดเดเดÛดÜดูดิดึด฿ดฯดฮดูดÝดÞดÜดฺดฺด฿ดไดไดเดฺดืดืดÜดแดÝดึดัดำดืดุดึดึดึดำดึดีดฺดฺดืดิดึดÛดÝดÜดฺดีดูดโดโดเดแดÞด฿ด่ด๊ด่ดใดÞดÝดได้ด์ด๊ดแดฺดึดึดÜดÛดืดุดุดฺดÜดูดุดุดÛดÝดÜดÜดÝดูดีดูดูดÜดÛดฺดูดูดÝดใดแด฿ดฺดุดÞดโดÝดูดุดÜดแดใดเดฺดำดำดำดัดอดสดสดหดะดุดÛดืดำดหดษดสดฯดัดฯดอดอดฮดืดำดะดอดฮดÜด฿ดเดๅด็ด็ดโดÞดÜด฿ดๅดไดใดเดÞดÞดแดไดใด฿ดÝดเดโดโดแดÞดÜดÝดแดเดโด฿ดÝดÛดีด฿ดแด฿ดÜดÜดÜดแดๆดไดโดÝดÛดูดÜด฿ดเด฿ดแดใด็ดๆดใด฿ดืดาดีดิดิดำดึดุดุดูดุดาดฮดาดืดึดำดัดฯดฯดาดูดืดีดฯดฬดอดำดิดึดูดำดาดึดุดืดัดสดฦดฯดอดฯดฯดฮดฯดิดูดึดัดฮดอดหดฯดาดำดัดีดัดฬดหดสดฬดฮดิดÛดÜดิดัดฬดอดะดิดาดิดูดÜดุดิดำดูดÞด฿ดÛดีดาดฯดะดัดัดะดิดืดฺดÝดÞดÜดูดึดำดึดูดุดีดีดีดืดีดำดัดฯดฯดิดุดฺดืดืดิดูดÝดÛดุดาดัดิดืดุดึดิดืดืดึดืดูดึดัดิดิดำดิดิดิดิดิดิดัดาดฮดสดฮดาดิดำดฯดฯดัดืดีดีดิดะดาดึดุดึดาดฯดาดฺดÞดÜดุดาดฯดะดูดÛดฺดืดีดฺดฺดÝดÝดฺดีดัดฯดิดุดึดาดัดึดÜดÜดฺดีดีดแดำดึดูดÛดฺดืดาดัดÛด฿ดÞดฺดืดึดิดิดำดัดหดศดอดัดิดาดฯดหดสดอดำดำดาดะดำดิดืดฺดูดืดึดิดีดืดึดำดฯดำดืดÞดÞดÝดืดีดืดูดÜดุดีดิดฯดาดืดูดืดำดิดึดุดุดืดีดาดึดÛดเดÞดÛดืดีดฺดืดีดิดูดÛดÞด฿ดโด฿ดฺดำดาดำดัดิดิดึดูด฿ดแดเดÛดุดีดูดเดแดÞดÝดÞด฿ดโดโดÝดึดาดำดืดึดฺดืดีดฺดÝดÛดูดึดาดÞดÜดูดÛดÝดÜดืดีดึดÜดเดไดไดÝดูดูดฺดÞด฿ดÝดÛดÛดÝดÝดÞดÞดÝดÛดเด้ด้ด่ดไดÞดÜด฿ดเดÞดฺดิดาดืดูดูดืดำดฮดัดีดฺดฺดุดึดฺดÝดเดÝดุดาดาดีดืดึดำดอดอดะดาดัดัดัดึดีดืดฺดีดฯดสดฮดฯดฯดำดะดฬดวดศดสดวดฦดฦดยดฦดฯดำดีดะดอดฮดะดีดืดำดฯดอดอดฮดะดาดฯดฯดาดาดัดะดอดำดึดึดืดึดาดัดาดฺดÞด฿ดÝดุดเดÞดเด่ดๆดใดเดÞดÛดÛดÞดใดโดÝดูดูดÛดÜดฺดุดิดิดืดึดุดิดะดฮดฯดฯดอดหดศดฤดลดหดฯดฮดสดลดวดสดำดึดิดอดษดวดหดอดะดฬดสดฯดัดำดัดฯดฯดาดีดีดิดัดัดำดึดิดาดฯดอดฯดัดำดูดุดึดำดีดิดิดำดาดะดาดึดูดÜดÜดÜดÜดฺดฺดฺดุดิดิดูดแดโดเดฺดำดฬดฯดุด฿ดโดÞดฺดÛดÞดÞดฺดิดำดัดีดึดำดฮดศดฦดษดหดฬดศดศดษดศดษดสดอดสดวดรดลดสดฯดะดฯดฬดวดฦดษดัดิดะดหดวดษดอดะดาดฯดะดฮดะดำดิดาดัดัดาดาดาดัดำดัดืดฺดÝด฿ดÞดÝดÝดแดเดÞดูดุดÜดÝดÞด฿ด฿ดÛดูดÛดแดใดแดÝดÜดÜดÜดแดแดÞดูดีดูดฺดูดุดืดÝดใดไดแดÜดุดัดำดุดูดาดฮดสดหดฯดฯดฬดหดหดฬดศดศดศดวดฦดษดะดืดีดฮดฦดรดลดษดศดลดฦดศดฮดฬดหดหดศดสดฬดิดาดะดษดษดฬดฬดหดหดฬดสดวดฦดลดษดำดืดึดาดัดีดÜด฿ดÞดÝดูดิดิดืดÛดุดิดาดัดีดฺดÜดูดÛดÛดแดใด็ดๅดÞดุดืดฺดÞดÜดฺดืดุดฺดÜดฺดุดีดิดีดืดิดาดฮดหดะดัดาดาดอดฬดอดอดัดะดฯดฮดัดัดัดัดฯดฬดฯดะดาดีดะดฮดศดศดษดษดวดลดรดศดาดิดิดัดฯดหดษดหดอดหดสดอดัดีดิดาดฬดศดสดะดึดาดฯดฯดะดีดำดาดฯดัดาดำดืดÛดูดีดไดÝดÛดเดแดเดÜดุดีดีดึดฺดÜดูดืดีดูดÜดÞดÛดุดำดีดฺดÛดฺดืดำดึดึดุดูดีดะดอดัดิดึดำดฯดฯดิดืดึดิดีดาดำดีดีดาดฬดฤดลดอดฮดฯดฮดหดหดฬดฬดฮดอดษดสดสดหดหดฬดหดสดสดหดฮดฬดศดลดษดอดฮดฯดฯดฬดศดาดืดุดึดัดษดสดฮดัดาดฮดสดหดะดีดิดะดฯดาดุดฺดืดาดะดีดÜดเดÝดฺดึดาดัดฺดใดๆดโดÜดูดูดีดาดอดฮดัดษดษดหดฮดาดะดอดหดฯดิดำดำดะดฮดอดัดิดิดาดอดศดฤดรดฤดรดมดภดมดศดฬดอดหดวดฤดฦดฤดลดฤดฤดลดศดหดฬดหดสดษดสดะดำดัดฮดฬดัดีดูดุดิดฮดศดฬดาดีดัดหดฬดฯดัดิดืดืดาดอดฬดัดีดาดัดำดุดืดึดิดาดิดูดÛดÛดุดึดฯดฬดอดฯดฬดษดหดะดืดÜดÛดุดีดาดัดัดฮดสดลดยดลดฦดศดวดฤดรดวดฯดำดำดฯดศดสดอดฯดอดศดมดลดมดรดวดฬดฮดฮดสดลดมดฤดอดฮดฬดหดวดหดฯดัดีดิดัดฯดิดืดÝดÛดึดิดฺดูดึดิดาดำดึดึดิดาดาดัดฮดำดืดูดÜดุดิดึดึดุดฺดืดÜดโดๆดใด฿ดÛดืดึดฺดฺดืดีดาดะดะดำดีดำดิดำดุดูดุดืดะดอดะดัดิดะดอดหดฮดาดฯดฯดฮดฬดฬดาดัดฬดวดรดภดยดรดฦดยดมดฟดฤดรดมดฟดปดธดผดยดฦดฦดวดฦดรดฦดสดหดหดฤดภดพดษดษดศดรดÛดุดุดูดÛดÞด฿ดÜดÜดÛดÛดÝด฿ดÞดฺดูดัดิดีดืดึดีดืดÞดใดโดÝดืดาดิดิดีดำดะดฮดัดึดีดาดฯดฯดะดาดำดาดอดหดฬดหดอดอดหดลดภดพดภดลดศดฦดลดลดฦดวดษดวดสดฬดฬดสดษดศดฤดฦดฦดลดวดศดฦดฤดมดฤดลดฦดฦดศดศดสดัดิดำดฯดฮดะดำดิดาดฯดอดัดึดุดิดำดาดำดึดีดึดูดืดฺด฿ดÝดÝดฺดึดืดÝดไดใดแดÛดÛดฺดุดูดÜดÞดสดยดพดฦดฬดฮดอดสดศดวดษดสดอดฬดสดหดษดษดษดวดฤดยดฝดฟดพดพดฟดพดภดภดยดรดมดมดยดฦดอดาดิดะดหดสดฬดำดึดำดฮดหดสดะดีดิดำดะดาดืดุดีดิดฯดฬดฬดัดืดÛดÛดÜดÞดÝดÛดุดฺดิดำดิดูดฺดุดำดำดึดุดุดีดิดึดÛดÝดÜดฺดำดฬดหดัดะดฬดศดรดษดหดฯดอดสดวดหดอดะดฮดหดวดษดษดหดสดษดฦดลดวดหดษดลดภดพดลดษดศดฦดภดหดษดฬดฮดืดึดึดำดัดะดิดืดำดฯดฬดษดาดืดืดุดีดาดอดษดสดฬดฮดะดฯดฯดัดืดึดิดำดีดฺดÝดÛดูดึดัดะดาดาดะดฬดษดศดฯดึดีดาดะดะดำดีดิดัดฯดาดัดำดิดิดะดฯดะดะดัดฮดหดสดสดอดะดาดำดฯดฯดะดาดัดฯดหดอดะดิดึดาดหดษดอดฯดีดัดะดฬดฯดฯดัดะดฮดษดฮดฮดฯดหดวดวดวดวดลดฦดลดยดรดวดฬดสดษดศดษดฬดสดษดวดษดÜดำดำดึดูดูดฺดฺดืดำดึดุดืดาดัดีดÝดÛดฺดุดิดะดัดัดัดะดฮดสดลดวดหดอดฬดษดลดศดศดศดศดลดรดศดฬดะดัดฮดฮดอดัดาดำดะดอดอดะดะดะดฮดษดฤดลดวดวดวดลดลดฤดฤดวดษดสดหดหดอดฬดฮดสดศดหดฮดาดูดฺดืดฯดอดะดฮดอดฬดสดอดิดุดึดะดหดอดะดำดูดีดัดฮดฯดัดืดืดัดฯดิดีดิดัดฯดฮดอดฮดาดิดะดฮดอดัดีดิดฮดฦดอดฤดฟดยดลดฬดะดอดสดสดฬดัดำดะดอดสดฦดวดษดษดษดฬดฯดำดิดีดาดฮดศดหดฯดฮดฬดหดหดลดลดฬดฯดะดฮดอดฮดฮดหดอดฮดฮดฯดฮดอดอดฬดษดสดอดหดอดะดฯดะดิดÛดÜดืดีดิดิดาดิดำดะดหดสดหดสดฮดฬดฬดาดุดฺดูดึดาดำดึดÜดÛดึดฮดหดะดิดีดำดะดฯดัดิดูดÛดูดิดิดิดืดึดำดฯดอดะดัดีดะดอดษดศดหดษดษดสดสดอดัดิดืดิดมดสดหดสดศดอดะดะดอดอดาดำดาดำดาดฯดฮดอดะดะดะดหดสดษดหดฮดฮดฮดฬดฬดัดำดาดะดฬดฯดฯดฮดฬดสดษดวดฦดหดฮดอดหดวดษดศดหดหดสดฬดฬดะดูดุดิดะดฬดวดษดสดศดหดฮดำดูดืดืดำดอดอดฯดัดัดหดศดศดฬดัดึดีดฬดสดฬดฯดฮดฬดสดศดฯดฮดะดฯดอดหดหดฬดฬดสดษดศดสดอดฯดหดศดฦดลดรดมดฤดรดรดลดสดัดิดาดฬดฦดลดศดสดวดลดอดวดฦดษดฬดฬดอดฬดสดฤดลดฮดิดำดฮดสดสดษดศดศดฬดหดัดืดฺดึดัดอดศดลดศดษดฬดสดสดษดษดวดหดอดหดษดสดฬดะดฯดหดสดหดฮดฮดฯดอดวดลดศดฬดหดศดลดวดวดษดษดอดษดษดษดหดหดศดลดรดมดฦดวดวดลดพดบดปดบดพดมดฤดษดฬดฮดาดะดหดฦดษดฮดำดาดฯดศดฤดลดษดะดาดอดสดวดลดวดวดษดฯดัดิดืดำดฮดอดฮดาดำดาดอดหดหดฯดัดาดัดึดัดฮดศดฬดฮดาดะดฮดหดษดศดหดสดหดษดศดหดฮดาดัดะดฯดอดะดะดฮดสดฦดรดภดฤดลดศดศดวดฦดวดศดลดยดรดลดษดหดฮดสดษดหดฬดอดฯดหดอดสดหดฬดฯดะดฯดาดำดะดะดฮดอดสดสดษดหดสดหดษดฮดฮดฯดฮดะดัดัดฮดหดสดสดสดอดอดาดีดำดะดฮดฬดอดหดหดษดฬดะดฮดฬดาดำดฮดศดรดภดพดพดพดฟดยดรดฤดมดมดภดปดบดปดพดผดฝดฟดฦดศดฦดมดยดฟดภดรดฤดลดฤดวดวดรดฦดษดอดฬดหดวดสดหดหดฬดสดวดยดมดฦดหดษดสดสดศดสดอดาดะดฮดอดะดัดำดัดะดาดำดุดืดิดฯดฬดสดสดสดสดอดฬดอดฯดำดิดาดัดำดัดัดฮดฬดฬดะดัดฯดะดฮดษดลดวดหดะดะดหดฦดยดฟดมดยดยดฟดลดฦดฦดษดษดฦดฤดมดรดศดหดษดรดรดรดฤดรดรดฤดศดอดฮดฯดฬดษดวดวดอดฮดหดศดวดฤดลดวดอดอดฬดฬดอดฯดฮดหดีดาดำดะดัดีดุดึดำดฮดอดัดืดืดีดฯดวดอดฯดำดัดฮดษดสดหดษดอดสดศดฦดสดหดฮดฬดฦดวดษดหดหดหดศดฤดสดอดหดหดศดฦดฦดฦดษดฬดษดวดฦดษดอดฮดฬดวดยดปดมดลดศดศดศดฤดวดหดฬดฬดฬดฬดอดฯดะดัดอดหดอดะดิดิดะดหดฯดะดิดำดฯดสดวดษดฬดฮดฬดศดลดศดฮดะดฯดหดหดอดฯดฮดหดศดษดสดฯดีดิดะดษดษดอดฯดะดฯดฬดสดฯดะดัดฮดวดศดลดรดฤดฦดฤดลดรดพดภดยดยดยดยดมดยดลดฦดฤดฤดรดฤดรดศดหดฮดฮดสดฦดวดษดหดวดฤดยดษดฬดฯดฮดฮดษดวดอดาดำดัดาดฮดฯดำดิดาดฮดะดิดุดืดีดำดัดิดืดÜดÛดุดึดิดีดึดีดะดฮดฯดิดำดาดัดะดฯดัดำดีดิดัดาดิดึดุดุดืดาดิดืดูดึดัดฬดหดฬดะดะดฮดษดฦดฬดฬดหดวดยดผดผดพดฟดพดผดธดภดฦดษดษดฦดยดพดรดลดฤดมดฟดฤดยดภดฤดสดัดิดัดอดสดหดาดืดูดึดะดอดะดีดีดิดัดฯดฯดาดัดะดฯดิดูดฺดูดึดำดาดุดÛด฿ด฿ดÜดีดัดำดืดุดิดิดัดาดาดิดืดำดฮดหดะดำดิดฮดษดวดฤดลดฤดวดฦดศดษดหดฬดหดฦดมดพดรดภดฤดฟดฝดพดภดมดฤดลดมดรดลดวดฦดฤดฟดนดถดถดตดดดทดฟดลดฦดฤดมดพดภดฤดสดฮดฬดศดภดภดรดลดรดฦดลดลดศดวดวดวดลดวดษดสดหดสดัดึดีดำดีดฺดเดแดÝดูดึดำดีดำดำดาดาดีดุดÛดืดำดฯดัดะดิดัดะดฯดอดฯดาดาดะดฯดฯดัดิดึดีดำดฮดษดหดฯดะดหดวดยดษดฯดฯดอดศดรดฦดสดฬดษดฦดยดปดนดปดฝดฟดฝดปดฝดรดลดฦดฤดภดภดฤดษดศดฤดมดยดวดอดอดวดยดภดฦดสดสดฦดรดรดวดอดอดหดฤดยดศดัดาดาดฮดศดฬดะดืดูดึดฯดศดษดฮดัดัดะดฬดอดอดฮดอดฯดาดึดุดุดึดษดัดอดอดฮดฯดะดฮดอดฦดพดฟดมดฦดศดฤดฟดลดฦดสดสดวดรดมดรดศดสดสดมดฝดฝดลดลดฦดฤดฟดปดปดภดมดฟดผดนดนดฤดศดฤดมดพดมดษดะดฮดษดฦดยดยดศดอดฬดอดอดสดฬดาดิดัดะดาดึดืดิดำดาดิดึดึดำดฮดสดอดิดÛดฺดีดะดฯดำดืดฺดุดิดิดิดิดุดีดฮดอดัดืดÞดÜดุดำดัดาดำดาดัดสดวดษดอดะดฮดสดศดศดหดหดอดหดศดษดสดหดษดภดฤดฤดมดผดปดฝดภดฤดรดฦดฦดศดหดวดลดรดลดหดฯดฯดฮดศดฤดลดลดษดฮดสดฦดรดฦดษดฬดอดหดหดฬดัดีดืดีดะดัดิดืดิดะดฮดำดิดีดีดำดัดฮดาดÛดÜดูดีดาดำดิดำดำดัดาดึดฺดเดÝดÜดฺดฺดูดÛดูดืดำดาดีดืดึดิดาดาดิดุดุดีดหดลดษดหดอดหดวดภดพดฤดฤดยดฟดยดศดหดอดหดศดรดวดศดษดวดฦดรดรดฦดหดฬดสดลดยดมดฤดษดษดฦดาดะดฯดอดฮดะดาดิดะดอดัดะดีดีดำดาดัดาดิดีดิดัดัดิดูดฺดÛดุดำดÜดÝดÝดุดีดัดอดฮดฯดำดำดัดะดำดืดึดิดัดหดษดฬดอดฬดหดสดสดฮดฯดอดหดศดฤดฦดศดศดฤดภดยดรดลดวดฦดฦดลดฦดหดฯดฯดหดลดรดฤดฬดฯดฯดฬดศดศดษดสดศดสดหดฬดอดฮดฬดศดรดยดฤดษดศดยดพดยดลดศดหดสดวดหดษดอดะดอดสดฤดษดฮดอดษดสดศดอดาดีดำดาดีดาดฮดอดฯดาดีดีดาดฯดะดำดิดิดัดอดวดศดฦดวดวดฤดยดรดมดยดมดมดพดพดภดรดรดภดพดปดพดลดสดศดฤดมดฤดหดฬดฤดฟดภดมดลดศดฤดลดยดลดหดฯดะดฯดอดษดวดษดฬดฮดฯดฯดอดฬดศดวดฤดฤดยดฦดลดฦดฤดฤดฦดสดฯดำดาดหดหดัดำดิดิดึดึดูดูดืดึดัดสดฤดฮดำดำดัดฮดะดิดุดืดึดัดอดฬดอดาดฯดษดฤดวดอดฯดอดษดฦดศดวดศดลดวดหดวดฟดบดทดฝดภดฤดยดรดลดษดษดศดฤดยดยดรดวดษดวดฤดมดยดฤดษดสดศดวดหดฮดำดำดะดสดหดฬดฮดะดำดัดฬดสดสดอดฮดฯดะดะดำดีดาดฮดอดอดฯดฬดฬดฮดหดศดสดหดฦดภดภดยดลดศดหดสดวดฦดหดัดัดาดฯดอดหดฬดอดฬดหดษดษดสดฮดาดฮดฬดศดศดฦดวดฦดรดฟดฝดฟดฤดวดฦดศดษดษดหดวดฦดรดภดพดยดวดสดวดภดฝดฟดมดมดฟดปดบดทดฝดฟดฯดึดีดาดอดฮดิดีดีดาดฮดสดฬดฬดฯดฮดฬดสดอดาดืดุดิดฯดฬดัดฯดฮดศดฦดวดษดฬดฬดสดศดวดษดษดวดวดษดวดศดสดษดษดวดฦดฤดศดัดะดอดวดฦดฦดฦดษดฦดยดปดภดรดฦดลดวดฦดฤดวดฬดฬดฬดษดฬดฯดอดอดอดหดศดสดวดวดลดศดสดหดฯดะดฮดฯดฬดษดวดฤดษดศดวดฤดวดฬดหดวดมดผดพดฤดศดฬดฦดยดวดวดสดหดสดวดฬดฯดฬดสดฦดมดยดวดัดำดำดแดÞดุดาดัดฯดำดิดะดฬดฬดฮดึดูดึดฯดศดศดะดอดสดฤดมดยดสดะดะดอดวดรดวดษดษดวดศดลดฦดวดศดลดฤดภดพดพดภดลดฦดฤดลดรดวดฦดฤดมดภดยดศดอดะดะดหดอดฮดะดฯดฯดฮดอดอดะดัดฯดฬดสดอดำดำดฯดษดฤดรดวดฬดฬดษดฦดฤดวดศดฦดรดพดฟดศดอดฮดฬดฦดภดมดฤดศดษดษดษดสดอดฬดหดฦดมดมดฦดฦดวดลดรดลดวดวดวดลดมดยดยดลดวดพดฬดฬดหดศดศดฮดัดฯดอดศดฦดศดอดฯดำดอดศดษดสดฬดอดฬดหดหดศดษดศดลดยดลดฬดัดะดฯดสดศดฬดาดิดำดัดหดสดฮดัดัดัดัดะดฮดฯดัดฯดฮดหดฮดาดืดีดึดัดฮดะดัดฯดฬดษดศดลดลดรดฤดยดรดษดษดวดฤดฟดพดภดยดฦดวดฤดฤดฤดวดสดวดยดฝดผดมดมดรดฤดรดรดวดฬดฯดฯดษดรดรดลดรดภดฝดพดภดรดฤดลดรดมดฟดยดลดรดรดฝดฝดฟดรดฤดอดาดฮดฯดฯดฯดหดฮดฯดฮดหดศดฦดศดหดฬดศดฦดวดศดสดศดหดศดฬดหดาดำดะดหดศดษดษดษดศดรดยดฤดศดอดัดัดหดศดฤดฮดฯดหดฤดฟดภดฤดษดหดสดวดษดหดฮดัดะดษดรดยดฤดฤดลดลดรดลดวดฦดฦดฤดยดยดรดษดัดัดฯดฬดอดฮดหดษดฦดวดหดอดฯดอดสดวดษดฬดฯดัดฮดสดหดฬดฮดอดหดหดหดฬดะดะดอดศดศดอดำดำดีดะดอดฯดำดุดูดึดาดิดีดิดรดศดลดยดมดภดฦดฮดฮดฬดศดลดฤดฤดยดยดภดผดพดภดฦดวดฤดยดรดศดหดอดหดศดยดมดฤดษดหดวดยดยดฤดฤดฤดมดมดยดรดฤดฤดลดฤดรดภดรดยดภดพดฝดนดธดบดฝดผดบดผดภดฦดฤดฦดฤดยดยดฦดวดฦดลดรดยดมดมดยดฤดยดรดศดอดฯดฬดษดวดศดหดฮดอดฬดษดฤดวดหดอดษดศดฬดัดะดฯดอดศดฤดลดศดสดสดวดศดฬดฮดฯดอดศดฤดรดฤดวดลดฤดฦดษดอดฬดฯดฬดะดาดฬดศดวดหดฮดหดศดฦดษดฯดาดะดฮดหดวดษดฯดาดิดาดฯดอดฮดฬดฬดหดษดสดหดะดำดาดะดัดำดืดึดิดฮดสดฬดะดึดูดืดีดำดีดึดึดีดาดัดะดาดีดำดำดัดำดำดาดำดัดฯดฮดฯดาดฯดอดสดหดหดฬดหดษดวดศดษดฬดะดฮดสดฦดลดศดลดภดผดปดปดผดฟดภดภดฝดฝดมดรดมดพดปดพดมดลดฤดภดบดตดถดบดฝดปดธดตดธดพดยดลดยดปดบดฝดยดÛดโดเดÜดืดิดำดึดึดำดฯดอดฯดึดÛด฿ดÜดืดิดืดฺดÜดูดำดาดืดูดฺดืดิดัดาดีดำดิดะดหดสดษดฬดสดวดรดฤดวดหดอดหดศดลดฦดสดษดศดลดยดฤดลดวดวดสดศดวดศดหดอดฬดสดศดฦดลดวดษดศดรดยดลดหดอดฬดสดศดฦดฦดฦดษดฦดสดสดฬดหดอดอดฮดอดอดอดหดวดศดฬดะดาดีดัดฮดฬดฮดาดิดิดัดฮดฮดะดัดฯดฮดะดาดีดิดะดษดษดฬดฮดฮดมดะดอดษดยดภดมดฤดลดฤดมดมดรดษดอดฬดสดลดยดมดฟดฝดปดฝดฟดรดศดศดศดลดมดภดรดศดฬดฯดษดฦดสดฮดอดอดหดหดศดหดาดำดัดฯดะดาดีดิดาดอดฯดัดึดูดูดีดึดำดิดึดึดีดีดุดูดูดุดุดาดำดุดฺดุดำดาดฮดหดหดอดหดษดวดสดหดาดาดฬดลดรดฤดรดยดฟดมดลดหดฮดฯดอดวดหดะดาดัดอดวดฤดภดฟดฟดฟดฦดฦดฤดลดรดรดรดรดวดหดษดวดฮดฯดหดฤดภดผดฝดรดฬดษดฤดรดยดลดวดฦดยดฝดภดยดลดษดวดฤดลดศดฬดสดวดวดวดฯดัดะดอดศดวดษดสดหดฮดหดฦดรดฦดศดวดยดพดปดพดวดอดฬดฬดฮดะดิดึดึดอดฦดฦดวดวดฦดฦดฤดฤดมดฦดหดฬดศดรดลดฦดวดฦดรดภดฝดฟดยดพดผดฝดมดลดฤดมดผดนดปดพดภดพดบดนดพดฦดลดฤดฟดผดพดยดฦดศดฦดมดยดลดวดษดสดศดยดภดยดรดรดพดภดวดฬดหดำดีดีดีดิดะดอดาดิดึดิดัดัดฯดฮดฮดอดษดศดศดฮดาดิดาดหดษดหดอดษดลดฦดสดฮดีดืดืดาดหดฬดะดัดฮดษดยดมดลดหดษดฦดยดมดฦดฦดฤดยดพดภดมดลดฤดมดผดทดบดฟดรดฤดฤดยดมดยดลดลดลดยดพดฟดรดวดฦดรดพดมดรดศดฤดมดภดรดสดอดหดศดลดฤดฬดาดาดะดหดฦดหดฬดฬดหดวดมดฝดลดสดฯดฮดฬดะดิดึดำดะดฬดะดืดÝดÛดืดฯดหดฮดำดิดฺดูดูดืดาดอดะดำดำดัดฮดษดษดฬดาดัดะดัดฮดะดาดิดฯดฬดอดฮดฮดสดฦดยดฟดฟดภดยดมดภดภดรดษดษดฦดลดภดฟดยดลดรดภดฟดยดลดษดสดวดฤดรดวดหดฯดฯดอดศดฦดฦดสดสดหดวดลดวดสดอดะดฬดฦดษดะดุดึดำดฯดะดำดฺดÝดฺดีดะดัดาดิดำดัดฯดัดีดิดิดัดะดิดุดฺดÝดฺดีดึดูดืดำดฯดฬดฬดัดาดึดะดษดสดอดาดัดฮดษดรดฤดฦดฟดฤดวดฦดลดมดภดรดลดยดฝดปดฝดฦดหดำดัดฯดฬดศดษดหดหดสดฦดฦดษดฮดะดฯดอดสดหดอดอดฬดษดศดฮดฮดหดหดสดษดอดำดุดึดิดาดฯดษดฯดิดึดึดำดะดฬดฮดอดัดฮดอดัดะดัดัดิดำดาดาดิดาดฮดษดสดฯดัดำดัดฬดหดฬดฬดฬดฮดฬดหดอดาดิดัดอดศดลดษดอดสดวดภดปดฝดพดผดนดนดฝดมดมดฤดภดพดฝดฝดพดพดปดนดนดภดรดฤดมดฟดฟดผดพดวดมดมดมดยดรดฦดศดสดหดษดวดศดฬดะดัดฯดฬดษดหดฮดฯดษดฤดฤดศดลดฦดฦดวดศดสดฬดะดำดำดฯดษดรดฟดยดฤดลดยดรดสดฬดหดสดฦดยดภดมดรดรดภดพดภดมดรดฤดรดยดพดฟดพดภดมดพดบดบดฝดปดปดนดปดผดมดฟดผดนดณดฎดญดฏดฒดดดดดธดฟดฤดมดฝดบดธดปดภดภดฝดนดถดฑดดดธดบดธดทดถดทดธดบดนดผดภดฝดฟดภดฟดภดรดษดฯดฯดอดศดฤดมดฤดึดุดÜดูดืดำดฮดฬดอดฬดสดษดสดหดอดะดำดำดะดสดวดศดอดฮดฬดศดวดฦดษดสดศดฦดยดลดสดสดวดฤดฝดผดฝดฟดพดผดผดพดรดรดยดผดบดฝดมดฦดฤดภดบดทดณดดดนดธดณดถดฝดปดผดฟดภดภดมดฤดฦดษดฦดรดยดฤดษดหดสดรดฝดพดมดฤดลดฤดฦดวดวดสดษดศดลดลดฦดวดวดฤดฤดศดศดศดฤดพดผดฤดสดอดฬดสดลดฝดภดภดรดมดฝดผดฝดลดษดลดฟดปดบดพดอดฬดอดษดฦดรดภดฤดษดหดษดวดยดภดยดศดสดสดศดษดอดฯดะดอดสดฦดสดะดีดิดฯดหดสดฬดหดสดษดษดอดัดัดฮดสดฦดศดอดัดิดาดหดลดฟดมดมดมดยดยดฤดศดสดหดศดลดมดฤดฦดฤดยดมดมดยดลดษดสดศดฤดฤดลดสดฯดฮดฦดยดรดลดวดฤดภดภดมดยดวดวดยดพดบดปดฝดพดปดปดฝดยดษดวดมดนดดดตดทดนดบดปดนดฝดฤดรดฟดปดบดบดพดมดมดฟดนดถดบดหดฮดฬดอดอดสดฤดลดฦดวดฤดรดภดพดฟดลดศดศดฦดฦดศดหดหดวดฤดมดฦดหดฮดฬดษดยดพดมดลดวดฦดวดษดศดษดฦดรดภดฟดฤดษดหดศดฦดมดฝดภดฤดลดรดยดมดรดฬดะดฬดวดฤดรดวดวดวดฦดวดวดศดษดลดยดฟดมดลดฦดฦดลดรดลดฤดรดยดมดภดรดศดะดะดฯดฬดฦดฦดรดมดภดฝดฟดฤดลดฦดลดฤดยดมดลดฦดลดรดฤดฤดศดศดศดศดลดมดฝดมดภดยดฟดฝดภดลดอดสดฮดอดหดษดลดฦดฦดสดฬดษดฤดฦดฬดฯดาดฮดหดสดฮดะดีดึดำดอดฦดฦดวดศดฦดลดฤดศดฬดฯดหดสดฦดวดสดสดสดลดฤดฤดหดะดะดฬดศดยดยดรดรดมดปดผดภดศดษดศดยดผดปดพดมดมดมดพดภดลดวดฤดฟดธดถดถดทดทดตดนดพดมดฟดพดฟดปดฝดพดฦดษดฦดยดฝดทดทดผดฟดผดฟดรดมดรดลดยดมดภดฤดศดศดวดฤดยดลดวดฦดรดฟดมดลดษดหดสดวดรดภดยดืดัดอดสดฦดรดพดฝดยดศดวดลดภดปดปดปดปดผดฝดนดฝดยดลดยดฟดผดฟดยดลดวดฦดยดฟดมดรดลดยดภดฟดฦดษดษดฦดมดฝดพดมดรดยดยดพดฝดฟดรดลดรดมดภดลดวดศดลดรดพดภดยดฤดรดยดฟดภดฟดยดยดลดลดฦดศดฬดฮดฬดสดวดฦดวดวดฦดรดรดฦดสดฬดสดฦดภดฟดยดรดยดภดปดผดยดลดวดฤดภดรดฤดรดฟดฝดพดฟดยดรดฤดมดปดนดภดศดศดหดวดมดพดพดวดฝดรดษดหดฬดมดยดลดลดหดษดลดรดมดรดฤดวดฤดษดวดฦดหดหดษดฤดภดฤดหดฬดษดวดลดษดสดศดลดมดรดสดะดิดัดหดลดรดยดฤดยดฤดรดฦดศดษดวดลดฤดฤดศดฬดฬดษดลดวดศดอดหดษดฤดยดฤดสดสดษดฤดพดฝดบดปดปดทดดดธดผดฟดฝดผดทดฎดฏดถดดดดดตดปดลดฦดรดฝดนดปดภดยดศดหดฦดภดฝดภดพดมดพดบดปดฟดยดยดฟดบดบดฟดรดลดภดบดตดทดฟดฬดาดฯดฬดศดรดฝดพดภดฦดษดฦดฦดษดสดสดษดฤดมดรดศดสดอดอดศดฤดฦดศดฬดฬดฦดมดฝดฟดมดฤดพดผดผดพดฟดมดภดฝดบดฝดพดฟดบดฝดฝดฝดยดฦดฤดฟดบดตดบดปดผดธดธดนดบดบดผดพดผดพดพดยดฦดฤดมดพดฝดฤดษดฦดฤดฟดภดมดษดอดหดศดมดพดมดหดฯดฯดฮดฬดหดษดษดฦดรดลดฮดาดำดัดอดษดหดฮดฮดฮดหดวดสดฮดอดฮดหดฦดภดมดภดฝดบดถดธดผดพดฟดพดฝดผดนดบดพดยดศดวดลดภดบดบดฟดภดมดฟดฝดผดฟดยดมดพดปดนดธดบดยดมดภดฟดฝดมดฦดลดลดฤดลดฤดฦดวดลดฤดฤดลดศดวดลดรดฤดสดะดะดฮดษดศดฬดาดิดิดำดฯดสดฬดสดอดฯดฮดอดฮดฯดฮดหดษดฦดฤดศดศดสดษดฦดฤดศดหดสดหดวดศดสดษดศดฦดฤดยดยดวดศดฦดรดภดฝดรดวดรดภดฝดนดปดฟดพดผดธดปดยดฦดฤดยดฟดปดภดมดยดมดฟดภดมดฯดอดฮดัดะดฮดสดวดษดฮดะดฬดลดพดพดภดฤดลดรดฦดวดลดวดษดษดฦดยดลดษดฮดฮดหดฦดฦดฦดวดศดฤดรดวดสดะดิดฯดษดรดลดฤดยดภดภดภดยดวดหดษดวดยดมดลดษดหดสดศดวดษดษดสดษดศดฦดฤดลดวดฤดฟดผดนดบดปดผดทดฒดดดตดดดตดฒดฐดฏดฑดทดฝดผดธดตดถดทดปดผดนดนดผดภดษดวดลดรดยดฦดสดศดรดฟดมดรดวดฤดยดฟดธดปดพดภดพดมดษดฬดหดวดศดวดฤดมดปดปดพดมดภดผดถดฒดฏดณดดดนดนดถดทดปดฝดบดถดดดถดนดภดฟดผดนดธดนดฝดยดภดผดธดธดบดปดปดธดทดถดนดพดฟดพดบดถดทดนดบดฝดนดธดบดภดฦดลดฟดฝดฟดภดฟดฟดฝดบดนดมดฦดฤดมดผดนดผดภดรดภดผดธดผดภดวดวดยดผดผดปดผดฟดฟดผดนดธดปดพดพดบดถดตดตดถดธดตดฏดญดฏดฑดฒดฒดฒดฒดทดทดธดนดตดตดตดณดถดถดตดตดทดลดวดษดอดอดฬดษดรดฤดฤดวดสดฦดฤดฦดษดหดสดฦดมดยดยดฤดสดฬดลดภดรดยดรดภดพดรดษดฬดัดฬดวดวดรดฤดฦดฤดยดภดลดษดษดศดลดรดยดฟดลดรดภดฝดนดตดฤดหดฬดวดลดฟดผดบดผดปดผดปดฝดฟดฟดพดผดปดฟดภดภดฟดฝดธดธดบดฝดผดทดฒดธดบดฝดฟดผดปดนดตดดดถดตดตดณดถดพดภดฝดธดฒดฏดฒดตดตดดดณดฏดณดณดฐดฎดญดณดบดผดผดนดตดดดธดษดมดมดรดลดยดฝดผดมดฦดอดหดฦดรดรดรดรดฤดยดฤดลดฬดะดฬดวดยดพดลดศดวดลดมดฟดพดวดษดลดลดรดฦดวดศดศดวดฦดรดลดศดสดศดวดฦดยดลดลดลดยดมดฟดยดฦดฦดฤดรดภดลดฤดยดฟดปดบดภดยดภดพดทดฒดฐดดดบดฝดฝดฝดฝดฦดลดมดพดผดบดฝดภดยดยดมดผดปดพดฦดศดฤดภดฟดมดรดฦดศดรดภดฦดหดษดวดฤดมดยดลดสดศดมดปดผดฤดษดสดหดษดศดฬดฬดฬดฮดหดศดฦดยดพดผดพดฝดมดลดษดฬดหดหดศดยดยดฤดวดวดลดรดรดภดปดทดนดบดบดผดพดรดฤดยดฟดภดมดยดภดฟดผดตดนดฟดรดฤดภดผดนดปดฝดพดปดทดตดทดนดฝดฝดฝดนดฝดผดพดปดนดปดนดทดธดถดตดดดนดผดฟดฟดฝดบดบดผดลดวดลดยดฟดปดบดฝดยดยดภดพดรดยดภดภดรดศดฮดะดฮดฬดศดวดฬดำดิดาดฯดฮดัดึดฺดฺดึดัดฬดอดัดำดำดาดีดฝดบดปดปดนดธดนดนดทดปดภดภดฝดปดปดฝดฝดปดนดดดฒดดดถดนดบดธดดดตดธดนดผดปดบดปดภดวดสดหดวดยดพดฟดฦดลดฤดยดมดฟดวดอดฬดหดษดษดสดะดัดัดฯดะดาดำดึดืดีดำดัดำดัดะดัดำดุดูดูดีดัดะดิดึดืดิดะดฯดาดัดัดฮดสดสดอดฯดอดฬดสดลดลดศดสดศดฤดฟดพดฟดฟดภดฟดปดนดธดบดผดฝดธดดดถดทดบดธดตดดดถดทดธดดดฏดฏดฏดปดบดพดฤดวดลดฟดบดพดศดอดษดมดปดพดรดฮดฬดศดฤดมดลดฦดลดสดหดวดยดมดลดวดษดษดฬดะดำดัดะดฬดศดฦดสดษดฤดมดรดลดวดหดะดอดวดรดฦดษดสดวดยดฝดมดมดภดฟดพดพดมดพดฝดพดผดผดผดฟดภดพดฝดปดถดทดบดปดผดนดตดนดผดบดถดฑดญดฏดตดทดดดดดฑดณดตดณดฒดฑดฐดฒดนดผดบดธดดดตดนดฟดรดมดฝดบดฝดรดฤดฤดมดรดยดลดฦดฤดลดมดพดอดวดฤดฦดวดษดฦดรดฤดวดลดวดษดฤดรดยดฦดศดวดยดฟดฝดฦดสดหดฦดภดฝดพดพดผดบดตดฒดถดพดลดรดฟดปดนดพดภดฝดบดถดธดภดฦดศดลดฝดทดนดพดฤดรดพดผดพดมดฤดมดพดบดนดผดฝดฝดพดปดทดบดฝดฟดพดฝดปดผดฝดพดผดปดธดผดฟดมดภดพดผดภดวดสดวดรดมดผดฟดฤดฤดมดมดมดวดษดวดวดฤดฟดมดลดฬดอดอดสดศดฦดฤดฤดรดรดลดศดหดสดษดฦดมดษดพดปดฟดรดภดภดพดมดฦดฮดฯดฮดสดรดฝดพดฟดพดผดทดปดยดลดฦดฤดภดฟดมดฤดลดลดรดยดรดฤดรดยดพดปดบดปดพดฟดพดพดพดฟดยดฤดยดพดฝดฟดฟดภดฝดฝดพดพดฟดยดภดผดปดพดยดลดษดสดฬดสดฬดฯดษดรดพดบดบดพดมดมดพดฝดพดฟดยดยดยดมดภดลดวดฦดสดษดสดหดอดฬดอดษดวดวดษดศดฦดฤดรดรดวดศดวดลดภดผดฟดยดภดพดพดพดภดภดมดมดฟดผดภดปดบดภดยดมดฝดทดดดตดธดปดบดนดทดบดพดภดมดฝดธดธดผดยดรดภดฝดนดผดรดอดฯดสดยดฝดมดลดวดฤดพดพดยดมดมดฟดผดบดพดลดศดษดลดภดภดพดปดผดนดถดผดพดมดมดฟดปดปดบดธดบดนดปดธดปดปดผดปดนดบดยดยดรดลดมดฟดฟดยดยดภดผดบดบดบดฝดพดปดทดบดฝดพดภดผดถดถดตดณดฒดฒดฑดดดถดนดผดนดถดณดถดบดนดถดตดธดทดทดถดตดถดตดถดสดฦดวดษดฬดฮดฮดหดฦดรดศดหดษดฤดรดลดวดศดษดลดพดปดปดภดภดพดพดฟดรดวดสดศดฦดมดภดมดฤดรดภดปดฟดรดวดษดวดยดฝดฝดฝดผดนดทดถดปดฟดมดพดบดดดดดทดบดนดทดถดธดธดนดนดนดทดถดทดฝดภดฟดผดปดผดพดยดรดมดพดผดฝดภดมดพดผดถดนดมดวดลดภดมดยดรดลดรดยดภดมดฦดษดวดยดฝดฝดพดภดภดฟดฝดผดพดภดฟดพดบดทดปดภดฟดฟดฝดฝดบดฎดดดธดปดฟดมดภดภดวดลดลดฤดฟดปดผดพดฝดนดตดธดฝดรดฤดวดฤดฟดพดผดบดฝดฝดปดผดปดฝดภดภดพดผดมดสดฮดหดวดรดรดลดศดศดสดวดฦดศดสดหดษดฦดรดลดฤดลดฦดฤดฟดมดยดวดศดวดศดลดฦดศดสดฦดรดยดรดวดษดฦดมดพดภดยดรดยดมดฟดมดศดอดฬดสดลดภดรดฦดลดลดภดพดผดฟดยดภดภดผดธดปดฝดฝดฟดบดธดนดฝดยดยดพดผดปดฟดลดวดฤดภดลดยดมดยดศดสดศดลดยดฤดฦดศดลดภดผดบดพดรดลดยดฟดพดยดฤดยดมดยดยดรดฤดวดวดฤดพดพดรดศดหดสดรดภดยดฤดฤดยดฟดฝดฟดฤดษดหดวดรดฤดฤดวดลดรดรดษดหดหดสดศดยดภดรดมดภดฝดปดบดฝดฟดผดบดบดปดผดฟดยดรดฟดฟดมดมดมดฟดฝดฝดภดยดฤดรดฦดฤดมดมดรดมดฤดฟดปดนดพดฤดศดศดยดพดฟดฟดภดพดฝดฝดฝดมดษดษดมดปดบดผดพดฟดผดผดสดฟดรดหดฮดฯดอดศดลดมดยดลดวดศดวดษดวดสดอดหดษดลดวดหดฮดหดฤดฟดภดฤดสดวดมดผดปดพดมดรดยดฟดฟดฟดมดมดฟดนดดดฐดณดถดธดธดตดทดผดพดภดภดปดธดบดปดผดบดนดฝดฟดมดภดยดฟดภดพดภดศดหดสดวดยดฤดศดสดวดลดลดษดฬดฬดศดฦดฤดฦดสดหดหดลดยดยดฤดศดฮดสดษดลดฤดลดวดวดศดสดษดษดสดษดศดลดรดรดวดสดฦดมดรดฦดวดวดลดมดฤดฤดมดลดศดหดฯดฬดสดวดศดวดฦดยดฟดปดปดมดมดมดปดธดนดพดภดฟดนดตดฑดฒดธดปดบดธดตดนดผดฝดนดดดฑดฐดถดฝดฝดบดทดตดธดธดบดนดปดปดผดบดปดปดฟดพดภดภดมดยดมดยดยดฦดศดวดรดภดพดฟดรดษดศดลดภดปดนดปดฝดปดฝดภดรดลดยดฟดบดถดปดพดพดปดฝดฝดภดฤดยดภดผดพดฟดภดพดผดธดดดฒดถดถดณดฐดฏดฒดนดธดนดนดตดฐดฎดฑดฑดฏดฐดมดฝดผดภดศดฬดอดอดหดสดฮดอดอดษดฦดยดวดฬดอดฬดสดวดมดรดศดหดศดฦดฦดษดฯดัดฮดสดลดฦดสดอดหดวดมดภดฤดศดษดวดลดวดหดสดสดลดฦดวดวดศดวดลดรดยดพดพดยดรดรดรดฤดสดฬดษดฦดมดพดฝดฟดภดฝดฝดฝดมดรดฦดฤดฟดนดฝดภดยดพดปดปดพดยดฦดศดรดฟดปดบดปดผดนดตดถดธดฝดฟดพดบดตดฑดดดณดดดตดนดผดมดรดรดฟดนดถดผดลดฦดลดภดฦดผดผดมดฦดษดศดฤดมดรดศดศดศดมดปดทดปดมดฦดฤดภดผดทดผดษดษดวดลดฤดฦดษดศดลดยดยดลดสดอดฬดฦดมดผดฟดฤดมดภดฝดพดลดษดหดศดรดฝดปดมดฦดฤดมดฝดยดลดลดรดภดมดยดฤดศดหดศดฤดมดยดยดฤดรดฟดฝดภดยดรดลดฤดพดฟดรดลดรดภดผดศดษดษดสดศดรดภดมดวดฦดยดพดปดฝดภดรดรดภดพดปดภดฤดศดลดมดยดมดภดพดบดปดพดรดฦดฦดลดพดวดฝดพดฟดลดวดษดวดษดฦดวดหดษดลดยดฤดลดวดหดฬดศดมดฟดฤดฦดวดฦดลดฤดรดลดฦดลดยดภดรดษดฮดฯดฬดฦดยดมดภดฝดบดปดฝดฤดวดฦดมดฝดพดฟดลดลดวดลดภดฟดฤดวดศดฦดฦดฤดมดยดฤดลดรดมดยดยดลดฤดมดพดรดวดสดษดศดรดภดพดมดมดยดฟดฟดฟดพดภดพดฝดฝดพดพดฟดภดฟดฝดมดยดรดภดพดปดฟดษดอดฬดษดฤดยดฤดษดหดศดยดรดลดษดหดวดวดฦดมดพดมดฤดวดลดยดฝดฟดรดลดวดลดฤดพดภดยดยดภดปดธดผดรดศดสดษดฦดวดฬดฬดสดหดวดรดฤดฦดฦดษดลดมดผดฟดมดยดพดธดบดมดศดวดฤดฝดบดผดมดลดรดมดมดยดฦดฤดรดฟดปดฝดฟดรดรดรดภดฟดมดฤดษดวดฟดฟดฤดวดสดศดรดฟดลดษดวดลดรดฟดฤดศดษดวดยดพดภดฤดรดฤดมดฟดภดยดรดฤดฤดยดยดฟดยดลดยดฝดปดปดฟดรดรดรดรดลดวดสดหดศดลดสดยดยดวดษดหดศดฤดยดยดษดอดอดศดรดผดฟดมดมดฟดปดนดผดภดยดภดฝดบดผดพดยดฦดฦดฟดปดภดลดศดวดยดฝดปดผดยดฦดยดผดนดมดฦดศดฦดมดมดฤดวดษดวดยดฝดพดยดลดลดยดมดฟดฝดพดพดฟดผดพดฝดภดรดยดฝดนดถดทดฝดภดพดบดนดปดพดภดฟดบดบดรดรดยดพดปดธดผดฟดฟดมดพดฝดภดฦดวดศดฦดฤดรดฤดลดวดมดผดฝดรดศดหดฦดพดปดมดลดษดฬดวดภดณดตดทดพดรดวดฦดฤดภดมดภดมดฟดผดธดนดภดฦดฦดฤดภดผดพดยดรดมดผดนดฟดรดฦดลดมดปดดดนดภดมดภดพดผดยดวดศดศดฤดภดยดวดศดษดวดวดวดฬดฯดฯดสดวดวดษดฬดอดฬดหดฦดลดฤดลดฤดรดฤดยดศดฯดฮดหดฦดฦดษดฮดฯดอดสดฦดลดฤดมดพดปดนดฝดยดศดลดลดยดฤดษดษดวดรดมดฝดรดฦดวดรดมดยดฤดฦดฤดยดพดธดปดนดนดทดฒดฒดตดธดปดบดตดตดฐดณดถดพดมดภดผดนดธดถดบดฝดปดผดทดผดมดฟดพดนดนดพดษดสดษดฤดมดพดฤดสดฬดศดฤดภดฤดศดอดฯดหดศดลดวดวดฦดรดรดฤดวดฮดาดะดฮดฬดสดวดฤดยดภดพดภดฦดฮดฬดศดฦดฦดลดวดสดศดลดภดปดผดภดรดฟดบดตดทดปดบดทดถดตดทดถดนดถดฑดฎดณดฒดฒดณดฑดฒดดดถดตดฐดญดชดฌดตดทดถดฑดฌดฑดฒดตดถดดดตดนดปดพดพดผดนดธดผดรดรดมดฟดปดฟดพดฝดรดลดสดฮดหดฤดมดมดยดภดฟดฝดพดภดรดฦดรดฟดปดผดฟดภดยดภดฝดผดฝดฟดฤดฦดรดมดลดสดษดศดลดยดฤดฦดรดฟดปดทดบดบดปดปดนดทดปดฝดฟดฟดผดนดทดทดปดฝดปดผดปดนดธดนดปดบดธดบดผดฟดฝดบดถดตดธดปดมดรดฝดตดฐดณดนดนดปดฝดบดผดมดภดฟดฝดฝดมดลดฤดรดมดลดสดอดหดสดสดสดหดฬดฯดฮดฬดศดรดฤดลดวดรดภดพดยดฤดรดยดยดธดธดบดภดภดยดภดฟดผดปดธดธดธดธดทดบดฟดยดยดภดฝดธดบดฟดฟดยดยดฟดนดผดฝดปดนดถดตดบดบดพดฝดนดตดปดฟดภดฟดปดทดธดนดบดฟดปดนดบดพดมดภดพดปดนดปดภดฝดบดบดผดพดฟดพดผดผดบดผดฟดรดฤดรดพดธดตดบดฟดภดผดผดภดลดลดฤดยดภดพดภดภดภดฝดปดฝดภดยดมดฟดนดตดนดผดฝดผดพดปดฝดฟดฟดฝดผดผดฟดยดรดรดมดพดพดภดภดภดผดมดพดมดรดฦดหดหดษดวดรดมดลดฮดฬดหดศดฤดลดวดลดฤดฤดภดมดลดสดษดษดฤดฟดรดศดหดฬดสดลดมดภดยดยดฟดฝดฟดฦดลดรดยดมดยดรดฦดษดฦดรดฟดมดฤดรดมดผดนดผดมดรดมดพดฟดฝดพดปดปดบดทดบดภดฤดรดภดผดธดนดผดบดถดฑดณดถดฝดฤดยดผดดดดดถดถดตดณดตดนดปดพดพดปดถดตดธดปดปดนดธดถดถดธดผดบดตดฒดนดพดฤดรดฝดบดถดทดธดนดทดฤดลดรดภดมดลดหดหดษดรดพดภดฬดฮดหดศดฦดสดสดฬดอดหดลดยดฤดวดฤดยดภดภดษดฮดะดฯดฯดอดะดิดÜดÞดÜดิดำดำดาดฯดสดสดหดฯดีดืดีดาดัดะดำดำดัดฬดอดหดหดษดฦดฦดวดวดฦดวดฦดฦดยดมดลดวดลดยดฝดนดผดภดรดภดผดนดถดดดถดธดบดธดปดพดฝดปดบดตดฒดทดฝดฝดผดนดปดภดลดลดวดฤดมดฦดรดฤดรดยดฟดผดพดฟดลดฤดมดพดภดฤดลดฦดรดรดยดลดศดำดึดิดาดฬดฦดลดลดวดฦดลดรดลดศดฮดฮดอดศดฦดฦดศดศดวดศดสดอดฯดะดอดศดรดมดฤดรดยดฟดผดนดฝดยดฤดมดฟดฝดฟดยดฤดยดพดปดผดยดลดฦดรดภดยดลดษดหดษดศดลดยดยดฦดรดฟดฟดมดฦดหดฮดสดฤดภดมดมดยดยดยดลดรดสดหดศดฦดศดฬดอดอดหดศดฤดลดษดวดฤดรดรดลดศดฬดสดฦดพดผดมดสดฮดฬดษดษดลดฦดฤดภดฝดผดมดสดฬดสดภดหดสดลดพดปดบดผดบดถดดดตดปดรดฦดฤดพดปดบดพดรดยดฟดฝดพดยดรดยดรดฟดฝดฟดพดฟดฝดนดผดฟดรดฤดลดภดฝดภดยดรดมดฟดผดภดมดรดฦดฤดยดมดยดภดมดภดฟดฟดรดศดหดวดฤดฤดฤดฤดลดฦดลดฤดรดฤดรดยดฟดนดถดธดบดพดฟดปดฝดฟดฟดฟดผดนดนดนดมดลดยดมดภดพดฝดพดฝดบดธดธดผดภดยดยดฝดนดปดฝดผดฝดนดธดพดมดฤดมดภดผดถดถดฝดผดมดยดภดยดวดฬดะดฮดฬดษดลดฤดฦดษดหดฬดสดศดษดหดหดษดลดมดพดภดรดฤดรดมดฝดฟดศดศดวดฤดฟดผดฝดพดภดฝดปดพดพดฝดปดธดถดธดปดภดรดมดปดนดผดฟดฟดพดฝดผดนดธดบดปดผดปดบดบดฝดพดปดธดถดปดพดฝดนดถดทดนดผดฟดผดทดตดตดนดบดบดธดถดธดถดธดถดตดตดทดนดบดผดบดธดบดฝดภดมดภดบดธดผดพดมดรดผดธดบดพดยดมดภดฝดฝดฟดมดฟดพดมดผดปดพดพดฝดปดบดนดนดนดพดยดยดฝดทดณดณดถดดดณดธดยดวดวดวดรดพดนดถดตดถดถดธดถดบดฝดมดฟดผดธดทดฝดรดรดมดฝดทดดดบดฟดพดผดปดปดมดภดฝดนดดดณดปดพดพดผดปดปดบดปดธดถดฑดฒดตดธดธดถดดดฐดณดบดยดยดภดนดตดธดรดลดศดฤดมดภดมดรดรดภดฝดภดยดฤดลดยดผดตดนดพดผดผดนดถดธดผดมดมดฝดปดพดฤดรดยดฟดบดฝดมดภดฝดทดบดทดถดนดปดภดฤดรดมดปดนดผดยดรดยดฟดผดฟดฦดวดฤดฟดนดบดฝดฟดฟดฝดผดฟดฟดยดฤดภดพดมดฤดรดลดฦดมดผดภดยดฤดฤดภดปดปดผดพดมดฟดปดฝดมดฤดฟดฝดบดนดพดมดลดยดรดมดยดยดมดพดผดบดบดพดภดพดปดทดบดบดปดผดฝดตดตดนดนดผดพดฝดฝดผดมดฦดยดผดบดนดบดภดมดฝดทดธดทดทดธดตดตดฒดฒดดดฒดฐดฒดตดปดฟดพดพดพดฝดมดฦดศดฤดทดนดถดณดฒดถดตดตดณดฎดฐดณดบดฟดฟดพดธดตดทดทดถดดดณดธดผดฟดรดยดผดถดฑดตดนดธดทดณดญดฑดทดธดณดฏดฒดธดฝดฝดธดดดฎดฏดฒดทดปดบดทดตดถดถดทดถดดดถดฝดภดมดภดพดผดผดนดทดบดฝดภดภดภดมดภดพดผดภดวดษดศดลดมดฝดธดปดฝดพดผดปดพดฟดพดฟดผดทดทดนดธดทดถดฒดฒดทดผดผดผดบดบดปดพดฟดฝดนดทดธดนดนดธดถดถดฒดถดถดตดผดลดรดพดธดนดฝดมดยดภดปดบดพดภดพดผดนดบดปดฝดมดยดผดทดถดธดปดพดฝดปดผดผดมดมดฤดรดฤดลดหดฯดฬดฦดฟดภดมดรดฤดลดมดภดฤดฤดฦดมดผดทดบดภดลดลดฤดพดพดมดภดปดบดธดธดถดณดตดณดฑดฑดตดทดตดฑดญดฌดฐดณดดดณดฑดฎดฑดนดบดธดถดฑดดดทดนดฝดบดถดถดทดทดถดดดฒดตดธดภดภดมดพดนดนดผดฝดภดมดฝดฝดพดฟดผดบดปดฝดภดยดภดมดฦดลดมดฝดบดมดวดษดวดมดบดผดผดปดนดตดฑดฐดนดฝดฝดบดนดถดดดตดดดดดดดตดทดบดปดนดดดญดฏดถดนดทดตดธดฟดฤดยดมดฝดธดถดนดฝดภดฟดปดนดนดทดนดฝดบดทดนดบดฝดผดฝดฝดพดพดฝดฟดผดฝดปดภดพดพดภดยดยดฟดรดฤดรดภดผดบดปดพดฤดลดภดบดฝดยดมดภดบดธดทดนดธดทดณดฑดฒดนดภดพดปดณดฑดถดพดพดผดธดธดบดพดฝดปดทดตดธดผดฝดทดบดธดถดทดปดฟดรดรดภดพดผดนดนดบดธดทดทดบดภดลดลดภดบดทดธดผดฟดฝดบดธดบดพดฟดผดนดถดถดทดบดบดธดดดฑดทดบดปดบดนดถดธดปดปดนดทดถดธดนดนดธดทดฒดทดพดมดฟดภดผดผดบดธดบดธดดดดดธดปดปดทดดดฏดญดฐดฑดฒดฒดณดทดทดธดถดดดดดตดถดธดบดนดตดณดปดปดผดฝดปดธดนดปดปดปดบดธดนดปดฟดฟดผดถดตดบดรดฦดลดภดปดนดบดถดตดปดปดธดตดฒดทดปดผดธดตดตดตดธดธดทดถดฑดฑดณดณดฑดฏดฎดณดนดพดมดฝดทดดดฐดฒดตดตดดดฑดณดตดถดดดฒดฑดถดฟดรดยดพดทดฒดตดบดฝดผดผดธดนดปดบดบดธดดดฑดณดถดนดผดผดพดภดภดยดฟดปดปดยดศดสดวดยดพดนดฝดฝดฝดบดธดดดฝดภดภดฝดบดธดปดภดมดพดบดนดฝดฟดฟดฝดนดถดตดทดปดปดถดฑดฏดณดถดทดตดฒดณดตดตดดดตดฒดฎดฌดฐดฒดฏดปดนดทดฒดฎดฏดฒดดดดดถดธดฝดผดฟดยดผดธดถดฝดภดฟดพดนดธดนดยดฤดรดภดบดทดบดฟดพดฟดฝดปดปดผดบดทดถดปดมดวดฦดฤดมดนดถดธดฝดผดบดปดฟดยดฤดภดฝดธดบดธดปดนดธดทดดดถดธดถดดดฑดฌดชดฐดตดณดฑดฌดซดฐดตดถดดดฎดฉดฎดฑดฒดฏดชดฎดฑดทดทดฐดชดฅดซดฏดฏดฐดฌดฎดฑดตดถดตดฐดฐดฑดตดนดปดทดฐดฏดฑดณดฒดฏดฑดณดนดฝดพดปดฤดรดภดผดธดปดรดรดฤดมดมดรดษดฬดอดษดรดฟดผดภดมดมดพดภดลดศดสดวดลดภดพดรดยดฟดปดนดผดยดฦดฤดยดพดบดธดบดผดบดธดนดพดฤดศดลดมดฝดปดปดฟดรดยดพดผดฝดลดฤดฤดรดฟดผดพดฟดปดนดปดฟดฟดมดมดฟดปดทดนดธดผดผดธดถดธดทดผดบดธดนดภดวดษดวดยดฟดฤดลดษดสดวดฟดผดฝดพดฟดผดพดพดยดฤดรดภดฝดบดฝดยดวดศดฦดฟดนดทดบดยดภดยดฟดธดณดถดทดถดถดทดธดบดบดนดบดทดณดดดตดทดถดดดฑดฎดญดถดธดถดณดญดญดฏดฑดฐดฐดฐดฎดฑดฒดณดถดดดตดถดบดปดผดผดบดปดฝดฟดภดพดบดบดผดผดผดผดนดผดฝดภดยดภดฟดฟดภดฟดภดฟดฝดปดฝดฟดฟดผดนดปดพดรดฦดฦดมดฝดบดมดลดฬดศดยดฟดพดมดฟดฝดนดฝดยดวดลดฤดฟดปดนดนดฝดยดยดฟดพดผดฟดฝดผดฝดยดลดฦดวดลดมดปดนดบดนดณดผดพดปดนดถดทดพดมดภดปดนดทดทดถดถดดดฒดณดตดทดปดนดถดดดดดฒดณดดดดดฐดฏดฐดตดธดถดณดฐดดดธดปดผดพดบดนดทดดดฒดฐดทดธดผดผดนดทดตดนดธดธดทดธดฒดฒดถดบดบดบดผดพดฟดพดพดฝดผดพดพดมดลดฤดยดภดฟดภดฤดลดลดรดมดลดฦดรดภดปดธดณดธดนดปดธดดดปดฝดรดมดปดถดณดธดผดผดปดธดทดบดฟดฟดฝดนดถดถดธดทดทดตดตดทดผดภดฟดษดวดมดปดทดธดผดฝดพดฝดผดผดปดฝดพดปดธดนดผดพดฝดบดปดภดลดสดสดวดฤดภดยดฦดฦดฦดฤดภดปดผดมดยดยดภดฟดยดฤดวดศดลดมดผดฟดลดวดลดมดฟดภดภดพดปดทดดดตดดดดดตดถดถดทดถดบดผดบดทดณดถดธดบดตดถดดดนดปดฝดปดทดถดบดปดบดธดณดฒดฑดณดถดถดณดฑดฑดถดฝดฝดปดถดดดถดธดบดนดตดฒดตดบดพดพดธดตดฒดถดดดดดฒดตดธดบดปดฝดอดหดวดรดฟดบดฝดภดวดลดยดฝดผดพดปดธดนดปดฟดลดฦดลดยดฝดบดปดผดบดนดทดดดตดนดผดปดธดทดบดปดผดผดนดถดธดบดบดธดตดฒดดดธดฟดภดฝดทดณดตดถดฑดฎดฌดฐดดดธดนดธดถดตดทดตดทดตดฒดฐดฑดดดทดธดทดถดณดถดนดปดทดตดฒดดดตดธดทดตดตดตดธดธดทดณดฑดดดนดผดปดถดฑดฒดทดปดพดฝดนดดดฐดดดทดธดทดนดทดผดภดฝดนดนดปดมดวดฤดษดอดฬดวดยดมดฝดมดภดฝดบดธดธดผดภดผดทดตดถดปดผดผดธดถดถดถดทดทดถดถดธดมดฟดพดบดฒดฏดฏดดดนดฟดพดบดทดธดทดถดดดฒดณดทดปดฝดปดตดฑดดดนดธดทดณดฎดฎดฐดณดถดดดฑดดดถดธดธดทดดดถดนดภดฤดฤดรดปดนดฝดพดผดธดตดตดทดบดบดทดถดทดบดพดฟดฝดบดทดทดถดธดบดธดบดผดรดรดฟดบดทดทดธดทดตดฒดฑดดดดดณดฑดฎดชดฆดงดฉดตดภดมดพดบดถดธดปดฝดฟดผดนดตดตดทดผดธดตดฒดณดนดฝดภดฟดปดธดฟดมดพดฝดนดธดนดปดพดมดพดฟดมดฤดฦดฤดภดผดฝดยดศดศดวดยดพดนดพดมดรดรดฟดมดศดฬดหดษดฦดษดหดสดวดลดยดภดมดฤดฤดยดผดนดปดภดมดยดยดผดนดนดปดฝดปดนดปดมดวดฤดฝดธดตดธดทดนดบดธดดดนดผดภดพดธดณดญดฑดธดนดทดตดตดธดฝดผดธดณดฐดฒดตดตดธดฒดฑดณดฒดตดธดบดบดธดถดดดดดตดธดบดธดถดดดนดฝดยดฟดนดตดตดธดทดตดดดฒดถดผดภดฝดผดนดตดบดฝดพดผดบดบดพดฝดผดปดทดถดธดทดทดทดดดณดดดนดฟดมดพดธดดดบดฟดฝดบดถดดดทดนดธดธดถดธดบดนดทดนดธดนดผดฟดฟดผดนดณดดดตดทดนดนดณดดดผดปดบดตดฑดณดถดนดผดปดนดนดนดฝดพดพดปดนดบดปดบดปดนดถดดดนดปดนดถดฐดซดญดดดบดบดนดนดบดฝดวดลดวดศดลดภดบดบดปดฝดบดทดฒดตดนดพดพดปดถดดดถดนดฟดยดยดฟดมดภดมดพดนดดดฐดณดธดฝดผดทดฒดดดทดธดตดณดตดปดภดฤดภดผดฝดฟดมดฦดวดฤดพดฝดผดผดปดธดตดดดตดถดถดตดฒดฏดฑดฒดณดฑดฎดซดซดฐดณดตดตดฑดฑดณดฒดฐดฎดฏดฒดถดนดทดณดฏดฉดซดญดญดฑดฎดฎดฌดญดฒดถดฒดฎดชดซดซดฐดฒดฐดฌดณดถดณดฏดฌดฎดถดบดบดธดณดฒดณดถดผดภดยดภดฝดนดตดฒดดดตดฒดฏดณดธดปดฝดบดถดฒดณดดดตดทดดดฑดฑดทดผดผดนดถดฒดดดธดถดตดตดณดณดณดดดณดณดฑดฎดฐดดดตดถดดดฒดฎดฎดฑดฐดฏดฐดฎดดดธดบดธดณดดดตดนดปดฝดปดนดบดบดฝดฝดปดธดนดธดบดพดฝดปดธดธดผดฝดปดนดปดมดฦดฤดรดมดพดมดรดลดรดพดธดฒดฏดฑดฐดฐดฑดฒดถดนดปดบดธดตดทดถดถดดดณดณดถดบดบดนดถดฒดฒดตดผดลดฤดยดพดนดดดดดตดธดผดปดนดบดปดปดบดธดถดดดธดนดนดบดนดณดฏดฑดฒดฑดญดญดฏดฒดณดตดฐดซดฆดงดจดชดฉดซดฎดดดบดนดตดฐดฎดฏดณดถดตดฑดฎดฏดฑดดดดดฒดฏดญดฏดณดถดนดทดดดดดทดบดนดธดทดบดฟดลดฦดฤดผดนดผดปดธดถดทดถดทดฝดผดธดฒดฎดฏดดดบดธดนดธดถดดดตดถดดดฒดฎดฑดณดตดตดตดดดฑดดดถดตดดดณดตดธดบดธดดดฐดฐดทดฦดวดฦดวดลดรดภดผดฟดยดมดมดฝดปดฝดมดมดมดพดฝดพดมดฤดวดรดฝดนดฝดฝดฟดผดนดธดปดพดฝดปดธดถดบดปดธดธดตดตดธดพดรดวดฤดมดฝดผดพดฟดผดธดนดผดพดผดนดตดดดถดนดนดทดถดถดทดนดผดผดบดนดฝดฝดฟดพดผดธดธดปดพดพดพดปดบดปดพดฟดฝดนดตดทดบดผดฝดผดปดบดฝดฟดพดฝดปดบดผดพดพดฝดปดธดปดพดลดรดภดผดผดปดฝดผดปดธดนดปดนดมดลดฤดยดฝดตดฑดณดดดฑดฎดญดฑดทดผดผดนดทดฐดฐดตดตดถดถดถดนดผดปดผดธดดดธดพดยดมดฟดฝดนดนดปดพดปดทดณดฒดดดดดฒดฏดซดซดตดฟดพดบดณดฎดซดญดฏดฎดฏดฐดผดผดนดถดฒดญดฌดฎดฑดฏดฎดฌดฎดฒดดดณดฐดฌดชดดดดดถดถดดดฒดฑดถดถดณดฏดซดญดตดนดนดทดฑดฒดตดนดบดธดตดณดถดธดบดธดฒดฌดชดฑดพดฝดถดฑดฐดฒดณดฐดฎดฌดฌดฑดยดวดหดฬดศดลดรดฦดษดฬดอดหดศดลดลดลดรดฟดฝดปดรดวดศดฦดฤดฟดผดปดบดธดดดถดปดรดวดศดลดยดฟดภดพดฟดฟดนดทดปดพดฟดภดฝดนดดดณดธดมดภดฝดฟดฤดฦดฦดรดพดปดปดพดมดยดฟดฟดฝดฟดยดรดมดปดบดผดผดบดนดธดปดฝดภดมดภดปดตดฑดฑดดดฒดฒดธดผดฟดรดภดพดธดธดธดนดภดฤดมดพดพดพดฟดภดพดฝดภดมดรดฤดมดฟดผดปดฝดภดภดฟดฝดภดฝดธดธดธดนดถดฐดฒดตดทดณดฏดฌดฎดดดนดฝดปดทดฑดฑดดดตดตดณดฎดฌดฌดฏดฏดฌดซดฏดฐดถดปดนดตดฏดฑดตดบดผดปดทดฒดตดบดมดลดลดมดมดฤดรดมดพดปดบดฟดลดฤดภดปดถดนดบดนดปดปดนดทดผดฟดพดนดผดบดปดปดปดธดธดผดภดฤดฤดภดธดตดธดทดตดณดณดถดตดฒดฒดฐดญดฑดถดธดนดทดดดฐดฎดณดดดดดณดฒดตดธดผดปดถดฒดตดพดภดฟดปดธดทดนดดดรดรดยดพดบดทดธดปดฟดภดพดบดธดบดธดฝดยดยดผดปดพดมดฟดฝดบดผดภดลดฤดมดผดถดฑดฏดฑดฒดฑดดดถดนดบดนดตดณดฑดฐดฑดดดดดฒดณดถดนดบดนดตดฒดณดตดตดดดฑดฏดณดณดตดตดตดถดดดดดฑดฐดฐดฏดฐดฐดฒดฐดญดญดฌดฎดฐดฑดฎดญดฏดฑดฒดฒดถดตดฑดฎดฒดปดผดนดดดฐดญดฎดชดจดชดซดฐดดดดดฒดฐดญดฏดฎดญดชดญดญดฏดฏดฒดณดฒดณดตดนดถดปดฝดปดบดธดตดบดนดทดทดดดตดตดธดนดถดทดถดทดบดปดพดมดฟดบดดดฒดฒดฑดฒดฐดฑดฐดฑดฑดฐดฐดฑดดดธดบดปดฝดปดตดฒดดดตดตดฑดฎดญดฏดญดฎดญดฌดฎดฎดฏดฐดฐดฑดฒดดดธดทดนดธดนดธดทดทดตดตดธดพดผดปดบดทดฒดฐดฎดฏดฏดฏดญดฉดญดฐดฏดฏดญดฐดฑดฑดตดถดถดฒดฐดฑดฒดณดฒดณดฑดฐดฒดฑดณดณดตดตดธดปดธดถดณดตดตดทดตดดดดดทดยดฤดยดยดยดภดฝดพดฝดฟดผดผดนดธดบดพดพดฟดฝดนดบดพดรดฤดยดพดบดบดผดบดธดถดธดฟดรดมดภดภดนดถดธดทดณดฑดฏดฒดทดปดพดธดดดฐดณดทดปดฟดผดนดทดนดบดบดถดดดถดถดทดถดดดดดณดดดธดนดธดถดฑดฐดฐดฏดฑดฏดฑดณดฝดมดฟดปดทดบดพดมดฤดยดฝดทดธดผดผดปดทดทดบดภดภดฟดปดถดทดปดยดฤดมดฝดพดมดฤดฟดนดณดฑดฒดฒดตดฒดฏดฎดณดชดญดณดทดตดฑดซดฌดฌดฎดฎดฏดฌดฎดฏดฑดฐดฏดฌดงดฆดฉดญดฑดฐดฒดฑดณดตดณดณดตดดดนดผดฟดพดผดผดฟดรดลดศดฦดยดยดรดฤดฦดลดยดผดฝดฟดมดยดภดพดผดภดยดมดพดฟดรดรดรดลดฤดมดพดฟดฝดผดผดผดฝดฝดยดรดมดผดธดปดผดปดปดนดณดณดทดปดปดบดดดถดปดภดมดพดธดดดตดทดปดผดนดฑดญดฐดดดตดฒดฎดฎดฌดฎดญดซดจดคดชดฑดถดตดฒดซดฎดธดญดฎดฐดถดนดธดบดบดฝดฟดภดพดผดฝดภดฤดลดมดปดถดผดยดศดฦดฟดนดถดผดฝดปดถดฐดตดนดฟดมดพดทดฒดธดผดปดธดดดฒดดดนดฝดพดฝดถดธดผดฟดฝดบดถดฑดฒดฏดฒดฑดฑดฏดฏดฐดฑดฒดฏดญดฌดฏดฒดตดดดณดณดดดถดทดตดฎดฉดฑดดดณดทดดดฒดทดฝดปดธดดดฐดฎดดดบดบดถดฒดฑดดดปดฝดฝดบดทดธดผดพดฟดผดผดฟดฤดยดพดบดธดผดยดฤดภดผดตดถดปดณดตดปดฝดบดดดณดณดดดทดตดฏดฉดฅดซดฑดฏดฎดฎดญดฏดญดฌดฌดฉดชดซดฎดฑดณดตดณดฒดฒดดดดดดดณดฒดฒดธดพดผดบดตดฒดตดตดณดฑดฏดตดธดบดบดถดณดฏดฏดดดนดนดธดดดตดทดธดตดตดตดฒดดดธดทดทดณดฏดถดฝดพดผดทดฒดถดทดบดบดธดบดผดภดฤดลดมดฝดพดลดวดลดรดฟดปดฝดพดผดบดณดฒดดดฒดฒดฑดฒดฐดณดทดทดตดฒดฎดฑดบดฝดฟดฝดบดบดบดธดนดบดปดธดณดณดทดผดฟดฝดนดฑดฎดฐดณดถดดดณดณดณดดดทดทดฑดฏดฑดฐดฐดดดณดฒดญดฏดดดดดตดดดธดฟดฤดฤดภดผดบดผดฝดฝดผดนดดดณดถดทดปดธดตดฒดฐดฒดนดธดทดดดฑดฏดฒดฑดฐดฏดฒดนดปดผดบดธดตดทดทดทดธดตดณดฒดณดณดฑดฎดฎดฏดตดนดธดถดฏดฒดดดธดทดตดฑดฑดฑดถดณดฎดจดจดชดฏดฏดญดจดฃดฅดงดฉดจดงดงดซดญดซดฎดฎดชดซดธดญดฏดฒดทดทดทดทดนดพดยดภดฝดบดนดปดพดพดพดผดบดปดพดฝดพดผดปดฝดยดมดภดผดทดฑดฎดญดฏดฐดฐดฐดตดบดพดผดบดธดปดภดฤดลดรดพดบดปดภดรดภดพดพดยดวดษดฦดมดนดผดผดพดพดพดพดพดพดฟดภดฝดนดทดบดพดมดฟดธดดดทดบดนดทดณดดดทดผดฟดฝดบดทดถดธดผดผดธดณดฒดตดทดตดดดฏดญดฐดดดดดฑดฌดฐดถดบดปดทดดดฑดณดทดนดบดตดดดตดถดดดถดฝดมดภดฟดธดตดณดดดฒดฒดฏดฎดฎดดดบดบดตดญดฉดญดณดทดบดมดผดธดปดผดปดนดทดบดมดรดภดผดธดธดนดฝดปดนดตดณดตดฝดพดปดถดฐดญดฏดฐดฏดญดญดดดปดฟดฟดปดถดตดฝดปดทดถดดดธดผดภดฟดฝดปดนดปดฟดฝดผดนดทดบดพดภดมดพดบดฝดภดภดพดนดธดนดปดฝดปดทดถดนดฝดมดฤดยดฝดนดทดผดฝดผดนดบดปดพดยดภดพดบดปดภดรดยดพดบดบดชดชดซดฏดทดนดธดฒดซดซดจดงดงดฆดฃดฅดฆดฉดชดฌดฌดฎดฐดดดทดตดฐดฐดฎดฑดณดฐดฎดฐดดดตดธดบดณดฎดฏดฒดตดทดดดฏดฎดฑดบดผดปดถดฑดณดธดปดนดตดตดนดพดยดฤดมดปดนดถดดดธดธดนดบดนดปดฝดผดนดทดบดฝดภดปดณดฏดฐดดดถดณดฑดญดฒดทดผดฝดบดทดตดบดฟดพดบดถดถดปดภดภดฝดทดตดทดปดนดธดนดปดผดภดฝดปดผดนดบดพดรดลดยดพดบดณดฑดฑดฒดดดถดถดฒดฒดฑดณดฒดณดฑดฐดดดถดฝดผดธดตดฑดณดทดผดฟดผดธดทดธดทดธดธดถดถดปดพดยดพดธดณดฒดฒดฐดฎดฏดฐดฑดฒดฐดฏดญดซดญดซดซดฉดงดงดจดฎดฑดญดงด ดด ดกดขดฃดฆดงดจดซดญดซดจดฅดฆดฉดชดฉดซดซดญดฌดซดจดขดดขดงดซดซดจดขดคดงดฌดญดญดฌดฉดฌดฎดฐดฏดฌดฉดฌดฒดณดดดฑดฌดฌดฒดถดถดตดณดดดถดบดบดธดฒดฏดฦดพดฟดวดวดลดฟดนดธดปดฝดภดภดฝดผดผดภดภดรดฟดปดนดผดภดยดยดปดปดฝดมดลดรดพดปดปดปดพดภดพดบดถดฤดฦดฟดปดทดฒดฒดณดฐดฐดฐดฌดซดญดฑดฐดฑดฎดฎดตดนดนดทดณดฒดฒดณดตดฒดฑดญดฐดฑดฐดฏดฌดฏดฐดฒดณดตดฏดชดฆดจดฐดดดฒดฑดฌดญดฏดฎดฎดซดฎดถดบดนดทดฒดญดชดชดฌดฌดฌดจดฅดจดฑดฒดฑดฎดฏดฌดฏดณดดดฐดฉดฉดฌดฎดฌดฉดชดRI)uldn=;u`W:.-_m_>-1RX|`7BID@+;jXbpๆ *Gฃ}|'*sW+O[?37—p~6eEOKEpb?4(^o~f%gV?3(U0AAWI/Tg9&,€]VPN!brZB)eZcH9;4aOfz> -Y\m/+s07>rXnJ",<]PMz0Mq`+ =mZ%%?laAH8ISO87Wbำ]BH ^,]BW]–KHR/ZQ45 jS3ตzh-*9n\=%(`J;%*]dIO ,9oDcF%KD.67+I7pFS0-=S+E@xขDxญ:/B8K`?%`cADlXN .7ศ’=/+FzS12[g?!+gQK>.;jI16UH ฃx0>3/S`8x’N8CoVTk8w^CE	*4uหZHW6(";7{OO%Ka.FSY๔ *o2ท4~\?n Qฎ*	-Z^b0N.*`z}T0๒ ]—q82Hv\pQ@Tc,(A;dteq5&@7GIb<Wlm^48,?PIH?V:R6H1"IS&PopB8(+A_gR,LO,3&-kE7AEK€VL3GH\O^ÿ nป:jcnDZfW07L+8}Mÿ Zl="ar!HSY2gM?/USE{(G_uFsPwซ[8"+>4#KS016s}k“zc!=RbE9vbC1{t8H\{h#.€=1~K0!smM
+Wrp39 B{iÿ VMhwz![qO'=Gk[09Wbe+,pซdNNeW*1ป<๛ aB{_%p,XGPKขopRH7pc$=PyF1[cj;&WjT3%3qตwL@]FXF^;4F0U=xN0C~FN9LcH md&)z=U‘?$G`fJ);Ba]bP.EAB@"’'[xDOBRgI]S:*BLHp/&:On<ý ฆX @cl7LXVW*1TwmL D_\C>gjzW%8=bq8C!<ฒ=K+B8ถt-<VRG=Q]="L@ฤ}Jþ # gn6 +;NLW#U`n~4%DหN26 n8D&;uฉ??7"SU7BUfH[B&54Zbo>!Je[aC 6[o: <roL7.XF&>ktH!mw…Om:cJNV-Po%)กP2D}Cก H^ss&9GqN6W\qV๚ ๕ 1bj`O5&P=T“)?$`<s";,dB0TKnพ*{€-ืm%:&?Ch>)Y>cกTr_kGJญn~ü Ec[)`zVI1b“x2' +J-l>;)H—?1,nPG0"xM8—}S?LcZZA[ญ}Oü JZkq*BhpG,"
+cQฏQ๖ Fnl“I3!4O2=C541#`!T{X<ý *${TF\…t@?60}I$JX`7+SwH8cTG3"4%JFM<=GUm=JX `€JDQ^x[< Fคb?p=MRRgWK/@XmB4\)AOV%”xNjn5M1qC=:U}LKBA7^hH AmrK?T@2>_aA&^[0%A’UV<)rOE/=iZ_EF@\&H6GKA>OeKI/BE>TQW%<tn2*IEdFc8EmvP"1GxPN<'9:KC 3;ฯS(=6N{=#4	hv}3U#ebc&+-Z`-1E|o\"๙ fNc]b3ัm(0“[6 neG@NOqRA?-*X6‘df0'ER|9*ud/-]4MOG6ZGvง/>@RSvH"2hRH8\dDsITiv[F\8,"๐ fจซm7B8C:5 I_>U
+คmeb๖ -m”l@lS)Em<>"$?N—g3!!THLGh-'u!%3v_.sซ]0๘ FT$?FvA%!%ry,-xu22O…[*0.IoLMO;3tP2wpL,C),~fABO><}'(e40 'l. 0RZ&jt]T5<0hvdK#L1cePBOK,qdN๓ !zSl2#BQCpQB=gkIySiJ<h*>QPe&VsK-%ajT0@)g`F,#UhOd8-I`7M<]1=.1?zvค
+7l$8G>ww;!OT]
+(Rqlk<2a~_>7G]F=$ u X57Qjpe1&DqQxQH5AdfU1W€S!ao~7๔ 'รÛh1—bI0 #wnE#{xp>๘ ๏ D0$lyJ*KM‘~oNh"DaA!๏ x^kgý *Rณ(<5'*Gd3<D{=]Fa&lKa_VL.6K#…\'ECXo_1KUW-I[’รü dUPTk+!บ1/C.Kq6L^mS({HC:7:eT{>Hfn|,UbXA)G"Z?2^kB3;_l`an^:G*LMj
+'>(%>P)60tkj2๗ S1k g5€fD9OpJ%V\e?Jle\:+@_~:9__F(.$Hฏ~&@:UQW.5HZ/F8Z/eฃZ0/Oa~C>),;v?-&Ror.1'6H=6N-Ul38MaZ5:<\oK.;FปU;15>Eb?//JHSj2"๖ LA๔ G:odTS-`N}>(1Y|^3INR'rHlRC!<!B’|8%9FgML3(Jc#<M]WE+3SksA$&LจXL#:{kU)-0ขE)LELV'EvmT`	 =R]8X6/JTL6*4Vuก…l*3((BฌW  >c_N7:`>๛ þ )qถ๏ I“7K`tF5อF-๑ NWbRk5<B’E9.~wH!VnH?g)9Pทs3gFk|FH7/.W%,Ch0ý )sQ8<n5Ek3Mx|N+!๘ B;+F"$|V!,SgUGgE3qf*&[EJ(ขlJ$
+H@ต/(FoNS6=1^`^"PK_G,A5`<'0JdXGL_MA=!3,1Fa4CPG:H" >-~JH,d~-(4R0&!Fe–ล0"4Ua!rK6l–•FHOCS_mks72XjYE'VbTCB6K$SeS;L~gCQ4-U]H1 -no*"MV[ .[lF(9xen65Gx:S./uqL2kl*)wQ7
+Ot?.@GV@+3<8b`=5$4tKw(
+5RaC0@jU{>>%*7APK&-m<WQ#]G7GEý WxOD2TlcP8-2M7(	?apfCh…H๔ `•pQd\tX$,?`LA>?ฐ',B3rช~,:Vv/๘ I`vM&*þ RซmQC'TkWJf/<F..%%E|a#:WlK9=TY^%e6*Z\X`D<>)?rVd'"_RDEW7]QdH.K_2@52B2^P`&%1fN$'b`~*A+5VGb<3Fu…0QCTM6-0B{mc5fDJfUO3d}Q+AnzkNBP_ub8K*EacN+[^d3]จl{WH#DJ€{JBOR$E\2NzMJZ\MACoR'!F`H0+F]mJ9<8z\2þ QGWY@ý $WbGBJ(<mPJ์ Bฏ~E H$C~{`qUF<*VpA[84>^t_2%F'HvuZ([YI6ERS9PH>np[AhH*%Cg@08V;_z\?c<(ztP/:N860:จ|M89Jk7VXO\R“/Km[M;,*[D6?FpeWL38@] PDMชx3H03U58>>woT(&BPO*I๘ +j\'O'rj:",?qCN56K@7HWd9!LD5ZV;/M7iEK<80JkE;,e@h3
+ya48EAO๓ ๒ HwK956`* )V(Jl~FzL?-YnnS-Bha'5SJuOPC2_Y;=&n…y&5\XkEI^7\bL31+2i]/F;RJ3ML,Z’^Mb+OS:3bsC&@Fc~R';mL^I9;*&+8aUp~f/5NdE)!Ib—SQ,KRz[% •ju;&%@sUmo1R[,&,_rq*`CUpkK*#qOL-6ad$(cbjWU)\TBPfxW8Oz,b.6Dm:
+/c(dV/<FKUCoz…KWIdmlGh^E
+7dfi2-6Hb_@5.M’JC c;%
+&|uf1ODdb;ra8`6RI*G8PS]`2VhH"Xr@PvU*S~fe6A7\nFWxO[A<@B0,EX[<1C+bX'H@`p;,HRWy@1GOC2ํ BezPV+AmjJO:R=?R%D0p[0,•U\O-C*>M?n<E=GJ'Sq4$AHUxc#6R?SD7H\y@56%6Q3Ja^pL&@]yB	Rv`q-*+b<%@?<0@`wk=>:=an,GNVS1O;\oX8:O{_NC>8CN>+^OW[g?&&6B—+0A}p ๛ og<8+/~-SHfu92G~0!0wH>A/"nO+hrsq]&6BkLH3HZ ตC%],๛ %bVM@(mPn4atSMQ6LA#'TW`G;ALYyf'&?CCUj%61ce:32UrD%5>gazQg&<WZ:qZ<'LJ<E•_68%:Hb<+b..;%$Eww_1<|l`V,M=6ZQH00gc_/;_9C#]AWa>;R8O70<%:–{:1'*wRJczOLu:.ý 6GD@+:9GQOK?7^wBEu[H56CIzF;L=13R+=]B:vL-JSix36D[l3<*2KitpQ`nZX-14+HGe=:gaG&'I@FKAf;LFoQK+0/UB78p6+MF~B$M{eA/Nคo8rV}.๖ gมN#
+]zW+"_oUQ*7(a–c2#`ีX!5l>eL+:O[MS$8?PI*"LeSR*PeI,B34^J):HY@?7Q<RV
+#๚ glx`G.Ehdj4)Hฅ8Q.<%[c16GK/5eaUOe=P<#+KGT:#OUSH1wu[;!E[yUW#UgV,/&8H^XW2Pvkm* lc9TT7\cWt0?NmojB@:1&I!>,B7L7O\bI%+?s$(-8_o;.PxL>&"5PH@๙ .๗ €ฆ€.^1T=`JW""_จB;[UZ0IcrB,>`ฌZ=!cCe'&+<8VD4=db.#๗ OuxBa{k@๘ <fs:%26SS;-;avg5<D1\U>c+]vnJ–•z 
+RBRM2UtTM;7 H|W&R2Vd€rhM@f;fBB0=M^:tD3h5HS3ญf;@$EจwG+YMpdMBB6=#4Lvxc2๘ ;’h<i3E45A%ศฝt๗ ๗ VsI&”UVG wd'ÿ $0ISj!๚ L8]8BE\vn: #N^HC&=Z“][4fJL\JhA3>\uSO.=C-d๛ SI||&+K]Drx\.*{Pþ /[phฑS"Aช๕E.\Sc2,9qQU8ln`0-LBh@{[sB!&CZ€j-CPv2+?g>LFQxc(7eWW'(4;Z]*!!7d|r.!+Dl]TFBUTE--%MLL/7&9LFESxDX4(FO8D=Y.Z5)Eฉ‘`#Eqz/ERbeN39a~-U<5,X”[5;!E^LHcQZvsN@6f:EW(,-V1*<Hrq…L*AQ[6,%(`M%้ Y^_๛ A=3GP`J#,a^+	/heAxnQw=7mV:Q5IJAVS,PW<0W01@()>gB'ý 8?52R/BAADkR:+3P’V8,=F1*$g_e;2?/l€R;5=P{QJAxppPK+ebC7UlVe=D$;^jI961JFHzWM>P`P5V(3iW.
+=S]r~ZjK<B&f<G).C^m*BSPqu7/VSN*FQ$h"•T๗ "lWEBH๊!rBJA16&cBX".vgY:!"gXn0[s^NM2R@!7vpd-M=,ZVKD#T‘I# &x{\[\g1V:EGu>>,V=(KC7ab6/ Vl]<]M;NX:þ 7bshg@<Y(“หจ/CRYR%!(U\lU"A&I>;<(%RjMVGþ 4eC7T%_5N\bก0P;D*QlO"WC<5S}VU5Arso2fข]8'Q-y’_%"^OU#>a€aD8H:tfWE}Y:H(Qv8//`^@O;,EFapKE9UEUF H]_F+!.&~]Q,CBd+G~}=>mฝฆI1P:,I>*[Z}G,pxnKOM๒ `ag9๘ p`l.+N{_:4c1$&^h–{O(VO):GbsP%W5McH".ธ—n@X*1;)F8qbhb5Jetv/!-nWx3pSญY6>Yj/58@bPO	7<QacK+G{TqFIKm;@F…นU0
+X\VX16CPnH.DMBx TH[N{€E%.a=F๕ *b"+oZL>];V…E
+[ZกYS+.0b7B@~5v”0!>cx*'@b’QpYd7/&Avp#Ubc,G7R;R6VJLGLp"7L16>\>"ÿ 4s\4pL^N@":`lX1/N_m{7W…H?87Ep_5&(Tnop2๋ .vNW4=$c‘X3D(UZJ8Pc`K6MjI]!3>M\H๓ 'r[;\N\k8AI|q@4ü 5RX2•…=W1Y`,;S-WnTX5U`€^S9&$u95LVZ"?‘ฃ^C5,SvU$NGPW!#frp5ÿ B,LZR0,mk[&CHoA(F"Gw`:1W_X[P3?qi:7<{`c btOD%OPkpHCDpbM_}f"6]\mb'Q}n<<A@HM?bujPq}Q-15m`!\SdA'&]>s2'#?b•G8•sD*\dsI2)6MNcrH<7SKLCGV’S>0bคw\;B2:U87U^S9JF\akdt_`LX>jE'6BMesÿ HK‘L@ý -PSwM+03B]x`g<?`s@.%T]obMIQ]dU3<mnO?5EfjGH3\p}B/@WF,*+Rma;8=?Lf:/*dOZS2,`?98=W^S70<rzs.?@9Zh6>(h€O#8r{V 8h[`.=1……O5;FC]u[€>&GGJP@HH$TvJ,&#nHR}3.ฒซo0ZN(5%EjH8X.[c<_>|”Q<'@[vkZSW-KI1Eh–>Q83[8k22ML6!Zlk_
+Gnr"2lyX?$0K?>X7qpCW8_;6>MduM-Y<GฃUzAk€จ!qึQ,^`?-'b:A"Mcl73G“gV(?+<Rjq tE.:E LHUBQ@p/??@"B3`UbmuOp4,"-Fs—h"BwJ1(<<a*๓ eW`Y/fOBJde*!Hq€N#7~tN@kQ?;,#Vy1$#Y_I+'OuTfW*Otn+.B}c3Jco_J/Isgf1>F17_>5(8X_{[L]=H4ObgACXiX#1Oi`,ý qด{;#cK~P52cglyQ;Q1&Bงs&%Un{S5-RM6s/๕ hcณR;P=T:C%Fvl-?1o^N$<=Czf2+>TUQFS•x+$L<q '[h?0+C€‘TK?]a5327KkM##%Uha0@7DRw^O<PW+*)/6þ PsWD5FX|U	5wvm63L>ุ_$P~\- "CxO5++vT4T1HZL:HQ-_Thr\[r6"$5RYD<Zq–-u]2(-O•qFMVP><	7q] !2a…o:(AoWrHE_<?[%1>Sb_D-<<5]SZ 1Nc7@"QdUiR;;4\JF
+ J1U4Ex8d0$rBe!F!pzk6qH&G=1G-L8 5JงlGau62E'/No^@^&Z’-7:u]_?8H.b\:`ข|(RQB:ZQ€]'4–RL5:@<s6$8Kช=44A}…nTUSQ5R/7nzn"CkG:Ct53zs?2(@=hq1 IVp55LL_C. *OYN8bH=GR0SdFQZT2!aKL22:SrI)D6=F7NAHDf8/0+5XHV=8a’Xk'-CgL)DA;B=/=OZ_D)CO|TIb S="/JMUWr26#MoPZ%J\Ho8$%=lU95,g/๚ #JghP#=ตiToZQ<>%w_ ý \wดI/0jbE6#nงaU*FKGPRLt+2K>h~S'O^“C6#NqZ9
+WjG7.,>VlRL :{…65QCbO'@JgbW;B!kaeU,?\OT*FJklAAFcxMg$G?WQ]}y€fH<UPEX&JURD]1:\bREE;Na^S <o/2JETWALk['9<unHG:5bAMJm}B+W_d|OB[[Q&<]q6F7,*`mWdcQXRK3JLWRSE%TNL}=?@TA4;8AHrO%b"Mg7 <s0? .^qP[kfdL!!?nD}MJ/,lRlQ?:eYR…ซc'G{X."5Xzi@/.Lp?)<Q•"#+UPH38RRakQ๑ Vฝ1H7oe68CP -+eZ,9(TBi?MOgW$FQ\UF*W{LA@5;ฐH\3'Gp”>aSsG[Vw5([vQ/v\<I!๊ ?tคP/*BK9:๗ ?ฃ“N 6WงDEE`.8P)5^_]UB*A’”63)TVH`V1Uo^*;cLA=8tE#AxtP@6ot`+;a^\0 .J…n[&e9\KeMmg6.XKE[}Q@OKm3jt}>LvWF@<”t0<fkC8g7qR(*7lu?hu_B?uC*$?N_C#\ศP/'<Fถ}_๔ %2'/A(wฒcCC7`[[ý ÿ G็2๙ 2HQ;XE*8!t00J}gO?DOgu>aM0ฏ…Wý 	!C[]ORQ@|[$&!-+SCWK?[CPlht%DWZ_WxU78K]AU-"|o*qV331|@…qgUEGfwO2.4_f/RwmnD.:;]BVkK€^L@lOIEVG|l_'PDPUEþ Gow=./>1X…s&:B]Il7eZn,H0{79 1,w '3V\(",l7DEญy๚ =b^€="HtqO%IMk=B40}bX.ü *`;:!+:{k>"$AqcP,@~…UE#f`1๖ %B…qง/8Pa|GlUene%E@Qmกq&/9mw\7>Vq\1-ก;<@ZF=505aoL&4Hc}eU7ü sSG๚ @}@#'Q`'39U{€2O@fk@P`/J$;OฉฃA๒ .I€_JLZGR:9mn2=
+&9GvLR'&fงe."G7/h- DeW,agyoac.3Fc`)<zKX+aL?*3C6kh@FAM`D_7Jao,A"ฟ<*Wo*CuบBM-2l; _—k9vqc#3Iฑk2!W\x:@<FดฃX8V1UgV?AWcV)}\T@.tZ5I*csh4-)@+@NQ]xm(A1An8<@mWY1ü 
+Et•xJ3;EL	4JaGK8L…qo.<P}v'NWPNKba–b'$T;P?F!eJฒzF!F\9WHE_QZKbDsg>WVOV3,0B@UHI& Xฐu9`aLhTจTH5*Tg+97-8ฦPC:BWqG=aj>"EV]|R&O`]K+14KM^1P+wG<+>=s.-P=hRx?!5RS0D,+UuHK?3%5opIE,8HgLA]qnmH4þ 1*jj6$f}5*alG๔ pS[]P%Ddaa/YGF3*2LUฑb|FDL?G5+aEKbf71ktwCZ+[JB$]xTNA@QZSa!:BU?0IXgDQ^wr$.-G^RZ#/QEb.&Ns{q#!;\-)6&nG~:I!AUg/<8:cVHAFLjh?!ü .` uGO&[cU&D-V0(`]Me?6lgM8g}-a"c_U%#o~E/K?SK@H-=YwlL0;^M}T@A/1N>Z}vp%Cก-3>:AzoP4EIPCCQ;!#;p–j<4<kNE0XpnpK?@unOÿ Y“…@BRprp1('MU2+cGaO&/KexV€t{C$282O>=\X(	>5jc7,4<=VbI*J==V:JPkJ/2G:D_(Sm`jb%cU )1U’j_0hR,:_TBY–e:'#]\qZ6*WF0Q|“N8AeBJ7&?’f.1F?Ww.KPj`M4-U060&VZO!DDIT</Mxwu@F&KHgA'5VpฃN%7E{Xþ QoOG0;_2a.4oh/->`v^I6o6@O_O@0=QMM/4’SEBFe~gF>pgl/H|\w%1GkFL-ilq@DX2(nf96-NR|4'7|jOXIW6ffE>0A`O^4;cR\?BHข’&?Q;F(BX…R7-=f]O8prJ2>C[[]P ?gmN"FeWpGX2WWk?AMe`NffJ(Eh\WA<7h/(/FtSM87?W777[<f_2" QpW9-YLaTGLPO&,My{4'Fc`Z*5E8n`/%lwG1.kJVQ#UฃXn3@OaIý FS]W!b`Cbจ=-'RfpK-,6mU๐ 4hc"gjZNAFSIL@OQR_A=+<UH^]>)PHmF>=L66"xr`'PV>บV*ZbPH68niT6'C^KKB4Boq0-{Hx}Z*- W\_'7•J9Ue40QWxgQRsFEJhqG3*F3CY05€•]E&4jO$!`Q{\9CaG@-9#FxgP€Z{zoH:SgJu]9:/09Y{V3,0SASNF#.Kn+&@?xdR)!Ghh7,ZUe]k.4"lb—PG:,B<HBkOT๘ Cgขq94pฐx1+"`Tü -#oั@5LamK1	DV2:_DD/Qooc4_€WW+OPV4#2O``[:;8hU:KSBmo >p€v5:ศnL9๘  ATdC:"VuS+"Iwa@%#uWo|.EG:b of>E*9/a.JRl!Ay`@)?_U@YxmhBgb4Xtd"(7vx;$ þ HuC;F.q|@"4lo?o“68wL#๖ "DtจL4, ag<3_Zr<301zoBFF`:60QnvKd# &9cK7NB5X\Z019`eHAMjXg;Q]<'![2fqU>D];:A'#)mhฎ<ZSOWJ3):Q:BC(S~uH.f]c>)+Iฃa@<}pfE(LBO`4	AฌgS'-Zwc~h3[]Z0þ P“bJ-_ cG @3xงh8๛ *WP)$,bax=M\>0hF2g[E๗ -lcS:0!QgF/0;[ฑnL.7qe%
+qc\<(.LH69R6VN(,rgVC>\]H(%QW?&;_uz+DocP*+%C\dVvR\++MyJN2B7UฏA:8sWU2-ztK*8J]lG5/[— U=MW5F68”C4:[hA2>SP(p๛ /]s2QLT($1t}JH>>]L'*UE6W/aUN,20%S*XKqH5GWฏEH,o'*`lFL2,-@`zZN->plV%.=kt5#2:bVOD-|BppJ7UtX.;kv#VSQO%;lsS?HAjX)/4ZWU-AJ{aW AJ[*%d>Ab@3C==qBV8 qg(:Rna>EHhO0##ByKVK+4(Z}n?1Qฅl*X1_a0k…JEH1Wep5&%;w@K5E#
+-x uBL3[sI.>/^5W/GAcT Wu_B "OIn:>u/*NJ[F1HQkZ([ocZ97ama!B~\^>2=m&๛ 47*PT*>Feฆ]?Ck]EEkU'V ถB"XJC3Iyp1QLB80SRjH!#’G[51VญoI9r•^,*3N}nJ0^_๓ 6^ k,๒ |rP.X__;E'#'ofj'L%*‘}=U๚ KmP@P08ZjXY#3B`JX57I_LE(z`iZ+cS>þ 7\[E8r\VFQRQR<WjO8#Aข…_AK<cR[. <(qbP(<=\h:#>Mk]:IhPqL.&;fl5SO/ttQ*@oRR+;tx9jsr=_6&๛ ý ]'"PRq[E/?Qro32(FกqR(7?r\[B"c^?2:…l^E-U^j4D@[[s/3Qosd3>.LHEkP`MD3EKAM1MdV+ Fh`7!0&I$<H€p@U0=`E.@q{Q 2a>d<1U…(8ClO=I|>Ih-W<A(VPmý  t[pyI&AWvJ"P\”ดU3๗ HHQI-,g=5#]O,$l^\SLSRqW;@H~{g(e\A4 KuMqM(กtE4I@WLF"h]Scn($pr…RKM'J_-?—m-+^M%ÿ V[€mq6*<K^+-oHJQ+Qฝr'wKซC<gWD,!`{I84AZ]W'3bJ}-<I k1@>W4(X}z{H*RMdO+B\aE+'nmZ'/'dX1'`ch7'.3#+nwoLJPNKb,+K9}IO
+Sdb_TbvJ?7s'KBJ_L$\hK:N,;WLTI?*_akvI8D-0.>/=ZQd0#F^T{JB;k|hF0>FaI6O'’twA2
+hWA%aVW  Own_LCZx@0:#>Uv_-'-@s€h=1+f“6<zbI8DS4!E{J1H>FAHXX.]๚ *Avg+-kwSKXkeE5M”rcE+3Q.-๕ ?x<*,P4_GmP#<FZC%:?SS0,EQ’e?ü C.fhfL>\V5uTC*'2o^B2Yo_[AjK51B@$`tI#0+Hre/6TQB?".w~K4?9a”a#YV^.0%nv5!HcrbG^'gtvR/Pฌz@6;p\h“l_๘ Þ !LKmM@]hL:=)ablb5,`nO5\.DI]hE7M}SCBBFM\W(blDP*LZ0`G*;6H*+2K>W-%%Tuk<'PDjy(-IO<@V?45RN ,96`x!-[mXdY*BXR2,?]J$-0?nU.F/4wg\'4Z^XV*4w\F;0!NF^I6 (Qzq^4T2$@1S€Q^rMvjH;.w}vA*eu!1jdญH&ZD,.
+F`vo.
+/UMKFnnd[S41Hng<7CCe.+:oU 3#Kr<n"O(@26JขL๓ {S9-2\fZb*[{6}d4>`PE;’N8*6nwV05`OB&๑ 8Jฝ}!XhO5[g
+0[(=\:-XVHPXhs€U>)1>#q~^C(0cbPHhqฒzDG)<Xc>AoงF9&f403;6BaK5@\|DPA'-TnKaK.a|L4B&/”i7l\;ฆ5!"3jvr*<RbKG?8pOF6HZlG51ZG!M$1WN;cW|)JR71,[PC`OEG\,+NกcV!KZ4ý EV2c=+AQ=3M”N`@,`h<(๒ "XฎtV,2\T-T>3'Jc`þ c—F<t[Fÿ 9@8sz,5*<S]G(b|L[&Le9&5?+wF$,;hXYY&`@.CkVL*#&k_sY^<ID_C130‘Y?7O[:3.#HNUB93P9nJC>P\XdR@8JppC9F*%UjU`E05k;"Flv•G๔ rlY`G.{ch/,{~<0.9aA2;f_<6?LkJP-';QC2@0V.&;j24XGT;J}V,๘ OL,:!>7OlL7IZJ?-SVงR,)6Bce>!"p}s]7L<D5]E(+`}E,%TSI8K!Wq<Q{vc.1'M2L,,U…XS*C|N9KVNG. $qL:E%7S_#W2TLE$(boc,%(lSb8ÿ MD?xkScm6B[Qj&&*?UฌEXI<D5- ScZQY>HplJB&]|lXL2OL:0t<'?MIE0WGlxL.2LL<G+Inq3"QeySF%#_VcH>QN\%(VU8|tWL^”S;2>\QI.]OD%6Ne'5Lz_W 2Zg]Q?ZnRJF0&;HA\_+þ U}xeBI[f?(T|A-
+Ec{&\plJBQob&HSFm 81oขU(/6[OMXpcSE4">eจL.RfLVE-:NQjBXEJ7D]#(?HM<+6>€“t$8;^Aa Vo€[?>Zk[B5U"R‘R$'QwK f–q,?/:l4`6cxW*!5BX^C33\ZeB4Ywf_,/0WIUXKR?d]`xฆaAZoHW,๙ OSwX'๒ '`mf8Gc–W>UZyน0@-@k "Rn•\32iตn*%jซQ=-x7I5MbNP2,-0i@5DUuB<
+>Q`}X?L-cQ%'E?\`^HS<{A9Op`clQ:|<b4F,uT@43h7tJ'F_ฑ',/jGgcA-D7:D=_K3I/gpC-73I(&5!;o`:u1C5?C88//oXX-4@9eOa+(jxO7/,f.,M.#V@{p2(eM_(&6n\{E’_8'AdN^?RxMK(4]=sLKNDhV +€XmKAwhV5->axO,22SKBgaRF367cHq|G
+5,JFRTFc+A/an:"Iu>"!`eK)"5sj@Wd’[& ">RR>it^*"\p—fKL%O@W(525f\HK5%7:MC<9o]'8kbp_[[BGf &%kSS`TTQ:8ÿ >€ฎP8*.Tek@0#`sdM,5]mg%$QTU?B.41BnB>4Pa>>$es—l@VDY7&<  HD@JW:!R`dq=30Hopc7:aA/P6\N\H5xco๘ @^gym&๏ Hfjc(,hM~hO9D]d1	O[O+8rTha@T'gz?I+7fpEI7H8kJQDC=dw+,Z`u]0(NrbN38I\IG'Wquu,&BNhe*,MญS8:NV`EgLE>jg&/$@`WB#+h—w%KbQ<[0Nw_>ENl\><n^BjRiP:o=c51bpk2._WP!zC&=n]4๑ ;X7HOIIt=e;#?oO<f0EJA:POd/4lH}qJR
+?8`d.3edO1(Naf[L:_eIEkWbN$lb0%`~jQ.5C[“uW-{woD3APmN@A7@S($?*SR_&m<VRIKO-]AuKD+!aNT7;:_H7EE‘~7K1rDA(<ZE1.WbrF;=!ZkbA<;p]j2KUML.NBwmH"LVrV[6^a8ü 4‘g[;<LU?65HScm0๘ 7fjb~10BKwAý IU\q'JV[:–C =SuW5P nฮN#*VmUHC1&joM(LOr]S=*Me)๚ Mm^=LWR>2Ae^,.%kyAGd?K:[R—#@kv/_ช[1M:zJ8(+fz…3?!<<bzL+/NThK:=3XjD,'KQK€EH42kbjp@68HT3|YLQ+PXeS3;Rj=!1=JJ*!@Khl;(F[ญ6X(GI5't…~`3NO0[\4>fta0+0[ntS!MZ*dJ?5[\II*7?Oq6"L~“gE <]Va=34Qmeb20@FPebXHbR]5+4esTjH+-N\L%-KMZ@/EPN`-3FL<‘1!\]&(J|M6ZSEgk\=71?V:pqU&HgM],_WB,	1VcgW. (;|p8;TN`<^]%Nr_C%XrP/%op?8OIGO}X,-Adw@HP5AQR)TQ–GOMZqM?akaXTC8]U;,aGkMV-OLH,6ku…R3N<ToU>N=`_?/^qR;"8UaH	8UPW"W”…2&"TiRRT/RMUNF'jhhd-4TX[O#.WjFTW@IKT9?7%?HcdA(/.Xd‘pXH`R/C=FUWR$.Xec' ![…qJ>RJ5c=QQ _mS40K_e~VG]C7%=[tT9,:R\MJ!Cht-(Z^D#YtK:EG07$9Ms\53i{G003\eA,@g_*]>#e]:aH,cF05>aiปF48D8Q424zฤ\0)LI!]Lsj$ )Pkd]1KdF0]TGÞ ni^7GWwe{T•zS8?\}D$]]ms,๎  8zLIN>u&HZ&l5d;?sbC
+"3MOTn\#)WT?0๗ [lhKHE1HPw\10UJ?}lKXX'1PLeocU6M==o;Fc^X"8][[>E+H=oc\<3jO'MXb9X0E;',1OPuL*&p6ACoh<=2b1K6(- (E:E0\A\>=;]+BIฒg2$,=Bk5&*^|J#GN^>#(+Xnp."8Z~KBU[S[๛ &n{,!S^k๙ #P0!b 4dL$%CxxAAUwrNKQ|X"\T:@…}uA7F\F1T.7ma-<QSX#B]}T='>0_],<+IbXvq8JdJ3'0!Ri`KT^LR53 5[`=R)G4UNMBOF`{C//&m?{]BNQBQ#Mj}y3/?W:I(a”ด\25YI8%LFMD/)@p[RRRhq<BP0+^%3]lQH=:5;Q,HN;TOl\$f]l-(:tqG> Pn\4ÿ ']”Re2Q}4$%>m]M/&J_tS=
+2]fe'B.[u"\MR+;KU<7JFHm`0;Sx6>EX1#b{vL^&(eYJ?1N\n:/ 2Gfd]1mT>=WSF;QAA%IPY2Q3C_I5FZP\=)>ae/:VL	W=^A<_gqQ:*GwwNS8ÿ %{”pO?Ud[>)"GSj;<<L|E ?jO 2XOSN+NG\@6)NXgCdFSJdXF:1C?KFNKwBE]:_ฝ^+#djC3xPl1WlJ*&P_hF73NgA1Xh[6 Ys:&I=t;*:h/4gTaDIh].7]sxM(E?dV449jh6H<;KA|0BEhua2Oq`H0PhH`1K>cR(,TSWIRLM;1J.NO%0Um5)\_S=#QOh’:>?BdA7ÿ {ฅN0#PA<0/;PHK@VLPL6?a[k=Y,*(c4T!'za<+]aDS%bun0%j“R14\>b|\6๛ _{…<B5N;6(0Bg{\4*Jnx7-0\งrU1JcN#SDAnlF0LSnex,1ZPMN,%Zg{P8EB~J#5kB;8hYeZ\h;BWXMAH…`[H^R5$} J0?LC{/Uof>G81#Gmk2ZFgh58(G{ฆ]eU;V((,UC`lMEESiWC6*XcfPV^+P`€zJ1gFN[A2=M<&mtQC;=m&tK?EฆnJ3oZH0)?YX&_\W@@"0f_@dFFJ;*a9:Ip–Z/AHf#Q~oAX?':lPqI?9ifURP3L_b"(/2`f8A.`]3>9Wl6H2:MรtT>T$ณ?B3HeNG=^_BทF@…aI-5=^_Rd`.mI]G-4CZF@G*JeSM2>uiZ?E,GWq<8AnaX0=[ฆO>4K9;f6^JV?;jgZ7v“QBB;\?C-4=J^id>AFoVD1:`:@'Efg,"OjZ;T`Xg/<ROE@#/Zทr><CSE,*0VQMoC>HM’/;PKn7$HN]_7'/n@UZ3<aR0#!Skd,þ ,4A $nvý EYVA2lfc;c:S8M20fL*?^IJ7;6XL@&PjLZZKHN(qhgcb/ý @DXL>31pw0S8A[ณ@@SD4&OฃV:1Cx)O3N_JI5(\P[v'G]`'๗ 1]-๚ &$^F€|RL*5RpZ@[RYQ3SVgM,.+-~~N<EmbILM\d—a,0,WhNK57vh=><Hoo@QT^=O1!8`^b+D{|B F=vO"8sHQN+;FX…]3<HLV%E3g`VHGG`2ÿ B7gxโ e4fCIc.OaZ9&Ql๙ Tl0+77Y;: ;qS[,#5epk60uH8K>—sN๔ [ก\24um=K/OB€H!S&^us๛ ce@;xBE,๎ NsPpr}AGX2S8?A€b]7lkK2Tแดแดใด็ด์ด่ดไดแดÝดÛดÞดเดÝดÛดุดุดฺดÜดูดึดำดิดึดุดุดึดาดฯดัดำดาดำดำดีดืดฺดÛดึดำดฯดาดÛดÞดÞดืดำดะดึดฺดÝดูดีดำดึดฺดฺดีดาดัดำดุดฺดิดฯดสดสดฯดอดฮดฮดฮดฮดิดุดีดาดาดิดุดฺดูดีดัดฯดาดะดฯดฯดาดิดำดุดฺดÜดÛดูดูดÝดเดเดÝดืดึดฺด฿ดโดÞดÛดฺดุดฺด฿ดÜดีดาดาดืดÜดเดÞดÜดุดูดÛดÜดÞดÝดโดÜดึดำดำดืดÝดแดแด฿ดÞด฿ดโด฿ดูดูดÜดโดใดÞดÛดุดืดฺดÜด฿ดเด฿ดเด฿ดÝด฿ด฿ดÝดฺดÝดโดไดÝดฺดืดฺดÞดแดเดÞดÛดÜดÝดÞดÜดÜดÜดÞดโดๆดๆดไดÛดูดÝด฿ด฿ดแดเดฺดÝดÛดÛดฺดูดิดาดัดาดิดัดฮดฯดิดีดูดีดาดัดึดฺดÞดึดาดะดิดุดฺดีดัดฮดะดีดุดÛดุดาดัดิดืดูดุดีดีดีดูดÛดÝดุดำดำดัดะดาดำดิดีดฺดÝด฿ดเดเดใดใดโดโดๆด่ด่ดใดโดใด็ด๊ด์ด์ด็ด฿ดโดๆดๆดไดÝดิดำดีดึดุดุดึดึดฺดÞดÝดืดืดำดำดืดิดิดำดฺดเดๅดไดฺดำดอดอดฯดัดัดอดฬดฮดะดอดสดสดฯดะดีดุดุดุดืดืดฺดÛดุดูดÛดÜดÜด฿ดโดÛดืดฺดÝด฿ดแดใดโดÞด฿ดได้ด์ดไดูดำดำดืดÜดÞดฺดุดืดืดÜดÞดÛดูดูดÛดแดๅดๆดไดแดิดำดำดาดิดุดฺดÛดÝดฺดีดีดิดึดÜด฿ดเดÞด฿ด่ดๆดๅด์ด๏ด์ด์ดใดใด้ด๐ด๓ด๐ด๊ดใดได่ด็ด์ด๊ดแดใด้ด๋ด๋ด้ด็ด้ด้ด์ด๏ด๎ดๆดเดÝดแด้ด้ดแดÜดÞด฿ดเดÝดฺดุดืดืดึดำดีดืดืดูดÞดÜดูดิดะดำดีดืดุดฺดÛดÛดูดฺดูดีดิดัดัดาดีดืดีดำดำดำดาดำดิดึดุดÛด฿ด฿ดูดืดÛดเดเด฿ดÛดÜดÞดเดโดโดแดไดโด฿ด฿ดแดโดÝดÛดÜด฿ดโดไดแดแดใดๅดๆด็ดไดใดใด่ด๎ด๐ด๑ด๐ด๊ดลดลดลดษดฯดีดาดศดสดฯดิดฺดีดาดะดืดÛดÜดÝดฺดึดูดÜดÛดÜดÝดฺดูดÞดใด็ดไดแดแดๆด๊ด๋ด้ดไดเดใด็ด่ด้ดๆด็ดใดโดแดใดเดÞดÝดÜดแดÝดฺดÞดใดใดไดใด฿ด฿ดÝดÝดใด่ดๅดÝดาดะดฯดาดิดึดึดÛด฿ดไดใดÝดืดีดืดฺดÜดุดำดฯดิดูดÝดืดาดฮดาดึดุดึดาดาดำดืดÛดเดÛดึดฯดอดฮดะดำดะดอดัดิดีดาดอดสดอดัดีดุดำดำดุดุดืดูด฿ดได็ดใดÞดูดฺดÞดÜดืดฮดษดหดฮดะดาดฮดหดาดีดิดึดาดอดศดอดิดืดืดาดัดำดืดุดุดีดาดิดุดÛดฺดืดิดึดÛดÝดเดÜดิดะดีดÛดูดูดุดึดฺดÝดโดๅด฿ดฺดÝดใด่ด็ด้ดๅดโดไดใดใดแดโดใด่ด๋ด๋ดไดเดÜดÜดเดÞดเดÞดÜดแดๆด้ด๊ด๊ดๆดโดเดโดแดÞดÛดÛด฿ดใดโดÝดึดำดึดÛด฿ดโดÞดีดัดัดิดีดิดำดำดัดาดำดิดีดัดๅดใดโดได่ด๋ด์ด็ดใดÞดÝดÝดเด฿ดÝดÝดโดๆด้ดๆดแดÞดแดไดโดโด฿ดฺดูดÝดÞดÜดุดึดุดฺดฺดฺดืดีดิดีดำดำดำดำดีดฺดีดืดืดาดาดำดาดัดฮดอดสดษดหดฮดอดะดฮดษดหดฮดอดหดษดหดัดืดÛดีดฮดฬดัดิดืดูดืดำดุดÛดÞด฿ดÜดฺดุดÜด฿ดโดเดÛดุดุดฺดÜดูดึดืดÜด฿ดÞดÛดืดึดูดÝดÞดแดÞดฺดÛดÜดเดโดไดÝดÜดÛด฿ดโดใดๅด๋ดึดะดำดูดÞดเดÜดฺดÛดแดๆด่ดๆดได฿ด฿ดๅด่ด้ด๊ดแดÞด฿ดได่ดโดÞดÜดÜดเดโดใดใดโดแดๆด๊ด่ดๆดโดÞดÞดโดใดÛดฺดÛดÜดแดๅดเดÜดÜดÛดแดไดได฿ดีดิดึดูดÜดÝดÛดÝดÞดÝดÝดÞดÛดÛดÝดÜดÝดÛดุดึดึดูดฺดืดีดำดิดึดูดืดีดฯดัดีดืดÜดุดำดะดะดิดึดฺดุดึดุดฺดÞดÛดึดำดาดุดÛดÛดึดฯดอดาดุดืดืดิดำดิดิดุดÜด฿ด฿ดแดÜดุดÜด฿ดใดๆดÞดÛดÞดโดโด฿ดÛดฺดิดูด฿ดเดÝดูดึดุดูดุดีดิดีดฺด฿ดÞดฺดีดาดฺดโดไดใด฿ดÜดฺดÞดใดไดๅดโดÝด฿ด฿ดโดเดเดÜดÞดโดๆดแดÞดÞดแดโดแดๅดใดÜด฿ดโด้ด๑ดํดๆดเดเด่ด๎ด่ดแดÝด฿ดแดไดใดใดเดแดใดใดไดโดูดุดÞดใดเดÝดืดำดึดฺดÜด฿ดูดิดฮดิดูดฺดืดีดิดฺดÞดÜดูดืดืดูดเดเดÜดูดิดีดุดÛด฿ดโด฿ดๅดโดแดโดๅด่ด็ดแดÛดÛดÜดแดโด฿ดÝดÜด฿ดโดๆด฿ดฺดูดÞดแดไดÝดืดืดีดฺดÜดฺดึดีดึดูดÝดÜดาดฮดอดาดุดืดิดัดอดฯดะดอดสดษดฬดฯดึดีดิดฬดศดหดาดิดะดฮดสดหดอดะดฮดฮดะดฮดฯดาดำดฮดฮดะดิดิดืดึดิดำดึดÛดÞดเดÜดÛดÛด฿ดใดใดÜดุดีดืดูดÜดÞดุดาดัดึดูดุดิดาดิดฺดÞดโดÛดุดิดิดืดฺดูดึดึดืดูดÝดโดไดูดีดีดีดึดุดุดึดำดิดิดืดีดุดืดิดิดÛดÝดÛดูดิดัดาดืดÜดÝดิดำดีดึดฺดุดฺดุดุดÛดเดโดเดÞดÛดÜด฿ดเด฿ดูดืดฺดÛดÝดÞดÜดÛด฿ดได็ดแดÜดฺดูดุดฺดฺดÛดืดึดุดูดุดีดีดึดืดูดÝดฺดีดาดาดีดÛดÛดุดิดำดิดุดÝดืดาดฬดษดหดฮดะดัดะดฮดัดำดำดัดฯดัดืดฺดÛดืดีดำดิดืดÜดูดีดิดิดืดฺดÜดูดืดิดาดำดุดÜดุดแดÜดำดาดีดืดิดิดิดีดำดิดำดัดฯดฯดาดำดาดัดฯดฯดฯดะดัดืดาดอดฯดัดาดำดาดิดำดิดีดัดอดสดอดะดัดฯดฮดอดฮดัดึดูดืดึดิดูดÝดแดใดืดิดึดืดูดูดุดุดฺดÞดไดใดเดฺดึดืดืดÛดืดึดำดาดีดุดูดืดึดืดูดุดีดัดฮดาดฺดÞดÞด฿ดÝดÛดุดึดฺดÛดาดฬดฯดีดุดÛดีดฯดอดฯดาดีดัดฮดอดะดึดืดืดำดัดาดำดึดÛดÝดÞด฿ดÛดึดิดูดÞดไดๆด฿ดืดุดุดÝดÜดูดุดÛดเดๅดเดÝดูดÜดÞด฿ดแดแดเด฿ดแดแด฿ดุดำดิดุดูดูดืดืดีดืดุดุดฺดุดุดÛดÜดÞดÞดุดึดฺดÜดÛดÜดูดึดาดะดาดาดะดาดืดÛดใดÞดึดฬดวดศดสดอดฮดฮดะดึดÜด฿ดเดÞด฿ด฿ดได๊ดโดÝดืดึดÝด฿ดÜดีดาดำดัดัดำดีดัดาดิดุดÛดÜดูดาดฮดัดิดุดุดืดืดืดำดืดูดÛดุดÝดใด็ด๋ด็ดำดไดแดฺดืดูดเดไดไดÞดÜดÞดแดโด฿ด฿ดแดๅด็ดํด๎ด๋ดๅด฿ดแดๆด้ดได฿ดÞดเดๅดไดแดÞดÝดเดใด็ด่ดใดแดเดเดแดๆด๋ด้ด้ด้ดไดÝดÜดุดÛดÛดÞดแดฺดิดิดีดืดÛดÝดÜดืดืดÛดÝดÛดีดีดืดÛด฿ดโดูดิดูดÜดÞดุดืดีดฺดÜดูดีดัดัดัดำดึดฺดิดะดิดูดÝดฺดิดะดะดิดืดÜดÞดÛดุดืดุดูดÛดÝดืดิดำดืดÝดเดÛดูดิดืดฺดÞดใดÜดÝดÝดืดิดึดÜดÞดÝดฺดุดำดึดูดึดิดะดัดิดีดืดึดัดิดูดÜดÜดีดิดัดีดฺดฺดิดัดะดำดึดืดิดาดำดีดูดÛดุดีดิดีดุดึดฺดูดึดุดูดฺดฺดÜดฺดึดฺดÝดÝดÝดÝดÞดÞดเดไดไดÞดูดะดิดุดฺดืดูดูดูดเดโด฿ดฺดำดำดืดฺดÛดืดิดูดÜดเดเดÞดุดีดูดฺดÛดูดำดัดัดำดาดฯดอดฮดัดีดูดÛดเดÞดุดึดืดูดูดืดำดะดาดืดูดำดะดฮดอดฬดฮดะดีดำดัดะดีดืดืดะดหดสดฮดาดุดึดาดอดฯดำดÜด฿ดิดษดวดฬดะดำดฮดหดหดอดัดำดฮดสดศดหดัดีดัดอดษดษดะดึดืดะดสดษดอดำดืดีดาดาดึดืดุดำดอดฦดภดวดฯดิดาดัดฯดฯดะดฯดสดสดฮดาดูดึดีดาดัดึดÛดÜดืดฮดัดะดะดิดึดืดีดืดืดฺดÜดุดิดัดฮดัดีดิดีดีดืดÛดโดๅดÞดืดิดิดูดÞดÜดฺดึดีดืดÝด฿ดฯดใดÜดึดิดืดÜดÝดÞดÜดฺดุดÜดÝดÞดÞดÜด฿ดได็ด่ดๅดÞดำดึดÝดÜดÛดูดฺดฺดÝดโด฿ดÛดาดำดึดูดืดฺดฺดึดูดÜดÛดืดิดาดืดฺดÝดฺดืดึดูดÛดÛดูดึดัดัดึดÛดÜดุดีดัดิดุดูดืดีดืดฺดÜด฿ดÞดุดาดาดึดืดึดาดะดัดึดุดีดัดฯดิดุดÞดใดโดÝดฺดฺดฺดÜดูดิดาดัดึดÜด฿ดืดะดฯดัดีดืดาดะดาดุดÛดÜดุดิดาดีดÛดเด฿ดืดเดÝดิดะดฯดีดุดำดะดะดีดÛดÝดÝดุดำดำดืดฺดูดุดีดีดูดฺดูดึดิดีดุดÜดÜดฺดีดฯดฯดิดืดิดาดาดึดูดÜดÛดิดะดำดึดืดืดีดำดึดืดืดีดึดีดึดÛดÛดÝดÛดิดำดีดุดÛดÜดุดำดาดิดุดÛดÛดุดูดÛดÞดÞดÜดึดาดิดืดÛดÝดึดิดีดืดึดฺดูดำดฯดะดะดะดฮดัดะดาดีดูดฺดฺดึดีดูดÜดÞดÞดืดิดีดืดืดุดืดืดืดูดÞด฿ดิดแดเดÛดืดูดÝดโดÛดูดÛด฿ด่ด็ด้ดๅดใดเด฿ดแดÞดÝดืดืดฺดเดโดแดÜดืดึดฺดÜดÜดÛดÛดÞดฺดฺดึดำดาดืดูดÜดÝดืดะดหดฬดฯดาดาดะดฮดฯดัดำดำดอดสดฮดำดำดาดะดฯดฮดาดุดฺดุดิดะดะดิดืดุดะดอดฬดัดืดูดึดำดาดำดีดืดึดฯดฯดัดึดืดืดีดาดีดÛดÛดีดาดัดะดีดÛดÜดฺดืดฺดุดูดÛดÛดฺดุดฺดÜด฿ดÞดฺดัดหดษดอดฯดำดหดอดฦดฦดษดฮดาดิดัดฮดฬดฮดาดิดะดอดฮดิดูด฿ดโดÝดำดีดÜดโดโดÝดีดีดูดÝดÜดฺดึดีดฺดแดๆด่ด฿ดุดืดุดแดโดเดÝดÜดูดฺดÛดÜดืดืดÛดÝด฿ดฺดึดิดุดืดิดำดำดาดำดุดฺดูดะดหดฮดอดัดำดฮดษดศดฦดวดสดศดฦดศดฬดะดัดสดลดมดมดวดศดสดฦดลดฦดษดฦดฦดศดลดลดษดฬดหดฦดภดภดยดฦดฮดาดอดสดสดอดฮดาดิดัดฮดัดีดุดสดษดวดศดลดมดรดรดมดผดธดปดพดฤดวดฦดยดยดมดลดสดรดฟดภดรดษดษดสดฤดปดพดภดฦดวดลดลดรดลดฦดศดวดลดยดศดอดะดัดะดฮดฮดาดิดีดึดีดีดูดฺดÛดูดืดึดิดำดิดิดีดืดูดÛดÝดÛดึดีดีดึดืดุดูดึดุดÞดเดโดÝดุดืดÛดฺดÞดÜดูดÜดÞดใดได็ดๅดÝดÝดเดใดไดโดุดหดฬดัดึดุดึดิดืดÛด฿ดูดึดึดุดÜดเดÝดีดฮดอดอดะดฯดสดๅดใด฿ดÜดูดฺดÝด฿ดÜดุดึดีดืดืดีดำดำดาดีดีดีดึดำดัดาดาดฮดษดฦดฦดลดศดหดหดษดศดสดฯดำดะดฬดฦดสดอดัดะดฯดฬดลดวดฬดสดวดฦดษดฮดัดฮดสดศดศดฮดฯดอดศดษดวดศดสดวดรดมดฤดษดฮดะดฯดสดฮดาดึดุดิดฮดฬดอดัดืดึดาดฯดัดิดูดÛดÛดูดูดฺดÛดÝดÞดÝดÛดÛดÝดแดโด฿ดÝดฺดÜดแดใดโดÝดฺดฺดÝดÞดเดÞดÛดืดืดึดูดิดีดืดืดึดึดฺดÝดÛดÛดูดืดฺดÞดÜดÜดÞดÝดÞดได้ด๊ดๅดÞดÜดฺดÝดÜดูดึดีดีดูดÛดÛดีดึดืดÜดÞดÜดูดำดาดาดูดืดาดฬดสดฯดืดึดอดศดฦดหดฯดฮดฬดสดฦดฦดษดฬดฬดษดษดวดสดฯดัดสดยดลดวดฬดฮดะดอดฦดฟดยดลดรดมดยดษดฬดอดฬดวดฦดษดฬดำดาดอดวดฦดหดฬดอดอดหดสดษดวดษดษดษดสดอดะดิดีดะดฮดาดีดืดุดำดฯดฮดฯดิดึดาดยดยดฤดภดมดฤดรดฤดรดมดภดยดฤดฦดศดฦดฦดฤดฦดหดฮดอดฬดอดฮดอดฮดอดฬดษดษดฬดอดสดฮดฯดะดาดิดึดิดำดัดำดืดฺดึดิดำดืดฺดÜดฺดุดิดึดึดฺดÜดÛดฺดฺดÛดÝดÜดืดำดฮดฯดฯดะดฯดฬดฮดัดำดีดะดอดหดอดสดหดหดศดฦดลดศดฬดสดลดฤดวดฬดฮดฬดศดลดฤดฦดวดวดฦดยดภดภดมดรดรดยดภดภดรดฦดสดษดฤดยดฦดหดฮดอดวดฟดผดธดถดฝด฿ด฿ด฿ดฺดืดีดึดิดำดึดืดึดุดืดำดัดัดะดฯดฯดัดะดฬดหดอดะดฯดหดศดวดษดหดอดสดวดฦดวดษดฬดฬดษดฤดมดยดศดษดศดลดรดรดสดอดหดวดวดศดศดฬดอดศดษดษดอดึดึดฮดษดสดฮดาดุดืดาดาดูดÞดเดÜดืดิดูด฿ดได฿ดÜดÜดÛด฿ด฿ดÛดÜดฺดÛดÜดÝดÛดืดิดึดุดÛดÞดÜดุดิดัดีดูดุดีดฮดฮดาดำดิดำดฬดสดหดหดหดฬดษดลดยดรดฟดฤดฬดฮดะดฬดฬดฮดัดำดาดาดาดืดำดีดืดำดอดอดิดุดÛดÞดูดีดิดีดึดีดืดÛดเดโดไดÝดึดิดีดึดิดะดะดะดะดาดำดำดำดหดอดฮดาดาดะดฯดฮดัดีดืดาดะดะดาดำดีดาดฯดฮดฮดัดะดฮดศดวดฬดะดฯดัดะดศดฤดฤดฤดวดศดฦดษดฬดฮดะดะดฬดศดลดวดสดษดสดวดยดรดฤดษดฯดาดฯดฬดฮดฯดาดฯดฬดฬดะดำดีดาดาดาดิดึดึดืดูดูดืดึดึดÞดฬดฬดฬดฬดสดอดฯดะดะดอดฮดฮดะดาดีดีดำดัดาดีดิดีดัดฮดฯดีดูดึดะดหดฬดอดฮดหดษดวดฮดึดÞด฿ดูดิดาดำดีดีดะดอดะดาดีดุดีดึดึดÜดÜดูดฺดีดึดืดฺดÜดÜดืดิดะดฮดัดีดิดัดฮดัดีดฺดฺดฺดึดึดฺดูดฺดูดุดึดึดึดฺดีดฯดหดฬดฯดอดหดวดวดศดวดศดศดลดวดศดหดฬดอดหดศดวดษดหดฬดฬดลดลดฦดศดหดหดฤดมดภดฟดฟดพดÜดÞดเดÜดุดุดฺดÛดÛดุดีดาดึดูดุดิดฯดฮดสดหดอดอดฯดาดิดืดุดุดิดฮดหดอดฯดฮดฬดสดอดัดาดอดศดวดฦดหดัดิดิดาดฯดอดาดีดัดฮดษดหดอดัดำดัดฯดอดสดฬดะดฯดฬดอดาดีดึดำดัดฮดัดะดาดัดอดษดษดหดฮดหดหดสดฮดำดืดฺดืดาดฯดำดุดืดิดะดอดสดสดฬดฯดฮดอดอดาดึดึดาดฮดอดฮดำดาดอดวดษดศดฬดฯดัดสดฦดลดหดอดศดัดิดะดษดวดสดฬดอดฬดสดสดฮดำดืดิดะดสดฬดาดืดึดืดิดะดาดะดัดฯดอดหดฯดึดูดุดิดฯดะดัดิดีดาดฯดฯดำดืดฺดูดำดฬดหดฯดฯดศดลดวดสดฮดิดืดำดฯดฬดฮดอดฮดฬดสดฯดำดึดืดิดัดษดษดฦดวดฦดศดสดฬดะดาดัดะดอดฬดาดีดีดัดะดำดำดัดาดะดอดหดะดิดาดอดสดวดศดษดหดสดวดวดวดฤดฤดยดรดรดฤดฦดศดสดฬดลดยดภดมดรดฤดฦดฬดฮดหดษดอดฯดะดะดฮดหดสดอดฯดฯดสดศดฤดลดวดวดฦดฦดฦดอดิดีดาดอดสดษดอดฯดฮดฬดษดศดสดสดสดหดหดสดฬดฬดฯดหดศดสดอดำดีดฯดอดฬดอดฯดะดาดิดำดีดืดาดอดฮดอดฮดฯดฯดาดำดะดะดิดีดึดีดะดอดัดาดำดาดฮดอดฬดะดัดาดะดฬดหดฬดอดัดำดฮดอดฮดำดีดาดฮดสดษดฮดำดึดาดหดวดศดอดฮดหดษดลดฦดศดหดสดลดฤดวดษดหดะดฮดฯดฬดวดลดฦดลดฦดวดลดยดลดสดฬดหดสดวดฦดวดวดษดวดลดลดลดศดสดหดลดยดภดยดรดลดลดลดลดศดศดศดวดฤดมดฟดรดวดศดวดมดฤดษดฬดฬดษดฤดฟดรดหดฯดอดษดษดสดฬดัดำดฮดหดหดสดฬดสดฦดหดอดัดำดาดฬดวดษดอดะดำดฯดอดฮดำดุดฺดÜดแดเดÞดโดเดÝดูดึดีดูดÛดÜดÛดÛดฺด฿ดแดโดÞดึดฬดสดฯดีดุดำดัดำดฺดÞดÛดูดัดฯดะดิดวดืดึดุดึดาดฮดฮดอดฬดฯดฯดฯดำดุดฺดูดึดำดาดำดิดำดัดอดสดฬดฯดะดัดาดัดฯดำดิดึดาดอดษดสดอดฯดฯดหดสดอดฯดัดฯดอดษดศดลดศดศดลดฤดวดวดฤดยดรดลดลดลดวดวดยดฟดมดยดฤดฦดลดภดฝดพดมดมดยดฤดฦดษดหดอดศดรดพดมดฦดษดฤดมดพดพดมดมดรดลดรดรดลดวดษดฦดรดมดฤดษดฬดฮดหดฦดลดศดหดสดหดษดวดฦดสดอดหดฬดหดหดอดัดฦดษดยดฟดพดยดฤดวดสดศดฦดลดยดฟดพดฝดนดปดฝดรดฦดลดฤดฦดศดหดฮดฯดะดอดฬดฬดฯดัดฯดฬดฬดฬดศดลดลดฦดสดหดอดฮดหดหดอดฮดฯดาดาดัดฬดฮดะดอดฯดัดฬดหดอดฬดะดฮดหดฦดศดหดสดสดศดษดฬดฯดัดะดอดษดฦดฦดลดรดยดฟดยดฤดวดษดสดฤดฤดมดรดลดมดพดพดภดรดรดรดฤดลดลดยดรดยดยดพดผดผดฟดมดยดยดยดฤดฤดภดมดลดลดมดผดถดฝดุดÛดเดÞดฺดืดุดÛดÞดÝดืดัดำดืดิดัดหดฬดาดูดึดำดศดลดษดฮดอดสดฦดฟดภดฤดสดษดฦดศดษดสดหดฯดฮดฦดยดฤดศดหดสดฟดฝดมดลดวดรดรดยดมดรดวดวดศดลดลดฤดวดศดศดศดยดมดฤดศดฤดฦดรดมดภดยดยดพดฟดมดรดรดฤดภดฟดรดศดษดฬดอดษดสดหดอดฮดฮดฬดสดฬดัดูดืดาดอดหดสดอดฯดฬดศดลดลดวดฬดะดฯดลดลดรดวดฦดษดวดฤดศดสดฬดฦดสดอดฮดฬดศดศดษดวดศดศดวดษดอดฯดฯดฯดอดฮดาดาดะดฯดฮดฯดำดุดีดฯดสดศดสดฮดะดฮดหดษดฦดวดอดฮดฬดหดฮดะดิดืดึดิดาดาดิดีดึดัดฮดหดฯดาดฯดอดอดฬดษดหดษดลดรดภดยดรดรดภดผดนดนดธดบดปดพดฟดยดรดลดฦดมดฟดภดยดรดภดผดฝดภดลดฦดศดลดภดนดผดภดยดฤดมดฝดพดมดลดลดมดภดมดฦดษดหดสดษดสดัดิดูดิดอดหดหดษดหดรดมดรดมดภดฟดฤดฦดสดษดยดปดพดฟดมดภดภดพดมดลดษดษดวดรดยดฤดศดษดวดมดฟดมดลดลดวดรดพดฟดรดฤดฤดวดฦดวดษดหดศดลดฦดสดัดึดืดำดฬดษดอดำดิดาดอดศดวดหดำดีดำดฯดฯดาดีดืดึดิดีดูดÛดÝดูดึดัดำดำดีดุดุดีดีดีดุดืดัดหดศดฯดิดิดฮดษดมดลดหดฮดะดะดฯดฮดาดำดาดฮดอดหดหดอดฯดฮดษดฦดษดสดฬดหดวดยดพดปดพดำดุดÞดÜดÜดูดูดุดฺดÛดฺดึดืดิดีดึดาดอดอดฯดฯดฯดศดลดฤดลดษดอดฯดษดลดวดหดสดวดฤดมดรดฦดลดฤดลดลดศดสดอดฮดหดวดลดลดฮดะดสดฤดภดยดฦดษดวดษดฬดอดฮดาดิดฬดรดฟดลดอดอดสดลดลดศดฬดวดฦดลดฦดสดฮดาดฬดศดฤดวดอดัดีดิดีดาดิดฺดืดึดุดึดืดุดูดืดาดฮดฮดำดีดีดำดัดาดึดืดึดัดษดวดฦดษดหดศดษดศดวดวดหดฬดฮดาดิดิดฮดฬดหดสดฮดฯดะดำดิดฺดูดืดาดอดฮดาดีดิดะดฬดหดฮดัดอดษดฦดสดะดำดาดหดหดฯดีดึดีดะดอดลดรดลดวดรดทดธดผดยดฦดฤดรดยดยดรดลดรดยดฤดยดยดลดยดฟดผดพดภดฤดรดรดมดภดปดพดยดพดปดฝดยดฦดวดรดฟดปดฟดฤดวดวดลดมดผดผดฟดรดฤดยดรดยดยดมดฝดผดพดมดภดรดศดฦดฤดฦดสดฬดฯดฮดฮดฬดฯดิดุดุดืดัดอดษดาดมดรดลดลดยดภดฟดฟดมดมดภดฟดยดลดษดศดศดรดมดฤดฦดษดสดษดวดวดฬดะดฮดสดหดหดอดฮดฯดอดะดฯดิดึดิดึดีดึดÛด฿ดแดÛดิดัดีดฺดÞด฿ดฺดึดืดÜดÛดÛดฺดึดีดึดุดืดำดิดัดาดัดิดิดะดฮดัดาดึดึดิดำดาดะดฯดฮดษดลดฤดฤดฦดรดลดฤดรดฦดษดฬดษดวดศดหดฬดสดศดฤดภดผดภดมดยดพดพดภดรดวดสดฦดมดบดบดฟดฦดหดศดรดผดผดฦดลดศดสดหดหดฦดรดยดวดษดฦดรดลดสดฯดัดฮดศดฤดฤดรดฟดฝดปดบดฟดรดรดฟดฝดฝดพดฟดฟดพดฟดฟดพดฝดพดฝดฝดพดมดฟดมดยดรดฝดธดบดพดฟดฟดพดนดบดภดยดรดลดวดวดสดฬดอดฮดฮดฬดษดฬดฮดะดฯดฦดรดลดศดษดสดสดอดิดืดืดีดัดิดีดีดูดืดำดาดำดีดืดึดำดฬดสดสดฯดัดฮดษดวดลดฦดษดวดฦดฦดหดอดอดสดสดศดฦดศดหดอดหดฦดยดยดศดาดีดุดูดุดืดัดฯดฮดฯดะดอดฬดฮดอดฯดาดฯดศดวดสดอดฯดฮดอดศดฬดสดสดษดวดวดหดสดหดษดฤดรดฦดษดสดหดศดลดวดหดหดสดฤดภดภดรดมดภดปดบดฝดยดฦดศดฤดฤดฝดทดนดผดธดฒดฒดถดพดรดยดภดพดมดรดษดหดฦดนดปดธดทดปดปดบดผดฟดฤดวดมดยดมดฦดสดอดษดฦดยดฤดวดอดัดฯดฮดสดฬดะดีดาดฮดลดรดวดฦดฦดศดวดศดฬดะดาดฮดหดฦดฤดัดวดษดหดหดหดษดศดหดะดฯดสดยดมดลดษดหดลดมดรดศดฬดหดษดศดศดสดอดอดะดัดำดฯดฯดัดิดฮดฬดหดฯดัดัดำดะดอดฮดะดำดาดฯดอดฬดฬดหดฬดหดศดษดฮดีดึดึดฮดหดษดฯดำดาดาดาดิดฺดÞดูดอดลดลดฦดสดสดศดวดสดอดัดะดอดศดฦดศดฦดษดศดศดษดสดฬดฯดฮดสดฦดรดยดฦดวดรดภดฟดยดฤดฦดลดฦดวดลดรดปดปดฝดบดฝดภดฤดฤดยดพดฟดมดยดฮดฯดาดาดะดฮดอดฮดัดำดฯดหดวดฤดศดหดวดยดภดฤดษดฬดสดอดสดฤดรดฦดหดษดษดษดอดะดาดะดสดวดวดษดฬดอดฬดสดวดฬดฬดฯดหดษดสดหดฮดัดะดหดหดฬดฯดฮดหดษดษดสดสดสดหดษดฦดลดวดษดศดวดลดฤดศดฮดฯดฯดอดฮดัดิดีดุดีดำดะดะดิดัดาดฯดสดหดะดาดอดลดวดษดษดฮดัดสดมดภดรดวดวดวดษดสดหดอดอดสดวดมดยดฤดศดฦดมดพดผดฝดอดอดำดูดุดำดัดะดฯดีดำดัดฯดิดึดืดึดอดษดฦดฦดสดฬดสดหดฯดีดุดึดาดอดศดลดวดศดศดษดสดอดัดำดฯดหดษดหดหดฬดหดษดษดฬดำดึดฯดศดรดรดลดวดษดศดษดหดฯดัดฮดหดศดลดศดอดำดำดัดฬดษดฬดะดาดะดฬดษดฬดัดิดะดฬดรดยดฦดษดหดหดวดษดหดฬดฬดษดสดศดฮดฮดะดฯดอดสดฬดฮดาดัดฬดหดษดษดหดฬดฬดษดวดศดหดัดัดอดมดฟดะดรดศดอดฬดสดลดลดรดวดษดสดหดฤดรดลดฦดฦดฦดมดผดฟดรดยดภดมดมดวดฬดะดหดลดภดฟดยดฦดษดวดลดฦดฬดาดิดะดสดรดวดหดฮดษดษดศดษดศดสดสดลดลดสดอดหดษดฤดรดมดฤดษดฬดฬดศดษดสดฮดหดสดฦดมดรดลดฦดรดพดมดฤดวดสดศดภดพดปดภดลดฤดยดยดฤดฦดษดษดลดพดปดภดฤดษดศดลดยดภดยดยดฤดยดรดรดยดมดมดมดมดภดฝดภดมดฟดธดนดปดฤดสดสดฮดิดึดัดหดศดสดฦดวดลดฤดลดษดอดอดหดศดฦดศดหดสดศดฤดฟดฤดศดษดศดฤดฤดฤดลดวดวดฤดภดมดฤดวดฦดยดฟดผดพดฤดฦดยดภดฟดมดรดฤดรดผดบดปดผดพดฟดฝดพดพดยดมดฟดฝดฝดมดฤดศดสดฦดลดรดฤดวดสดหดสดศดษดฮดีดุดิดฯดฬดะดัดะดะดฯดฬดฬดฬดอดศดรดมดรดษดฯดัดะดฮดศดอดัดิดฯดวดภดฟดมดยดฤดรดมดลดลดฤดฦดฦดยดฟดฤดวดหดฯดฯดฬดฦดรดมดฤดฦดษดวดยดรดฦดษดอดอดฬดสดฮดีดุดิดฬดวดฦดวดษดฬดหดศดลดศดฬดฬดฦดฤดฤดฤดวดหดศดลดภดฤดสดหดหดฬดสดวดฬดฯดฮดหดฦดรดวดหดฬดฬดษดศดหดอดะดฯดหดศดศดหดหดษดวดฦดวดวดวดฤดมดรดศดอดฮดะดฬดศดลดษดฮดัดะดหดศดษดอดฮดฯดฬดศดศดฬดอดอดสดวดฬดะดิดีดิดฯดฬดาดีดืดึดีดัดฮดาดุดุดีดัดำดึดัดัดะดฯดะดฮดสดศดฯดิดีดะดสดษดหดฯดำดีดฮดสดศดฬดะดฮดฯดฮดฯดาดึดิดีดำดีดืดฺดฺดุดะดะดีดูดฺดีดาดฮดะดาดำดัดฮดฬดฯดัดำดะดัดฯดฬดฬดอดฮดอดอดฬดฬดฯดาดะดษดฦดฦดหดอดอดฦดมดพดฟดมดภดยดมดรดษดฬดหดฦดภดฝดผดพดพดฟดพดฝดมดศดอดสดวดยดภดฟดพดผดฝดผดฝดภดรดฤดลดมดฝดรดศดสดษดลดพดพดภดฦดสดสดสดฦดสดีดึดุดฺดฺดูดิดัดฮดะดัดฯดหดฬดฯดาดัดะดฬดษดวดศดอดฮดอดสดษดษดอดฯดหดวดลดฦดศดษดวดรดรดศดศดหดษดลดภดภดยดฦดศดศดวดสดอดะดฮดสดศดษดหดอดหดฬดวดลดวดษดฬดสดษดศดฦดศดสดษดษดสดสดหดฯดฯดฬดสดษดหดะดาดฯดสดวดวดศดสดสดษดวดษดอดะดฮดษดรดยดฦดสดฬดศดฤดรดศดฯดัดฮดฬดษดสดหดฯดสดลดลดวดสดฬดหดอดหดศดลดผดผดภดรดลดฦดยดภดฦดสดหดวดวดฦดษดอดฬดษดวดษดหดฯดฬดฬดสดฦดศดฬดะดะดษดมดฝดภดฤดษดษดษดศดหดอดฯดอดสดสดอดหดฮดฮดหดฬดษดฬดฮดศดยดภดมดฦดศดฦดพดนดถดบดภดภดผดทดตดนดพดพดภดปดตดทดผดรดลดยดปดปดบดปดฝดปดผดนดปดพดฟดภดพดภดรดศดษดฦดยดฟดฤดสดฯดฮดหดฦดฤดวดอดัดำดะดสดวดฦดษดสดสดฬดอดหดอดษดวดฦดฦดฬดฤดลดฦดศดษดฦดมดภดรดวดวดฦดลดฝดปดยดฦดฤดพดพดยดฦดหดษดรดปดฝดภดฦดหดศดผดผดภดฦดษดวดฤดรดฤดวดฬดหดฤดลดวดสดฯดะดฮดอดฮดำดึดึดฯดฬดสดอดฯดาดาดะดอดสดฯดำดฮดสดหดฮดฯดฯดัดัดะดฮดะดฯดฯดสดวดศดษดษดอดฯดิดืดุดูดึดีดัดฮดหดษดวดศดฬดวดษดอดัดะดฬดลดยดฤดษดหดลดพดผดฝดภดยดมดฟดนดผดภดฦดฤดลดรดมดฦดัดฮดะดิดีดิดฮดฬดฮดาดำดะดฬดสดอดัดำดฯดษดฤดฤดฦดศดฤดฤดฤดลดศดหดศดยดฝดฟดรดฦดหดสดศดฦดสดฯดาดะดฬดหดสดษดอดะดะดอดสดอดะดำดำดะดฬดอดฮดอดฬดษดฦดฦดสดอดฮดสดลดยดฝดยดภดฝดฝดฟดภดฤดวดษดฦดฦดษดฬดฯดอดสดวดฦดฤดรดวดษดวดษดฬดัดาดฯดฬดอดฮดิดฺดฺดึดะดอดัดิดำดฯดฬดะดีดÜดูดะดสดลดฦดฬดฮดฬดฦดฟดสดะดฯดาดุดฺดุดีดาดฮดฮดะดอดฬดฮดะดีดูดูดำดษดลดษดอดฬดหดฤดฟดฝดฟดฤดฦดฦดฤดวดฮดฮดษดฟดบดฝดฤดสดศดลดฝดปดฝดผดพดปดฝดฟดฤดศดษดลดรดฝดพดฟดมดฝดปดนดฝดฟดมดมดผดนดผดรดฦดวดฤดภดพดฝดยดฦดฦดฤดพดบดฝดภดภดมดพดพดรดศดศดลดฤดลดหดฯดฯดสดรดภดฦดหดอดฮดสดฦดฦดศดหดฬดฮดสดสดฬดัดิดำดะดฬดฮดิดÛดÝดÞดÜดึดปดธดธดฝดพดพดผดฝดมดลดวดรดฟดภดฤดหดฯดฯดหดษดสดฬดะดาดัดฬดหดฯดำดีดัดฮดสดฬดัดำดิดีดหดษดฬดัดาดฮดฬดฮดาดีดึดาดษดวดษดหดอดษดศดวดฬดฬดฯดฮดหดฬดหดสดษดฬดษดฦดลดษดอดสดวดฦดภดภดรดวดษดฦดฤดลดศดหดษดฦดภดตดนดผดฟดผดนดนดผดยดลดฤดพดธดณดณดณดฑดฒดดดถดธดผดพดปดนดผดฟดรดวดฦดมดพดพดรดษดหดอดสดฦดยดยดยดผดปดผดบดนดผดฝดพดพดผดบดนดปดฝดฝดฟดฝดผดปดฟดยดพดปดฝดฝดภดฟดฝดบดทดตดถดทดนดธดทดธดผดฟดฝดฟดพดยดลดฦดยดฤดฟดมดฦดหดฯดสดรดฤดรดฦดศดฬดสดฦดฟดปดพดรดลดยดมดฤดลดลดวดวดสดษดษดฬดอดสดรดภดยดลดลดยดรดลดฤดศดสดสดฦดฤดรดรดฤดลดพดตดถดถดธดดดฒดฏดฐดฐดฒดถดนดธดถดนดปดพดผดณดฎดฑดดดตดตดถดธดฝดิดฯดอดัดิดึดะดฮดฬดอดฮดะดะดฬดอดาดีดืดืดะดะดฯดาดาดฮดศดฤดยดยดรดยดรดยดลดสดฬดฮดหดฦดยดฤดศดษดวดภดปดปดภดฤดลดฦดรดรดฦดษดรดพดบดบดผดพดภดฟดฝดนดปดพดมดมดพดปดฝดฟดฝดผดบดนดปดภดฤดศดศดฦดลดศดฦดลดฦดฦดฤดฦดฦดฤดรดมดภดฟดยดฦดฤดรดมดยดฦดสดฬดหดลดรดภดรดฤดวดวดสดฬดหดหดหดฬดลดฟดมดรดฦดศดสดฦดฬดษดฬดฯดัดะดสดษดฦดหดฮดฯดฬดศดวดศดษดษดษดษดสดฯดัดาดำดัดฮดอดัดำดำดฯดอดอดหดฬดสดหดฯดฬดฮดอดฮดฬดหดวดษดฬดะดัดอดหดษดหดฬดหดสดฦดลดศดษดสดลดรดฤดลดสดอดวดภดฝดภดลดสดสดศดลดรดษดหดอดศดภดผดยดวดษดลดยดมดยดลดวดยดปดธดฝดลดษดษดลดฝดผดพดยดฤดรดมดมดฤดวดหดศดมดนดทดตดปดฝดฝดธดถดบดฝดฝดพดฝดฟดฬดษดษดหดหดสดฦดยดฤดศดสดฬดฬดฦดลดศดหดฬดวดมดภดมดศดฮดอดสดษดศดสดอดฮดฮดสดศดษดอดฯดัดอดศดศดษดษดศดลดฦดศดษดสดศดฦดลดฦดลดษดฦดฤดภดภดภดฦดศดศดลดฤดวดษดสดวดรดฦดฬดอดอดษดลดฤดมดฤดฤดฦดฦดฤดภดฤดศดวดยดฝดนดบดพดฟดฟดฝดพดผดฟดพดฝดผดปดบดพดฟดมดฟดฝดผดพดฟดฟดภดพดผดบดพดยดฤดฟดนดผดฟดฟดฟดผดฝดฝดฬดษดวดสดหดอดศดลดลดลดสดอดฮดฬดฬดอดฮดฬดลดภดภดรดษดอดฬดสดวดรดรดวดศดวดลดฤดศดสดศดฤดลดลดวดหดฮดอดษดฦดรดฦดหดสดวดลดฤดรดลดลดฤดยดมดฟดฟดรดยดยดมดฟดฟดภดรดยดยดรดลดฦดวดวดรดมดฤดมดฤดฤดมดรดวดหดฮดษดรดยดรดศดหดหดวดฦดฤดรดวดศดมดฟดพดยดศดหดฬดฤดภดฟดฤดวดวดยดมดภดลดศดฦดรดมดภดมดลดวดฦดฤดฤดะดวดฤดศดษดรดฝดปดพดยดวดสดวดรดภดฟดยดพดมดมดฟดภดฤดลดวดมดบดฝดยดลดฤดฤดฤดฤดฦดฤดลดรดฟดพดยดหดฯดฮดรดผดปดพดมดพดบดผดยดฦดศดษดฤดพดฝดมดฤดวดฦดฤดรดลดวดวดฦดรดผดปดปดมดมดพดผดมดรดลดฤดยดภดภดลดวดศดยดมดมดยดฤดฦดมดภดพดภดรดวดษดรดผดผดยดศดศดวดฟดปดฝดมดมดภดผดภดฤดสดอดฬดวดมดฟดลดหดอดหดฦดรดมดมดมดฦดฬดฬดลดพดฝดฟดยดวดฦดวดวดหดัดำดษดภดพดยดวดษดฦดพดผดปดผดมดพดมดรดยดลดศดวดลดรดมดลดฬดฯดฮดวดมดมดศดฯดะดษดภดฟดมดฦดลดยดรดมดภดมดมดฤดมดพดฟดมดลดษดวดยดรดศดหดอดอดฬดษดอดัดาดฯดฬดสดสดฯดัดอดษดรดภดฤดลดลดรดมดรดศดสดหดวดรดมดฦดหดศดรดภดมดมดรดมดภดฝดปดปดฟดภดมดมดมดพดพดฟดฟดพดบดพดศดลดมดฦดสดหดหดษดศดศดษดหดฦดฝดนดฝดภดรดยดฟดพดยดยดฤดมดบดธดบดฟดฤดฦดฤดภดปดพดมดรดมดปดทดตดถดทดณดณดทดบดผดผดนดดดฒดดดทดปดผดทดถดทดบดฝดผดณดฎดฌดณดทดธดปดผดฝดฟดยดฦดรดผดบดนดบดผดบดธดทดปดภดฦดวดบดฒดณดบดผดผดฝดพดธดทดทดนดผดภดพดฟดลดศดศดยดฟดพดฟดยดฦดวดฤดภดยดมดมดรดฝดทดตดผดมดฦดสดษดฦดปดผดปดผดภดภดบดธดปดพดมดรดลดฤดฤดฤดสดหดสดฦดมดภดฦดษดสดวดฤดภดยดวดศดศดวดฤดษดฮดอดษดมดผดปดภดยดฤดรดมดมดรดวดหดวดฟดปดฝดรดวดฤดรดลดศดหดษดหดฦดมดภดภดมดมดภดผดบดผดภดยดภดผดพดลดษดษดรดภดปดฝดฟดยดฤดมดผดภดมดมดพดพดบดถดตดทดถดดดดดฒดณดธดบดทดตดณดถดธดผดปดบดธดธดพดวดษดสดลดพดปดปดพดฟดฟดมดอดศดลดศดสดษดษดษดวดษดฬดสดฦดภดผดฝดมดยดมดบดตดถดนดผดพดยดพดธดปดฟดมดพดผดฝดมดลดศดลดพดนดผดภดลดฦดฦดผดถดปดรดศดษดวดฤดภดลดศดศดฦดรดยดวดสดษดสดฦดศดษดหดฮดหดศดฦดวดฬดฯดฬดวดศดษดฬดอดอดษดลดฦดษดหดอดสดฦดฦดษดฬดฬดวดยดภดมดฦดหดศดฤดลดสดะดำดิดฮดสดยดมดรดรดยดผดบดฟดฤดรดยดภดฝดผดภดรดฤดลดยดวดภดฝดภดยดฤดรดภดฝดภดยดมดผดธดทดฝดรดฦดศดยดปดผดผดฝดฝดฝดพดภดฤดวดฦดยดมดรดลดวดลดมดพดผดฝดยดษดฦดฟดฝดฝดฤดสดสดวดมดฟดรดวดสดษดฤดพดภดยดลดฤดมดปดฝดยดฦดวดศดฤดภดภดลดลดรดฤดฤดวดวดฦดผดตดดดทดฝดมดรดฝดปดบดปดบดผดบดบดฟดรดลดยดฟดฟดฟดฤดศดศดษดฤดฤดรดวดสดอดสดยดพดภดฤดฤดฦดศดฤดวดฬดฯดัดฮดฬดวดลดยดพดรดฦดลดรดภดฤดศดหดสดฤดมดภดฤดศดษดลดรดยดลดษดฦดยดยดมดรดลดฤดฦดยดฟดฟดมดรดฤดมดผดผดรดษดอดศดมดฟดฟดลดษดสดวดรดลดสดสดอดยดยดฦดษดสดสดฦดยดลดสดัดำดฯดฦดยดมดฦดฦดศดสดวดษดฮดาดฮดศดภดฝดภดลดวดฤดมดภดลดศดหดษดยดพดยดลดษดสดษดลดฦดฦดศดศดฟดทดตดปดฟดมดมดบดดดทดนดปดปดทดถดตดถดถดดดณดถดฤดฟดฝดผดฝดพดผดบดผดผดฟดทดตดฒดฑดญดญดฎดฑดฐดฒดถดธดนดบดทดณดฏดฑดทดธดนดธดตดดดธดปดธดถดดดถดพดฤดรดภดธดณดฒดดดถดปดฝดฝดภดรดภดฟดฝดผดผดมดรดฤดภดผดทดบดภดมดมดพดนดนดฝดพดฝดบดผดปดภดฦดฤดมดธดถดนดฝดผดฝดพดฝดฟดยดภดพดทดฑดทดธดปดผดบดบดฟดภดมดภดพดบดธดตดนดผดบดนดธดดดถดตดตดดดฒดดดทดปดฟดฤดผดฮดหดษดวดฦดสดฮดอดฦดรดรดษดอดฯดศดฦดรดฤดหดศดษดภดพดผดพดภดฟดพดภดยดฤดวดษดฬดยดฟดภดรดรดภดผดนดฝดพดพดปดธดนดฝดฝดผดนดดดณดทดบดนดธดถดตดถดนดปดปดธดตดทดทดธดตดณดดดตดปดภดมดยดปดธดบดฝดฝดฝดปดปดธดทดบดปดผดปดฝดฝดพดมดภดปดบดบดภดฦดสดฬดศดหดอดฯดฬดษดศดสดฬดอดฮดสดศดวดษดฮดอดษดลดมดมดฤดหดฬดฬดยดภดผดฟดยดวดหดศดยดพดภดฦดสดอดสดวดศดฮดิดาดำดัดฯดฮดัดึดีดำดัดฯดัดะดฯดฯดาดีดืดูดีดฮดฬดษดศดษดสดหดฬดฮดัดะดฯดฯดอดสดสดฮดะดอดสดวดฦดลดศดศดยดยดมดฦดฤดภดปดนดธดทดนดธดทดตดณดถดบดบดบดทดธดผดฟดฟดผดธดดดดดธดฝดพดผดนดดดตดนดปดผดบดบดบดฝดยดยดมดฟดมดลดสดสดฦดรดฟดรดฦดวดฤดฟดมดฤดฦดหดฮดีดบดตดทดตดบดฟดภดมดฝดนดธดบดปดปดธดถดตดถดทดธดตดฑดฑดตดผดพดผดทดฒดฒดฒดตดตดฒดฑดตดนดนดปดบดผดภดฟดพดผดธดธดฝดมดรดภดพดพดยดฦดฬดฮดสดลดฦดหดะดฮดาดะดฬดหดฯดำดัดหดสดฬดฬดอดฬดหดฬดหดฮดาดำดาดฮดหดหดอดฮดหดสดฤดฟดฝดฝดพดภดรดวดศดศดฦดยดพดปดพดฟดนดฒดดดนดปดผดฟดฟดบดทดตดธดธดธดณดฐดฑดฑดฑดฑดดดฏดฯดอดรดฟดภดรดฤดภดภดมดฤดษดอดฬดษดฦดรดรดลดลดรดฟดฝดยดษดะดะดสดฤดฦดวดวดยดพดบดบดฝดมดมดพดนดบดฝดผดผดนดทดนดฝดภดฟดปดถดนดฟดฤดยดผดทดณดณดทดนดธดบดนดบดปดธดดดฐดฏดฒดนดปดฝดปดทดนดปดพดฟดฟดฟดปดปดปดผดฝดฟดฝดพดมดลดฦดฦดฤดรดลดศดวดวดฦดฤดวดสดหดวดฤดภดพดฟดฤดวดลดยดฦดสดฬดฯดฬดวดรดฟดภดภดฟดภดสดษดวดศดฬดาดะดสดวดฦดวดฬดฯดสดศดฤดภดพดฟดมดมดยดฦดสดฮดฯดษดลดฟดฟดยดยดภดภดฤดรดรดฦดวดภดฝดฟดยดฤดรดวดฦดยดฤดฤดรดฟดบดธดธดนดผดถดณดตดถดบดฝดฝดทดตดดดธดฝดฝดฝดฝดปดผดฟดภดฝดนดตดตดทดบดนดบดธดบดฝดพดพดปดฒดฑดถดนดบดปดทดตดนดมดลดลดมดผดปดบดปดพดฝดพดปดฟดมดฤดมดฟดฟดฤดฦดวดฤดฟดฝดผดฝดยดพดภดมดมดพดผดฝดมดรดฤดรดภดฟดมดรดฟดภดพดพดภดฤดมดฝดบดปดภดลดวดฤดมดพดฟดรดฤดฟดพดผดฟดรดลดลดมดพดฟดพดรดฦดยดฟดบดฟดยดฤดฤดภดภดฤดศดหดศดลดยดยดลดวดวดลดภดมดฤดษดหดฦดรดรดยดยดมดรดมดฝดฝดฟดรดฤดรดมดฟดยดฦดศดวดลดรดรดฤดฤดพดตดฏดฐดตดถดดดดดณดถดปดภดภดฟดนดทดธดปดผดบดธดนดฝดมดฤดฟดผดนดบดฟดฤดฦดฝดฬดฬดษดวดศดหดฬดสดวดฦดสดฯดำดิดาดะดฬดหดสดฬดฬดสดฦดวดศดอดฬดษดยดพดยดวดฦดรดมดมดฦดหดฬดสดศดลดลดฦดศดลดฦดศดฬดะดัดฬดฦดฤดรดลดวดวดฤดฤดฤดลดรดลดรดฟดฟดรดศดอดฬดษดวดษดฯดัดัดัดฯดฮดฯดฯดฮดษดศดหดะดาดำดฯดศดรดรดฦดวดลดยดภดรดลดฦดศดลดรดลดศดอดศดฤดฟดฟดมดฤดยดมดฟดฝดมดฤดฤดพดผดธดปดผดปดนดนดภดมดฝดบดธดผดมดฟดผดปดฟดลดหดสดลดผดปดฝดฟดฟดผดนดบดผดฟดภดบดทดตดปดมดยดพดปดนดฝดมดฦดฤดมดภดพดฟดพดพดฟดพดพดรดฤดลดฤดมดภดมดฤดลดลดวดลดฤดลดศดษดศดฤดรดฤดลดวดมดปดบดผดยดลดยดฝดผดพดรดฤดยดยดปดนดปดปดนดธดนดปดฟดมดพดปดบดผดฟดมดฦดรดยดมดภดรดลดลดมดพดภดยดวดฤดยดพดนดถดธดผดภดฟดฝดบดฝดรดฤดฝดลดฦดฦดรดลดศดษดวดยดฟดฝดยดษดอดฬดฦดยดภดยดฤดยดพดฟดมดฦดษดวดศดวดฦดสดฬดอดษดยดฟดฟดยดฤดยดภดฤดษดอดฬดฦดลดภดผดพดภดฝดผดผดฟดยดลดลดยดฟดมดฝดฝดปดถดฒดฐดณดทดทดตดฒดฏดณดทดตดทดทดบดพดยดฤดยดฝดปดปดพดภดมดยดมดภดภดรดฦดฦดภดผดพดยดรดฤดยดพดฝดฟดรดฤดยดภดรดฦดฤดรดยดภดพดฟดมดลดรดภดบดทดทดทดบดพดฬดอดอดสดษดษดฯดัดฮดวดฤดฦดหดอดหดยดพดภดรดวดลดฟดพดยดษดอดฯดฬดภดฟดมดภดพดปดนดฝดยดวดศดมดบดถดนดบดผดผดพดพดรดวดอดหดศดฤดภดรดวดฤดภดพดปดฝดภดยดมดฟดภดรดฦดลดมดฟดฝดฟดฤดลดศดลดรดฤดฤดมดยดพดบดพดรดษดอดฯดหดลดภดฤดฦดพดปดนดบดภดลดศดษดศดฦดฦดศดหดสดรดพดผดฟดยดรดมดฟดฟดมดฦดสดวดลดยดฝดภดมดฟดฦดฤดศดฤดภดยดรดฦดวดษดศดฬดฮดะดฯดหดลดวดอดาดิดฮดศดฦดฦดหดฬดษดศดษดอดัดฯดหดวดรดรดศดฬดลดยดฟดภดฦดหดษดลดยดลดศดหดวดยดมดฦดอดัดัดฬดศดวดสดหดหดฦดมดมดวดสดฬดษดยดบดพดรดรดฟดยดฝดนดปดฟดยดฤดภดฟดยดษดฬดหดลดฝดบดพดภดฤดยดพดพดรดษดหดสดวดรดยดลดศดหดวดรดยดยดฦดฦดมดฟดฟดมดฤดฤดภดบดนดถดบดพดมดรดยดวดฤดฦดฦดวดวดฦดรดมดรดลดษดหดษดลดฦดฦดฦดฤดยดฟดยดศดสดษดฤดรดฤดวดสดสดหดศดลดรดรดฤดยดยดฤดรดลดษดอดหดวดภดมดฟดพดพดผดพดภดรดฤดฤดฤดลดฦดหดัดะดหดศดวดฬดะดำดัดฮดฬดฯดัดีดำดฬดสดหดะดาดฬดศดฦดฤดวดวดวดวดฤดลดหดะดัดศดฤดยดฤดศดสดษดลดมดฝดบดฝดผดบดนดบดฟดฤดฤดฟดทดณดฒดดดณดตดดดฏดญดฐดฑดณดษดศดฟดนดถดธดฟดฤดฦดฤดยดฦดศดฬดหดศดรดรดยดพดฟดมดพดฝดฟดฤดรดมดนดนดฝดลดศดลดยดภดภดยดฦดฦดมดฟดฟดยดฤดฤดฤดผดธดธดผดพดปดถดณดถดปดภดพดฝดปดผดผดพดฟดธดถดบดภดมดภดมดฟดฝดรดฦดษดฤดผดนดนดพดฟดฟดผดปดบดฝดฟดมดภดฝดพดยดฦดวดฦดมดฝดพดรดฤดยดภดพดภดฤดฦดวดลดภดฝดภดฦดษดศดฤดมดภดยดฤดฤดฝดทดถดดดถดฝดอดฯดอดวดฟดยดฤดศดสดศดฦดลดวดสดวดฟดปดนดฝดฟดมดภดฝดฝดรดฦดศดวดฟดถดดดตดนดธดทดนดธดบดพดผดถดฑดฑดตดตดถดถดดดดดถดธดนดทดบดทดบดภดยดบดถดดดฑดณดทดถดถดถดตดนดผดภดผดนดธดบดปดฝดบดธดนดพดมดฤดมดปดบดบดนดปดปดนดนดปดผดภดฤดภดบดทดปดภดฟดฟดผดปดฟดลดศดศดลดปดนดบดฝดนดตดฒดตดทดผดยดภดบดถดถดทดธดผดษดสดศดรดมดภดรดลดยดพดปดฟดลดศดสดลดมดภดฤดฦดษดสดวดฦดฦดวดษดฤดฝดธดปดภดรดลดมดฝดผดภดรดมดฝดปดฝดรดศดศดฦดพดบดฝดยดลดรดมดภดมดรดฤดยดฟดฝดภดฤดฦดษดลดภดพดมดฤดฦดรดมดภดรดฤดฦดมดพดผดภดลดวดวดฤดพดภดรดยดฤดฤดยดมดรดรดยดรดภดฟดฟดมดลดรดฝดนดปดภดวดษดศดยดฟดฝดภดภดพดผดฟดยดฦดวดฤดรดยดมดลดศดลดอดอดวดรดรดษดฯดัดะดวดรดฤดรดฦดรดภดฟดยดวดสดศดยดมดมดมดรดรดภดปดผดภดยดรดพดบดปดปดพดมดภดภดภดลดสดฬดฦดพดบดธดนดปดบดดดฐดฐดณดดดถดดดถดทดนดนดธดตดณดทดผดรดฤดภดพดผดฟดรดฦดฦดฤดภดภดฤดวดหดฯดฦดยดยดลดฤดรดพดพดพดรดลดฦดฦดรดยดลดสดะดฯดหดศดลดศดษดวดฤดยดลดสดฮดฯดหดวดฤดรดลดวดรดพดปดฝดฤดฦดลดลดศดฤดรดรดวดหดหดฬดศดมดฝดพดลดสดฬดสดษดษดฬดศดวดรดมดลดสดหดษดรดปดบดพดฤดวดลดลดฤดวดอดอดศดมดฝดพดรดยดรดฟดพดฟดรดฦดรดยดภดมดลดษดฮดหดสดศดศดฬดฮดสดรดฟดมดลดวดฤดฝดบดผดฟดมดภดบดทดทดผดมดรดผดนดถดปดยดฦดรดปดธดนดฝดฤดภดปดบดบดภดมดภดผดผดผดฟดรดฦดรดภดฝดพดมดลดวดมดฝดพดฟดฦดหดสดฦดลดวดมดมดทดนดธดตดดดณดตดทดธดดดดดฑดณดตดถดดดดดดดธดฟดฝดบดถดดดถดปดพดผดทดถดธดฟดยดมดบดธดธดผดฟดมดฟดฝดบดปดมดฤดลดรดฤดรดลดรดฟดฝดฟดรดศดอดฮดวดรดภดภดภดมดฟดฝดปดฝดภดยดฤดมดมดพดภดยดยดฟดฝดพดมดยดยดพดบดธดบดนดบดนดถดดดธดผดพดภดฝดปดผดผดผดฟดปดทดทดฝดมดฤดลดมดภดฟดมดยดพดถดฒดณดธดผดบดตดฐดฐดดดฒดฒดพดรดษดฦดมดรดฦดฦดลดยดมดฟดภดรดฤดพดนดนดฝดภดยดรดพดบดทดปดฝดพดนดทดถดถดธดทดถดถดธดปดมดยดฟดปดธดถดนดฝดพดปดทดนดนดนดทดถดฒดธดบดผดผดนดตดตดทดธดบดนดธดทดณดทดบดบดนดทดธดบดปดปดบดนดฝดรดลดฦดยดผดบดฝดภดฤดลดยดฟดภดรดฤดวดฦดศดหดอดฯดสดฤดฤดรดลดษดสดศดยดยดลดษดสดหดฦดภดพดยดฦดรดลดยดรดฤดรดพดลดวดศดยดฟดพดลดสดหดหดวดยดยดรดภดมดภดมดภดยดวดฦดลดมดวดฮดิดะดฮดษดลดฤดศดศดฦดมดภดลดษดสดศดมดทดดดทดพดพดฝดฝดพดมดลดวดฦดภดฝดฟดรดฦดฤดรดฟดภดฤดวดรดมดฟดพดพดพดฝดบดทดบดพดภดมดผดถดดดนดผดบดนดนดบดฟดฦดฦดยดฟดปดบดพดยดลดผดทดดดบดภดรดรดภดพดภดรดฦดลดฟดผดมดลดศดวดรดฟดภดลดสดอดศดรดพดฝดปดฟดวดสดหดวดมดธดบดฝดฟดยดพดบดผดมดรดมดพดผดภดวดฬดหดศดฤดภดฝดภดยดฤดยดภดรดฦดฤดฤดยดมดฦดฬดฯดฮดลดมดลดษดอดสดสดรดยดฦดษดฦดรดยดฦดสดฮดฬดฦดยดมดมดรดฤดยดภดฟดรดษดฬดสดศดมดผดพดฤดรดฤดฝดนดนดนดบดธดนดผดภดรดวดฦดภดปดธดบดผดฟดฝดฝดปดนดผดผดธดตดดดธดปดนดดดฎดฌดญดฑดตดบดผดนดธดบดฝดผดบดณดฐดฒดดดนดวดสดฬดศดลดมดภดมดมดภดมดฟดมดรดยดรดพดฝดฝดรดวดวดฤดภดฝดผดปดนดบดภดรดฤดลดยดฝดฟดฟดยดฦดวดศดลดฝดผดมดฤดฤดมดภดมดมดฤดฦดฤดลดรดรดยดลดรดภดผดนดทดธดนดผดฟดยดรดฦดวดวดฦดรดฦดษดสดวดฦดยดมดยดฤดมดฝดบดปดพดฟดมดฟดผดฟดฟดรดวดฟดปดถดทดผดพดรดผดนดธดปดผดภดพดผดบดพดยดยดฝดนดถดถดบดผดนดฒดฎดญดฏดตดวดสดฬดฬดศดลดษดหดอดฬดศดรดภดมดรดฦดรดฝดฟดรดฦดวดรดภดผดพดฤดวดศดยดรดลดศดสดฦดมดภดมดยดวดศดยดปดนดบดฝดพดผดนดปดผดมดฤดฦดมดฟดมดฦดษดศดรดภดมดฤดษดศดฤดพดผดฝดภดมดฝดนดถดทดบดผดธดถดธดบดพดฤดลดภดปดผดพดยดมดยดฝดบดนดฝดพดบดทดปดพดยดฤดลดฤดฟดฟดรดฦดวดศดวดฤดลดวดวดลดฝดบดนดมดยดฤดยดฟดบดบดฦดพดฝดภดพดผดฝดฟดยดลดศดรดมดมดวดหดอดหดฦดยดภดพดภดฟดภดมดมดยดยดฤดฟดผดปดพดฟดมดยดพดปดพดภดยดรดมดภดยดลดศดลดภดฟดภดมดรดยดปดทดปดฟดยดยดผดนดบดผดพดมดฝดนดผดมดฤดลดฤดมดภดภดฟดยดฟดผดธดทดนดฟดฤดยดนดตดถดบดผดผดนดถดปดฟดรดฟดธดดดดดผดฤดศดวดฦดฤดรดฤดฤดมดภดภดมดรดภดพดนดถดนดฟดรดวดลดฝดปดนดศดฟดยดลดฦดฦดมดฝดผดฟดรดยดพดผดพดฟดฟดรดรดยดภดฟดรดมดฝดบดผดภดมดฟดยดมดมดยดรดฤดยดผดปดพดมดยดมดผดบดฝดมดฤดรดฟดผดฝดมดยดยดพดธดปดฝดพดฟดพดฟดฝดฝดภดยดมดภดฤดวดวดษดษดฦดยดวดฬดฮดฬดษดฦดยดพดยดฤดลดรดภดยดฤดลดรดฝดผดพดภดรดรดภดฝดภดรดฤดฤดภดฝดปดภดรดฦดฦดรดยดยดฤดลดยดปดธดทดนดปดพดฟดฟดฝดปดพดยดศดฮดะดะดหดวดลดฦดฤดฦดษดสดฮดะดะดหดสดวดลดสดอดฮดหดศดวดวดหดอดษดลดมดยดฦดษดฦดรดฤดวดฬดหดศดฟดถดตดธดปดปดผดผดฟดลดลดฤดฟดบดทดบดผดฟดฟดฝดผดปดภดพดผดนดธดทดบดปดฝดนดถดตดทดธดธดถดฒดตดธดผดฝดนดณดฒดดดทดบดปดทดทดถดบดผดปดผดผดฝดมดฤดรดบดตดดดธดฟดรดพดบดทดบดภดรดฦดฤดมดฟดฝดมดลดศดศดยดฝดฝดดดฒดถดตดฒดฑดฒดถดบดผดธดฒดฐดฑดณดตดฒดฎดซดฌดฏดฒดฏดฎดญดฏดทดผดฝดฝดถดฐดดดนดพดผดทดณดฑดทดปดฝดปดถดดดบดภดรดผดบดพดฤดวดฦดมดฟดรดษดฬดหดสดศดฦดสดฯดฮดหดฦดมดพดมดรดวดสดสดอดะดาดฮดษดศดวดษดหดษดยดผดบดนดปดธดดดญดฉดจดจดชดฌดซดฉดชดฐดฒดดดฐดชด ดด ดคดกดฃดฅดจดฉดซดฌดชดฉดฎดตดทดนดทดดดณดณดนดบดพดมดฟดผดผดนดนดผดนดตดณดดดถดบดฝดตดฒดตดฒดถดทดธดฒดฑดตดธดบดถดฐดญดฑดดดถดถดดดดดดดณดธดนดตดณดณดดดบดฝดปดทดทดธดปดนดธดบดนดบดฝดฝดผดพดบดธดณดธดบดนดถดนดบดฝดบดนดบดทดถดถดทดฒดฑดดดธดปดภดฟดนดดดณดทดผดภดภดพดนดผดยดยดภดมดฟดฝดภดยดภดบดบดภดฦดศดวดภดบดธดถดถดนดตดดดตดนดมดฤดฤดบดถดดดธดมดทดดดบดผดปดปดพดภดรดฤดพดบดทดฝดมดศดฦดมดบดนดธดปดพดบดธดนดพดภดภดมดฝดธดทดธดบดผดผดนดนดพดมดฤดมดผดฝดผดพดพดฝดฝดฝดฟดภดยดลดยดภดรดลดศดฤดฟดปดนดบดพดมดฟดธดทดปดฟดมดฟดฝดผดฟดยดลดยดฟดผดปดนดบดบดผดบดบดปดฟดมดปดถดตดถดธดทดดดถดธดบดปดผดผดนดบดผดพดพดฟดพดผดผดฝดฟดฟดผดปดธดทดธดธดธดตดฒดฒดดดมดฤดวดวดฦดฤดยดยดฤดวดษดศดรดยดฦดลดรดฟดธดถดบดยดฦดฤดภดพดฝดฟดรดภดพดปดฟดฤดฦดภดผดทดทดปดพดฝดถดฒดณดถดธดถดฒดฐดฏดฒดณดณดฎดชดชดจดชดญดฎดฌดฌดฐดฑดณดดดดดฏดฒดนดฝดฟดปดตดฑดฏดฑดฏดฐดฎดฑดดดนดธดดดฎดซดฎดถดบดนดดดฒดถดทดปดผดฝดปดธดนดนดพดพดฝดธดธดนดผดปดบดณดฑดดดทดธดนดทดตดถดบดฟดฝดบดตดฒดผดตดถดธดบดถดฏดญดฎดฐดณดฑดฌดฌดฏดฒดตดตดตดฐดฏดฏดฑดดดทดถดณดตดนดธดฒดฎดฌดฎดฑดดดตดธดทดนดผดผดทดฏดชดฉดจดฉดญดญดชดชดชดฉดฉดงดฅดงดฌดฐดณดฒดฑดฑดฐดดดนดปดปดนดผดบดฝดปดบดตดตดธดพดมดภดปดทดธดบดฝดปดธดถดทดผดฝดฝดพดนดทดบดพดยดยดฟดปดผดผดปดบดถดณดทดบดฝดฟดภดปดณดฒดฒดฒดฒดฑดณดทดผดฟดฟดผดนดนดบดทดผดมดยดฟดปดบดผดมดลดลดมดฝดนดธดปดพดฝดฝดพดยดศดหดษดฤดผดฝดมดรดฤดรดภดมดรดยดยดภดผดบดผดพดพดนดธดนดบดพดฟดฝดบดตดทดบดปดธดฒดฑดฒดตดทดถดฒดฐดฎดฐดฐดดดดดฑดดดถดนดนดทดทดณดฏดณดดดฐดซดชดฎดตดบดธดฑดฏดฏดณดทดธดธดถดดดตดทดทดณดฒดฒดถดบดผดปดทดณดตดบดปดปดทดณดฏดตดบดผดปดนดทดถดถดนดนดถดดดฒดณดฑดณดตดถดธดตดณดตดผดภดมดฝดธดดดดดนดฝดพดปดธดนดปดนดตดฒดถดปดฟดภดปดถดฒดทดผดภดพดปดถดถดปดภดมดภดฝดบดผดฝดปดบดธดปดภดรดลดมดธดถดบดฟดมดรดภดภดมดฤดฦดฤดมดฟดพดมดฤดศดษดลดฟดฝดฟดฟดพดฝดปดผดพดภดภดพดปดปดนดนดธดบดธดณดฑดตดธดนดนดธดทดบดผดผดธดฑดฌดฎดฏดฏดฎดฎดฌดฑดถดปดนดถดฑดฏดฑดฐดฏดฌดชดชดฒดธดบดภดรดมดบดณดฑดตดบดผดฝดธดบดปดภดพดนดถดธดนดปดผดนดปดปดฟดยดลดยดปดทดตดทดปดพดฟดพดผดบดฝดมดภดพดผดผดพดฟดปดธดธดปดพดภดฝดปดบดนดฝดฝดพดฝดปดพดรดสดสดศดยดปดธดทดธดตดตดณดตดผดผดปดธดถดนดภดศดสดหดวดลดลดลดษดศดฟดนดทดนดนดธดตดญดฎดฐดตดทดทดดดนดปดพดผดนดณดฑดดดนดฝดธดฐดญดฑดดดบดตดญดฌดฌดฝดฝดฝดฝดพดพดปดนดทดบดพดฟดยดฝดนดนดปดผดปดถดตดทดผดฝดฝดพดนดถดธดนดบดทดตดนดผดผดปดนดทดตดดดฒดฒดฎดฐดณดนดปดผดธดตดฒดฏดฎดฐดณดธดตดตดณดดดตดทดณดฒดฒดธดบดปดธดณดญดฑดถดบดผดนดธดผดฟดมดฝดตดถดบดพดมดฟดพดนดถดถดบดผดปดผดพดรดรดลดฤดพดผดฝดพดมดฟดปดปดผดฟดมดฝดธดถดธดปดผดฟดภดผดบดบดธดนดบดฝดฝดผดตดถดนดปดนดทดถดทดนดบดผดบดนดถดนดฝดมดฟดบดธดบดพดภดฝดพดภดฟดยดลดลดฦดยดพดฟดมดฟดฟดปดฟดรดฦดวดฤดรดผดทดปดมดยดผดนดบดฟดมดรดภดพดผดผดผดธดธดถดนดฝดภดฟดฟดผดนดนดบดฝดผดถดดดฒดธดบดตดฒดฐดฐดตดบดปดถดฒดฐดฑดถดบดผดธดดดฑดดดตดทดทดทดธดดดนดถดถดตดธดบดผดฝดพดปดตดตดบดผดฟดฟดพดธดถดดดตดฒดตดถดธดฝดนดบดพดฟดปดดดตดทดผดฟดฟดฝดฝดภดฤดฦดยดปดทดทดฝดยดยดภดนดถดนดผดพดภดภดภดรดศดษดวดยดภดฤดศดฬดสดวดภดฝดผดปดพดฟดภดภดฤดลดวดศดฦดรดรดรดยดฦดวดษดศดศดศดษดลดยดฤดศดสดฦดรดฟดผดปดบดนดนดถดนดฝดภดฤดฦดยดภดภดพดปดปดนดนดปดมดฤดฦดรดปดธดบดฝดพดฝดบดถดถดธดฝดผดนดถดตดถดปดผดผดนดดดทดผดฟดฟดพดผดภดทดถดนดผดพดฟดผดบดผดฟดภดภดผดปดผดฟดยดฟดบดณดฐดฑดถดตดดดฒดดดถดนดปดตดฎดฎดฒดฒดดดณดฑดณดธดปดผดธดถดฑดฒดตดนดปดปดธดตดณดณดตดณดณดตดทดนดนดธดทดถดผดมดรดฟดบดทดฝดฤดฦดฦดรดฟดบดผดฤดษดสดลดยดมดฤดฦดรดยดฟดผดปดฝดฟดผดถดณดถดฝดภดมดภดภดยดฤดมดภดผดนดนดทดผดฟดฝดธดทดธดปดพดผดธดทดธดบดผดพดผดธดบดยดยดรดลดษดฦดยดรดศดหดหดสดฦดรดฤดศดศดลดยดมดยดฤดฤดมดมดมดฤดศดหดหดศดรดฟดมดลดฦดลดยดภดรดลดลดพดทดดดทดปดฝดพดปดถดณดถดบดปดธดธดทดทดบดธดณดฎดฐดณดนดผดฝดนดธดทดบดผดนดฑดฌดฏดณดทดธดถดดดดดณดถดตดฒดฏดฐดดดธดนดบดตดฒดฒดถดทดบดทดฒดฐดตดนดนดนดธดตดตดบดฝดผดผดบดบดฝดภดผดนดถดนดพดรดฦดรดมดภดวดฑดฐดณดถดนดทดฏดซดญดถดธดทดธดธดทดทดธดตดถดณดณดถดบดปดบดดดณดณดฐดฒดดดณดฒดดดณดณดฑดฑดดดนดฝดฝดพดปดทดถดทดฝดพดภดพดปดฝดฟดฝดบดนดบดฝดยดรดฟดผดปดธดผดฟดผดนดธดธดฝดยดฟดฝดถดณดตดตดธดดดฑดณดบดฝดผดธดตดณดตดถดธดทดฐดฌดชดฐดทดนดถดฑดญดญดฐดฐดฑดญดซดฌดญดฎดฏดฏดชดฎดฐดฑดณดฒดฒดฐดฒดตดฒดดดฒดญดซดตดถดทดบดนดนดตดดดดดธดปดบดณดฒดฑดฑดทดธดธดตดณดถดนดบดบดณดฎดฏดตดนดบดปดถดณดฑดฒดตดทดถดถดธดปดปดนดดดณดดดทดปดนดตดฒดณดถดทดธดตดฒดฏดดดทดถดตดตดตดทดทดธดตดฒดฒดถดปดพดบดถดณดฑดฒดตดดดฑดฑดถดผดมดยดผดตดฒดฏดฐดฑดฒดฑดฑดฒดดดตดตดฒดฎดฐดทดบดนดตดฒดฏดฑดดดตดถดฑดญดญดฒดบดปดณดดดฒดฐดณดฒดฐดฏดฑดมดบดนดฝดฟดพดบดธดปดมดยดฦดยดธดณดทดปดบดทดถดถดถดนดผดนดตดดดทดผดฝดผดธดถดตดทดบดปดดดญดซดญดตดนดนดณดฐดฐดตดถดทดถดดดตดปดปดผดบดธดบดผดฟดผดนดธดธดถดทดธดบดนดธดดดธดปดพดภดผดธดฝดฤดฦดฤดผดปดฝดฝดฟดปดบดปดฝดภดฟดนดดดตดถดทดธดปดธดณดฒดตดทดธดทดตดดดตดทดนดทดณดณดถดนดบดนดนดตดตดตดปดภดยดยดฟดนดถดณดณดดดทดทดตดทดพดรดภดนดถดตดดดถดทดถดดดดดถดธดทดตดฏดซดชดญดฏดฐดฑดฐดฒดถดนดธดณดฐดฑดตดนดผดฝดปดณดณดฑดณดดดณดถดบดพดยดฟดบดดดฑดดดณดฒดดดฒดฏดฒดณดตดณดฏดญดฎดฑดณดฑดญดฉดงดฌดฑดตดตดฐดฎดณดถดฑดฎดฎดฎดฎดญดฌดชดชดญดฒดดดถดตดฑดณดทดบดบดถดฐดฎดฏดดดธดบดธดทดตดตดทดนดธดตดณดฑดถดนดปดผดบดธดบดทดถดถดถดตดณดดดทดผดฟดผดทดดดฒดณดทดนดตดณดฒดถดบดนดบดทดทดธดผดพดฟดฝดนดบดปดปดปดบดดดตดธดฝดมดฝดบดทดนดฟดยดรดฟดบดนดบดนดทดทดดดฑดดดฑดดดทดนดผดผดผดพดปดธดถดบดฟดฟดบดธดทดดดทดบดบดธดธดผดภดมดภดฝดปดบดปดฟดมดยดฝดธดบดฟดมดภดพดปดผดผดปดผดผดทดตดตดธดบดปดถดตดทดผดภดฝดทดณดฎดฏดดดตดถดตดธดลดมดภดรดลดฦดยดฟดฟดภดภดรดรดรดมดลดสดฮดหดสดลดฤดรดฤดยดฟดฟดรดศดสดวดรดภดพดฝดภดฦดษดวดลดวดศดวดฦดฤดพดฝดผดพดฝดผดผดภดรดลดรดฟดบดทดนดบดบดนดทดณดทดธดนดทดดดตดบดผดปดถดฐดฏดฐดดดดดธดธดทดถดผดฝดพดธดทดตดธดปดปดดดฏดฏดณดธดธดตดดดฒดทดผดปดพดพดผดผดผดพดมดพดปดธดตดทดบดนดธดทดตดนดฟดมดมดฟดบดทดถดตดดดตดฒดดดตดทดบดปดฝดปดธดทดบดฝดภดฟดผดทดณดดดธดนดธดทดนดบดผดผดบดธดธดปดพดฝดนดถดธดปดฝดฝดธดดดณดดดฒดฒดณดฒดดดณดฒดถดดดฒดฑดณดดดตดตดฒดญดฌดฑดฐดฎดฏดฐดณดธดผดพดฝดนดถดถดธดนดนดทดถดทดบดปดทดฒดญดฏดดดถดถดดดณดตดดดฐดฑดฒดฑดฏดฑดฒดดดถดตดฒดฑดฒดตดณดญดญดฎดฐดณดตดตดฒดฑดณดธดฝดฟดฝดบดพดพดถดณดตดธดปดนดธดธดธดปดฝดฟดผดบดฝดฟดมดภดปดฒดณดตดถดทดธดทดนดผดยดฤดฟดดดฒดทดปดพดบดบดนดผดบดบดธดดดฐดฒดธดบดนดถดดดฑดถดธดธดปดบดธดปดบดนดณดฌดซดฐดนดฟดผดนดถดทดปดบดทดณดฐดซดฐดดดณดญดฉดจดชดฎดฒดณดฒดญดฎดฑดถดตดณดฐดฌดฏดถดบดผดธดถดทดตดดดตดญดจดฌดฐดฐดญดฎดฌดฏดฌดฎดฎดซดจดจดฎดดดถดธดนดดดฝดนดธดปดพดปดตดดดดดถดผดผดบดทดถดตดตดถดถดทดณดฑดตดบดฝดปดนดบดถดฒดณดฑดฐดณดธดปดผดผดนดตดณดฒดณดณดตดตดฒดฒดถดถดตดฑดฐดณดถดดดณดฒดณดดดธดธดนดทดดดฒดฒดดดฐดฎดฑดถดทดดดญดชดฌดซดฎดซดชดฌดฏดตดธดบดปดนดดดฏดฏดฒดดดธดตดดดตดนดบดฑดญดชดชดฌดฏดญดญดญดจดฉดญดฏดณดถดทดทดทดธดถดตดดดตดถดธดทดบดผดฟดฌดจดจดซดญดฎดฏดญดฐดดดบดพดผดตดฑดฏดฐดฐดฒดฑดฐดณดทดบดบดถดฑดญดฏดฒดดดฑดฌดซดซดฏดฎดญดฌดชดญดตดธดตดฏดชดญดฑดถดดดฏดญดซดฏดตดนดนดตดทดบดนดฝดพดผดปดพดมดภดปดถดฒดณดถดธดธดณดฏดฎดดดนดบดทดฒดฏดณดทดฝดธดตดดดถดบดพดฟดธดดดฑดฒดดดตดณดฒดตดธดธดธดปดถดฒดฎดฒดดดตดณดฑดดดธดพดภดผดทดฒดฏดฑดดดถดนดนดตดทดนดพดมดภดฝดบดตดฑดฒดณดฐดฐดฑดตดทดปดพดพดผดบดนดธดธดธดถดทดบดพดภดฟดผดฝดผดฟดพดมดฟดพดผดฝดบดปดนดดดตดธดนดผดปดปดธดถดทดทดถดทดตดทดฝดฝดบดตดฑดฒดดดถดทดถดถดตดถดบดฟดฝดทดฎดฌดฎดณดถดถดตดถดธดนดนดนดธดผดฝดฟดฟดปดนดนดผดฝดผดบดดดฐดฒดณดดดทดนดทดบดพดมดพดธดตดดดดดตดฐดฑดฒดฒดทดทดนดปดบดบดยดยดฟดผดภดมดฝดปดทดนดฝดภดภดผดนดทดทดบดนดถดตดธดพดฤดศดฦดภดฟดปดพดพดบดดดฏดฑดตดทดนดถดดดฒดณดถดทดดดฏดฌดฐดดดถดณดฐดฌดฏดฑดณดฑดฌดชดฎดฒดฑดฑดฌดฆดฅดงดชดฉดจดฉดฌดฑดณดณดณดฏดญดฏดณดตดดดฑดซดฌดฐดฑดฒดฏดฐดตดบดฝดบดตดฑดฑดฏดณดถดตดณดฒดตดทดธดถดฑดฒดตดนดปดฝดนดถดตดบดภดยดพดทดถดถดนดปดบดธดทดฌดชดซดฌดฏดณดดดณดฐดฑดฏดดดถดถดดดณดตดทดตดดดฒดณดบดพดฟดฝดทดณดทดผดพดฝดถดฑดฒดนดพดพดพดฝดผดพดยดภดฝดบดบดปดฝดฟดผดถดถดณดถดฝดมดผดดดฐดฑดฒดณดฑดฎดฎดฑดตดตดตดฑดฎดฐดตดทดถดฑดญดญดณดดดฐดซดฅดคดจดซดฎดซดชดจดงดจดฉดซดฉดฉดซดฎดฐดฎดฌดชดฎดญดฎดญดญดซดฉดจดชดฌดญดญดฎดญดฑดฒดฑดญดญดฒดถดนดบดธดทดทดฐดฎดฑดดดนดทดตดฑดฐดฑดถดณดฐดชดฆดฉดฌดฑดฏดฌดฌดฏดฒดฒดฐดชดงดจดฉดชดชดงดชดญดฏดฑดฏดซดฉดจดญดฒดฑดฌดงดงดซดฏดฐดฐดฌดฌดฐดถดธดธดถดทดนดฝดพดยดมดผดตดณดตดบดผดนดถดธดบดนดตดฏดญดฒดตดถดทดถดณดทดทดนดปดนดดดถดถดธดนดถดตดฐดดดทดนดบดถดฒดฑดตดนดบดบดทดดดถดนดธดตดดดฒดณดถดธดดดฎดญดฏดณดทดทดตดฏดผดบดนดทดทดนดนดนดถดถดนดผดฟดฝดนดตดถดธดผดฝดปดนดบดพดฟดฝดบดตดฏดฏดฐดฑดฒดฐดฏดณดนดฝดทดฏดญดฑดตดดดตดถดธดปดภดมดฝดปดบดบดปดบดนดทดตดถดธดทดตดฒดฒดฐดฐดณดถดณดดดฒดตดบดฝดธดดดฐดฑดดดทดตดฒดดดดดดดธดถดฑดญดฑดถดปดพดปดถดณดตดธดธดบดนดถดดดถดผดมดฟดบดดดดดถดธดนดนดบดฟดรดฦดลดมดฝดนดบดพดมดภดนดทดถดนดปดฟดรดยดผดธดทดทดผดผดบดธดผดฟดฟดภดมดฟดปดพดมดยดรดภดพดปดพดมดรดยดมดมดมดรดวดวดลดมดมดฤดวดวดฤดมดภดยดฤดยดมดรดรดศดศดฦดยดฟดผดผดฟดยดมดภดพดฝดยดมดยดฝดธดปดนดนดทดตดทดปดภดฦดยดผดทดธดปดภดมดผดบดผดบดฝดฝดธดตดตดถดนดปดพดฝดนดถดธดทดนดธดทดดดตดทดธดนดดดญดฌดฐดณดทดทดตดทดทดบดพดมดบดบดธดตดดดณดทดนดธดถดดดณดตดธดถดดดณดธดฝดพดบดธดดดนดฝดภดภดปดทดณดดดถดดดฒดฐดญดฏดฒดตดธดปดปดพดฟดมดพดนดธดทดบดผดบดปดถดดดนดฝดพดฝดดดฑดฑดตดทดฒดฐดฎดฐดดดถดธดดดฎดฌดฐดดดณดฏดฎดฎดฐดณดตดณดฐดชดฌดฌดชดฉดจดจดฌดฒดถดณดฏดชดฌดฐดฒดฒดฎดจดฆดจดญดฒดฒดฒดฐดดดตดฑดฌดชดฆดจดฎดฐดณดฑดฐดชดฅดฅดจดญดฏดธดถดณดฑดฐดฏดฑดฑดฐดญดฎดฒดตดธดถดดดถดถดธดถดตดตดตดทดปดปดธดนดธดปดฝดผดณดฐดฎดฏดฐดตดตดซดจดชดฎดฏดฏดฌดซดซดฏดฑดฎดซดงดซดฑดถดทดฒดจดฌดฎดฏดฌดญดญดฎดฑดตดทดธดดดญดชดฐดตดตดฑดฎดชดญดซดซดชดฌดฑดณดดดนดธดตดถดตดถดนดธดตดณดฑดณดธดบดตดฒดฏดฐดฑดณดดดณดฏดฒดณดตดณดฑดฐดตดนดปดบดณดฒดฒดดดดดตดถดถดญดฌดฌดซดฌดฑดณดฐดญดญดฒดธดนดฒดญดชดซดฌดญดฌดฌดญดฏดฑดณดฒดฏดฌดฉดญดฒดดดตดถดณดฑดฒดฒดดดฒดฒดณดธดปดผดบดตดฒดตดทดธดดดฐดฑดตดบดบดธดธดณดฏดณดถดถดถดตดดดตดนดผดนดญดชดฉดชดฌดซดซดฎดฑดตดนดปดนดธดนดถดตดถดถดถดฐดฒดณดณดณดฐดณดทดปดปดบดธดทดนดผดพดบดบดนดทดนดปดธดถดทดปดฟดยดมดผดนดทดนดฟดมดรดผดดดทดฑดญดฒดธดทดดดฒดฒดถดบดฝดนดตดดดตดณดณดฒดฒดฐดฒดถดผดพดผดตดฎดฎดฐดดดถดตดตดดดถดธดนดดดฒดฐดฒดดดดดฏดฎดฌดฌดฐดตดตดตดดดนดพดปดทดณดฐดฏดดดนดผดปดนดธดนดปดพดปดถดทดทดธดนดธดฐดฏดฑดณดถดทดถดธดผดยดษดศดฟดบดธดธดบดผดนดปดปดฝดยดรดมดผดปดบดผดภดฟดภดฝดบดผดผดบดธดตดถดผดยดลดยดฝดดดทดฝดมดฤดปดวดฤดมดภดภดรดฦดฦดรดภดมดฤดศดฦดลดฤดฤดศดสดษดศดฦดลดศดหดฮดะดอดศดวดวดหดฬดษดฦดลดลดลดฤดภดบดธดผดพดมดฟดฝดปดปดฝดพดบดทดธดนดนดปดผดทดณดณดตดดดดดณดฒดตดบดฝดพดพดบดทดปดพดฟดปดถดฒดฑดณดดดถดฐดฐดดดทดธดถดดดดดฒดตดทดนดธดดดฑดณดตดดดณดฎดซดฎดฐดฑดฏดซดจดฉดญดฎดฎดญดฌดฌดฐดตดถดธดตดฐดชดฐดธดผดฒดฒดฐดฏดฐดฏดณดถดทดดดฑดฑดตดธดธดตดฏดชดญดตดนดธดตดฐดฒดตดทดนดธดทดนดผดผดธดทดดดธดพดรดลดยดพดปดฝดพดฟดนดตดดดนดปดฝดปดฒดฎดฎดณดธดทดฐดฎดฎดณดถดนดดดฑดฒดฒดตดถดตดฏดฎดณดทดทดบดถดฎดชดฎดดดทดณดฌดจดฉดซดฎดชดชดฅดคดจดฎดฐดฌดซดฏดณดธดดดฐดชดชดฉดฉดซดงดฅดงดฉดฎดญดจดฆดฅดฉดซดฎดฉดคดกดกดฅดซดฎดญด
